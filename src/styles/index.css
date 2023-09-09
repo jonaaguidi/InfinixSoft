@@ -1,42 +1,76 @@
+/* Base de Tailwind CSS */
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  scroll-behavior: smooth;
-  color-scheme: dark;
+/* Estilos Base */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+  }
+  body {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  body::-webkit-scrollbar-track {
+    border-radius: 12px;
+    background: #000000;
+  }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background: #db3957;
+  }
 }
 
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden !important;
+/* Estilos Personalizados (@layer y @apply con Tailwind) */
+@layer components {
+  .bg-hero {
+    @apply w-full h-screen bg-center bg-cover min-h-[500px] relative z-40;
+    background-image: url("/img/Hero/Background_Hero.png");
+    background-repeat: no-repeat;
+  }
+
+  .bg-hero::after {
+    @apply absolute top-0 left-0 w-full h-full;
+    content: "";
+    background: linear-gradient(
+      180deg,
+      #0c0c0d 8.97%,
+      rgba(12, 12, 13, 0.86) 23.96%,
+      rgba(12, 12, 13, 0.46) 58.33%,
+      rgba(12, 12, 13, 0.79) 85.94%,
+      #0c0c0d 97.92%
+    );
+    z-index: 1;
+  }
 }
 
-body {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-body::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-body::-webkit-scrollbar-track {
-  border-radius: 12px;
-  background: #000000;
-}
-body::-webkit-scrollbar-thumb {
-  border-radius: 12px;
-  background: #db3957;
-}
-
-.flag:hover{
-  transition: transform ease-in-out 0.3s;
-  transform: scale(1.15);
+.button-gradient {
+  display: inline-block;
+  padding: 24px 32px;
+  border: 1px solid transparent;
+  opacity: 0.85;
+  border-radius: 999px;
+  background-color: transparent;
+  background: linear-gradient(#242427, #242427),
+  radial-gradient(circle, rgba(31,96,193,1) 30%, rgba(219,57,87,1) 120%);
+  background-clip: padding-box, border-box;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  overflow: hidden;
 }
