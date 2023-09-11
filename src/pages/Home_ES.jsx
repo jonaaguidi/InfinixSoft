@@ -1,6 +1,14 @@
+import Header from "../components/components_EN/Header"
+import Banner from "../components/components_EN/Banner"
+
 const Home_ES = () => {
   return (
-    <div>Home_ES</div>
+    <>
+      <Header />
+      <main>
+        <Banner />
+      </main>
+    </>
   )
 }
 

@@ -23,15 +23,15 @@
     color: #ffffff;
   }
   body::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
   }
   body::-webkit-scrollbar-track {
-    border-radius: 12px;
+    border-radius: 20px;
     background: #000000;
   }
   body::-webkit-scrollbar-thumb {
-    border-radius: 12px;
+    border-radius: 20px;
     background: #db3957;
   }
 }
@@ -57,20 +57,41 @@
     );
     z-index: 1;
   }
+  .button-gradient {
+    display: inline-block;
+    padding: 24px 32px;
+    border: 1px solid transparent;
+    opacity: 0.85;
+    border-radius: 999px;
+    background-color: transparent;
+    background: linear-gradient(#242427, #242427),
+      radial-gradient(
+        circle,
+        rgba(31, 96, 193, 1) 10%,
+        rgba(219, 57, 87, 1) 120%
+      );
+    background-clip: padding-box, border-box;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+  }
 }
 
-.button-gradient {
-  display: inline-block;
-  padding: 24px 32px;
-  border: 1px solid transparent;
-  opacity: 0.85;
-  border-radius: 999px;
-  background-color: transparent;
-  background: linear-gradient(#242427, #242427),
-  radial-gradient(circle, rgba(31,96,193,1) 30%, rgba(219,57,87,1) 120%);
-  background-clip: padding-box, border-box;
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-  overflow: hidden;
+/* Estilos de Utilidades (Animaciones/Sombras/Degradados) */
+@layer utilities {
+  .border-gradient {
+    border: 1px solid transparent;
+    background-color: transparent;
+    background: linear-gradient(#242427, #242427),
+      radial-gradient(
+        circle,
+        rgba(31, 96, 193, 1) 15%,
+        rgba(219, 57, 87, 1) 120%
+      );
+    background-clip: padding-box, border-box;
+  }
+  .text-shadow {
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 1);
+  }
 }

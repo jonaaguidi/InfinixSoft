@@ -86,22 +86,7 @@ const Holding_Dropdown = [
     name: 'Infinix Holding',
     icon: InfinixHolding,
     link: "https://infinixholdinggroup.com/"
-  },
-  {
-    name: 'Infinix QA',
-    icon: InfinixQA,
-    link: "https://infinixqa.com/"
-  },
-  {
-    name: 'Infinix NFT',
-    icon: InfinixNFT,
-    link: "https://infinixNFT.com/"
-  },
-  {
-    name: 'Infinix VR',
-    icon: InfinixVR,
-    link: "https://www.infinixar.com/"
-  },
+  }, 
   {
     name: 'Infinix Social',
     icon: InfinixSocial,
@@ -111,6 +96,23 @@ const Holding_Dropdown = [
     name: 'Infinix Gaming',
     icon: InfinixGaming,
     link: "https://infinixgaming.com/"
+  },
+  {
+    name: 'Infinix QA',
+    icon: InfinixQA,
+    link: "https://infinixqa.com/"
+  },
+
+  {
+    name: 'Infinix VR',
+    icon: InfinixVR,
+    link: "https://www.infinixar.com/"
+  },
+
+  {
+    name: 'Infinix NFT',
+    icon: InfinixNFT,
+    link: "https://infinixNFT.com/"
   },
 ];
 
