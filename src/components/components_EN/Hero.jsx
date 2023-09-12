@@ -13,9 +13,9 @@ const Hero = () => {
         'We Are InfinixSoft.', // Lista de Textos
       ],
       typeSpeed: 80,
-      backSpeed: 50, 
-      backDelay: 2500, 
-      startDelay: 500, 
+      backSpeed: 80, 
+      backDelay: 1500, 
+      startDelay: 300, 
       loop: true, 
       showCursor: false,
     };
@@ -42,7 +42,7 @@ const Hero = () => {
         </div>
 
         <div className="py-10">
-          <h1 ref={titleRef} className="text-center text-[52px] text-[#F4F5F6] text-shadow font-bold pb-3"></h1>
+          <h1 ref={titleRef} className="h-[72px] text-center text-[52px] text-[#F4F5F6] text-shadow font-bold pb-3 flex items-center justify-center"></h1>
           <h5 className="text-center text-xl leading-8 text-[#F4F5F6] text-shadow">Discover how InfinixSoft can help you create the perfect strategy for your business.</h5>
         </div>
 
