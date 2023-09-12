@@ -78,8 +78,6 @@
     overflow: hidden;
   }
 
-
-
   #card_blur::before {
     content: "";
     position: absolute;
@@ -92,8 +90,14 @@
     height: 105%;
     filter: blur(40px);
     z-index: -1;
-  }  
-  
+  }
+  .card_blur{
+    background-image: url("/img/Culture/blur_cards.png");
+    z-index: 100;
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+
   #image_about::before {
     content: "";
     position: absolute;

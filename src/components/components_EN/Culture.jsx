@@ -12,10 +12,10 @@ const Culture = () => {
         </h4>
         <button className="button-gradient">Our Services</button>
       </div>
-      <div className=" max-w-[1280px] flex justify-center flex-wrap pt-20 gap-20">
+      <div className="max-w-[1220px] flex justify-center flex-wrap pt-20 gap-16">
         {Culture_cards.map((card) => (
-          <div id="card_blur" key={card.title} className="max-w-[358px] relative">
-            <div className="flex flex-col py-16 px-8 bg-[#18181B] rounded-3xl border-gradient z-20 ">
+          <div id="card_blur" key={card.title} className="max-w-[358px]  z-10 relative hover:card_blur">
+            <div className="flex flex-col py-16 px-8 bg-[#18181B] h-[340px] rounded-3xl border-gradient z-20 ">
               <img className="pb-8" src={card.icon} width={42} height={42} alt={card.title} />
               <h4 className="text-[#FCFCFD] text-[21px] font-bold pb-4">{card.title}</h4>
               <p className="text-[#777E90] text-[16px] font-normal">{card.content}</p>
