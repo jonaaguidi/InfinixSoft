@@ -120,14 +120,14 @@ export { Team };
 
 
 // SERVICES DATA
-import service1 from "/img/Culture/cultura_excelencia.svg"
-import service2 from "/img/Culture/cultura_innovación.svg"
-import service3 from "/img/Culture/cultura_equipo.svg"
-import service4 from "/img/Culture/cultura_honestidad.svg"
-import service5 from "/img/Culture/cultura_colaboracion.svg"
-import service6 from "/img/Culture/cultura_social.svg"
-import service7 from "/img/Culture/cultura_social.svg"
-import service8 from "/img/Culture/cultura_social.svg"
+import service1 from "/img/Services/service_1.svg"
+import service2 from "/img/Services/service_2.svg"
+import service3 from "/img/Services/service_3.svg"
+import service4 from "/img/Services/service_4.svg"
+import service5 from "/img/Services/service_5.svg"
+import service6 from "/img/Services/service_6.svg"
+import service7 from "/img/Services/service_7.svg"
+import service8 from "/img/Services/service_8.svg"
 
 const services  = [
   {

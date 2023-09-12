@@ -14,7 +14,7 @@ const Services = () => {
             <div className="max-w-[1220px] flex justify-start flex-wrap pt-20 gap-x-14 gap-y-10">
                 {services.map((card) => (
                     <div id="card_blur" key={card.title} className="max-w-[369px] z-10 relative hover:card_blur">
-                        <div className="flex flex-col py-16 px-8 bg-[#18181B] h-[406px] rounded-3xl border-gradient z-20 ">
+                        <div className="flex flex-col justify-center py-16 px-8 bg-[#18181B] h-[396px] rounded-3xl border-gradient z-20 ">
                             <img className="pb-8" src={card.icon} width={42} height={42} alt={card.title} />
                             <h4 className="text-[#FCFCFD] text-[21px] font-bold pb-4">{card.title}</h4>
                             <p className="text-[#C7CBE5] text-[16px] font-normal">{card.content}</p>

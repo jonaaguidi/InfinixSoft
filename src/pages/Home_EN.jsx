@@ -5,6 +5,7 @@ import About from "../components/components_EN/About"
 import Culture from "../components/components_EN/Culture"
 import Team from "../components/components_EN/Team"
 import Services from "../components/components_EN/Services"
+import Cursor from "../components/components_EN/Cursor"
 
 const Home_EN = () => {
   return (
@@ -18,6 +19,7 @@ const Home_EN = () => {
         <Team />
         <Services />
       </main>
+      <Cursor />
     </>
   )
 }

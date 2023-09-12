@@ -17,11 +17,11 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full h-fit px-28 py-5 flex justify-between items-center ">
+    <header className="w-full h-fit fixed z-50 bg-black px-28 py-5 flex justify-between items-center ">
 
       <div className="flex gap-5 z-50  items-center">
         <img src={Logo} width={200} alt="InfinixSoft" />
-        <img className="relative p-3 mt-2 opacity-60 hover:bg-[#242427] hover:rounded-lg hover:opacity-100 cursor-pointer" src={Arrow} alt="arrow" onClick={toggleDropdown} />
+        <img className="relative p-3 mt-2 opacity-70 hover:bg-[#242427] hover:rounded-lg hover:opacity-100 cursor-pointer" src={Arrow} alt="arrow" onClick={toggleDropdown} />
         {showDropdown && <Dropdown />}
       </div>
 

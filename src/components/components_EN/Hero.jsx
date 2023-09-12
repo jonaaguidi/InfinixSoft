@@ -9,9 +9,10 @@ const Hero = () => {
   useEffect(() => {
     const options = {
       strings: [
-        'Your Dream, Our Dev.',
-        'We Are InfinixSoft.', // Lista de Textos
+        'Your Dream, Our<span id="span">&nbsp;Dev.</span>',
+        'We Are Infinix<span id="span">Soft.</span>', // Lista de Textos
       ],
+      contentType: 'html',
       typeSpeed: 80,
       backSpeed: 80, 
       backDelay: 1500, 
@@ -47,8 +48,8 @@ const Hero = () => {
         </div>
 
         <div className="flex gap-10 items-center justify-center">
-          <button className="button-gradient hover:opacity-100">Our Services</button>
-          <button className="button-gradient hover:opacity-100">Contact</button>
+          <button className="button-gradient hover:opacity-100 border-[#DB3957]">Our Services</button>
+          <button className="button-gradient hover:opacity-100 border-[#DB3957]">Contact</button>
         </div>
 
       </div>

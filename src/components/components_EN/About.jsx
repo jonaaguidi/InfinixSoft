@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="w-fit h-fit mx-auto px-28 py-20 flex items-center justify-between gap-24 ">
         <div>
-            <img id="image_about" className="relative rounded-2xl" src={AboutImage} alt="About" width={448}></img>
+            <img className="rounded-2xl" src={AboutImage} alt="About" width={458}></img>
         </div>
         <div className="flex flex-col justify-center gap-36">
             <div className="w-fit max-w-[693px] flex flex-col gap-8 z-50">
