@@ -1,47 +1,5 @@
 // Importaciones/Exportaciones de Imagenes dentro del diseño con el objetivo de modularizar el codigo.
 
-// Marquee del Holding
-import InfinixHolding from "/img/Hero/Infinix_Holding.svg"
-import InfinixSoft from "/img/Hero/Infinix_Soft.svg"
-import InfinixQA from "/img/Hero/Infinix_QA.svg"
-import InfinixNFT from "/img/Hero/Infinix_NFT.svg"
-import InfinixVR from "/img/Hero/Infinix_VR.svg"
-import InfinixSocial from "/img/Hero/Infinix_Social.svg"
-import InfinixGaming from "/img/Hero/Infinix_Gaming.svg"
-
-const Holding = [
-  {
-    name: 'Infinix Holding',
-    icon: InfinixHolding,
-  },
-  {
-    name: 'Infinix Soft',
-    icon: InfinixSoft,
-  },
-  {
-    name: 'Infinix QA',
-    icon: InfinixQA,
-  },
-  {
-    name: 'Infinix NFT',
-    icon: InfinixNFT,
-  },
-  {
-    name: 'Infinix VR',
-    icon: InfinixVR,
-  },
-  {
-    name: 'Infinix Social',
-    icon: InfinixSocial,
-  },
-  {
-    name: 'Infinix Gaming',
-    icon: InfinixGaming,
-  },
-];
-
-export { Holding };
-
 // Banner debajo del Hero.
 import Atlassian from "/img/Banner/Atlassian.png"
 import AWS from "/img/Banner/AWS.png"
@@ -80,7 +38,15 @@ const BannerLogos = [
 
 export { BannerLogos };
 
+
 // Holding Dropdown (Todo el holding menos InfinixSoft)
+import InfinixHolding from "/img/Hero/Infinix_Holding.svg"
+import InfinixQA from "/img/Hero/Infinix_QA.svg"
+import InfinixNFT from "/img/Hero/Infinix_NFT.svg"
+import InfinixVR from "/img/Hero/Infinix_VR.svg"
+import InfinixSocial from "/img/Hero/Infinix_Social.svg"
+import InfinixGaming from "/img/Hero/Infinix_Gaming.svg"
+
 const Holding_Dropdown = [
   {
     name: 'Infinix Holding',

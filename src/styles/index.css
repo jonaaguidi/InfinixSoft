@@ -60,7 +60,7 @@
 
   .button-gradient {
     display: inline-block;
-    padding: 24px 32px;
+    padding: 20px 32px;
     border: 1px solid transparent;
     opacity: 0.85;
     border-radius: 999px;
@@ -86,8 +86,8 @@
     background-position: center;
     top: 0;
     left: 0;
-    width: 108%; /* Default 100%% */
-    height: 108%;
+    width: 105%; /* Default 100%% */
+    height: 105%;
     filter: blur(40px);
     z-index: -1;
   }
@@ -97,12 +97,12 @@
     position: fixed;
     width: 8px;
     height: 8px;
-    background-color: #DB3957; 
+    background-color: #db3957;
     border-radius: 50%;
-    pointer-events: none; 
+    pointer-events: none;
     transform: translate(-50%, -50%);
-    transition: transform 0.2s ease; 
-    z-index: 9999; 
+    transition: transform 0.2s ease;
+    z-index: 9999;
   }
 
   /* Cursor exterior */
@@ -110,16 +110,30 @@
     position: fixed;
     width: 40px;
     height: 40px;
-    border: 1px solid #DB3957; 
+    border: 1px solid #db3957;
     border-radius: 50%;
-    pointer-events: none; 
+    pointer-events: none;
     transform: translate(-50%, -50%);
-    z-index: 9998; 
+    z-index: 9998;
   }
 }
 
 /* Estilos de Utilidades (Animaciones/Sombras/Degradados) */
 @layer utilities {
+  /* .border-gradient {
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 16px;
+    background: 
+      radial-gradient(circle at 100% 100%, #18181B 0, transparent 1px) 0% 0%/8px 8px no-repeat,
+      radial-gradient(circle at 0 100%, #18181B 0, transparent 1px) 100% 0%/8px 8px no-repeat,
+      radial-gradient(circle at 100% 0, #18181B 0, transparent 1px) 0% 100%/8px 8px no-repeat,
+      radial-gradient(circle at 0 0, #18181B 0, transparent 1px) 100% 100%/8px 8px no-repeat,
+      linear-gradient(#18181B, #18181B) 50% 50% / calc(100% - 1px) calc(100% - 2px) no-repeat,
+      linear-gradient(45deg, #db3957 30%, #1f60c1 70%);
+    background-clip: padding-box, border-box;
+  } */
+
   .border-gradient {
     border: 1px solid transparent;
     background-color: transparent;
@@ -136,7 +150,11 @@
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 1);
   }
 
-  #span{
-    color: #DB3957;
+  #span {
+    color: #db3957;
+  }
+
+  .z-max {
+    z-index: 999;
   }
 }

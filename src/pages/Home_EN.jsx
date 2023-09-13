@@ -11,7 +11,7 @@ const Home_EN = () => {
   return (
     <>
       <Header />
-      <main >
+      <main className="main">
         <Hero />
         <Banner />
         <About />
