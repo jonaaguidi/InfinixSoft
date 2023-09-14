@@ -36,8 +36,8 @@ const Hero = () => {
         </div>
 
         <div className="flex gap-10 items-center justify-center max-[580px]:gap-8">
-          <button className="button-gradient hover:opacity-100 border-[#DB3957]">Our Services</button>
-          <button className="button-gradient hover:opacity-100 border-[#DB3957] ">Contact</button>
+          <button className="button-gradient">Our Services</button>
+          <button className="button-gradient">Contact</button>
         </div>
 
       </div>

@@ -15,7 +15,7 @@ const Culture = () => {
       <div className="max-w-[1220px] flex justify-center flex-wrap pt-20 gap-16 max-[832px]:gap-12 max-[800px]:gap-7">
         {Culture_cards.map((card) => (
           <div id="card_blur" key={card.title} className="max-w-[348px] z-10 relative hover:card_blur max-[832px]:w-[316px]">
-            <div className="flex flex-col py-16 px-8 bg-[#18181B] h-[340px] rounded-3xl border-gradient z-20 justify-center">
+            <div className="flex flex-col py-16 px-8 bg-[#171718] h-[340px] rounded-lg border-gradient z-20 justify-center">
               <img className="pb-8" src={card.icon} width={42} height={42} alt={card.title} />
               <h4 className="text-[#FCFCFD] text-[21px] font-bold pb-4">{card.title}</h4>
               <p className="text-[#777E90] text-[16px] font-normal">{card.content}</p>
