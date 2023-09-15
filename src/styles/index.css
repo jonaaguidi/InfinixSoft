@@ -36,7 +36,7 @@
   }
 }
 
-/* Estilos Personalizados (@layer y @apply con Tailwind) */
+/* Estilos para componentes (Abstraer clases) */
 @layer components {
   .bg-hero {
     @apply w-full h-screen bg-center bg-cover min-h-[500px] relative z-40;
@@ -61,10 +61,10 @@
   .button-gradient {
     display: inline-block;
     padding: 20px 32px;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     border-radius: 999px;
     background-color: transparent;
-    background: linear-gradient(#242427, #242427),
+    background: linear-gradient(#171718, #171718),
       radial-gradient(
         circle,
         rgba(31, 96, 193, 1) 10%,
@@ -75,6 +75,22 @@
     font-size: 14px;
     cursor: pointer;
     overflow: hidden;
+    transition: transform 0.40s ease-in-out; 
+  }
+
+  .button-gradient:hover {
+    transform: scale(0.98);
+    box-shadow: rgba(23, 23, 24, 0.95) 1px 1px 20px;
+  }
+
+  .button-gradient:focus {
+    transform: scale(0.98);
+    box-shadow: rgba(23, 23, 24, 0.75) 1px 1px 20px;
+  }
+
+  .button-gradient:active {
+    transform: scale(0.98);
+    box-shadow: rgba(23, 23, 24, 0.75) 1px 1px 20px;
   }
 
   #card_blur::before {
@@ -85,8 +101,8 @@
     background-position: center;
     top: 0;
     left: 0;
-    width: 101%; /* Default 100%% */
-    height: 101%;
+    width: 100%; /* Default 100%% */
+    height: 100%;
     filter: blur(40px);
     z-index: -1;
   }
@@ -119,24 +135,28 @@
 
 /* Estilos de Utilidades (Animaciones/Sombras/Degradados) */
 @layer utilities {
-  /* .border-gradient {
+  .border-gradient {
     border: 1px solid transparent;
     background-color: transparent;
     border-radius: 16px;
-    background: 
-      radial-gradient(circle at 100% 100%, #18181B 0, transparent 1px) 0% 0%/8px 8px no-repeat,
-      radial-gradient(circle at 0 100%, #18181B 0, transparent 1px) 100% 0%/8px 8px no-repeat,
-      radial-gradient(circle at 100% 0, #18181B 0, transparent 1px) 0% 100%/8px 8px no-repeat,
-      radial-gradient(circle at 0 0, #18181B 0, transparent 1px) 100% 100%/8px 8px no-repeat,
-      linear-gradient(#18181B, #18181B) 50% 50% / calc(100% - 1px) calc(100% - 2px) no-repeat,
+    background: radial-gradient(circle at 100% 100%, #18181b 0, transparent 1px)
+        0% 0%/8px 8px no-repeat,
+      radial-gradient(circle at 0 100%, #18181b 0, transparent 1px) 100% 0%/8px
+        8px no-repeat,
+      radial-gradient(circle at 100% 0, #18181b 0, transparent 1px) 0% 100%/8px
+        8px no-repeat,
+      radial-gradient(circle at 0 0, #18181b 0, transparent 1px) 100% 100%/8px
+        8px no-repeat,
+      linear-gradient(#18181b, #18181b) 50% 50% / calc(100% - 1px)
+        calc(100% - 2px) no-repeat,
       linear-gradient(45deg, #db3957 30%, #1f60c1 70%);
     background-clip: padding-box, border-box;
-  } */
+  }
 
   .border-gradient {
     border: 1px solid transparent;
     background-color: transparent;
-    background: linear-gradient(#242427, #242427),
+    background: linear-gradient(#171718, #171718),
       radial-gradient(
         circle,
         rgba(31, 96, 193, 1) 15%,

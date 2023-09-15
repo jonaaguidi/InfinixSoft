@@ -12,12 +12,12 @@ const Culture = () => {
         </h4>
         <button className="button-gradient">Our Services</button>
       </div>
-      <div className="max-w-[1220px] flex justify-center flex-wrap pt-20 gap-16 max-[832px]:gap-12 max-[800px]:gap-7">
+      <div className="max-w-[1220px] flex justify-center flex-wrap pt-20 gap-6 max-[832px]:gap-12 max-[800px]:gap-7">
         {Culture_cards.map((card) => (
-          <div id="card_blur" key={card.title} className="max-w-[348px] z-10 relative hover:card_blur max-[832px]:w-[316px]">
-            <div className="flex flex-col py-16 px-8 bg-[#171718] h-[340px] rounded-lg border-gradient z-20 justify-center">
-              <img className="pb-8" src={card.icon} width={42} height={42} alt={card.title} />
-              <h4 className="text-[#FCFCFD] text-[21px] font-bold pb-4">{card.title}</h4>
+          <div id="card_blur" key={card.title} className="max-w-[390px] z-10 relative max-[1442px]:w-[356px] max-[400px]:w-[304px]">
+            <div className="flex flex-col p-10 bg-[#171718] h-[268px] rounded-lg border-gradient z-20 justify-center items-start max-[400px]:h-[300px]">
+              <img className="pb-4" src={card.icon} width={48} height={48} alt={card.title} />
+              <h4 className="text-[#FCFCFD] text-[21px] font-bold pb-3 max-[400px]:p-0">{card.title}</h4>
               <p className="text-[#777E90] text-[16px] font-normal">{card.content}</p>
             </div>
           </div>
