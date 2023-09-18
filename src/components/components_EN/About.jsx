@@ -12,7 +12,7 @@ const About = () => {
             <div className="flex flex-col justify-center gap-4">
                 <div className="w-fit max-w-[693px] flex flex-col gap-8 z-50">
                     <h5 className="text-2xl font-semibold max-[1120px]:text-xl">We are Infinix<span className="text-[#DB3957]">soft.</span></h5>
-                    <h3 className="font-normal text-3xl text-[#F4F5F6] max-[1120px]:text-2xl">InfinixSoft offers games, business and product development (web, mobile, social and internet technologies) to startup and enterprise clients.</h3>
+                    <h3 className="font-normal text-4xl text-[#F4F5F6] max-[1120px]:text-2xl">InfinixSoft offers games, business and product development (web, mobile, social and internet technologies) to startup and enterprise clients.</h3>
                 </div>
 
                 <div className="flex items-center pt-16 gap-16 max-[1384px]:gap-2 max-[1384px]:pt-8 max-[485px]:gap-10 max-[485px]:pt-4 max-[485px]:flex-wrap max-[485px]:justify-center">

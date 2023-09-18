@@ -10,7 +10,9 @@ const Culture = () => {
         <h4 className="max-w-[720px] text-xl text-center pt-2 pb-8 leading-[30px] max-[1024px]:text-[16px] max-[455px]:text-[14px] max-[455px]:leading-6">
           En InfinixSoft, nuestros valores de <span className="font-bold">excelencia, innovación, colaboración y responsabilidad social</span> guían cada acción y proyecto que emprendemos.
         </h4>
-        <button className="button-gradient">Our Services</button>
+        <a href='#services'>
+            <button id="card_blur" className="button-gradient">Our Services</button>
+        </a>
       </div>
       <div className="max-w-[1220px] flex justify-center flex-wrap pt-20 gap-6 max-[832px]:gap-12 max-[800px]:gap-7">
         {Culture_cards.map((card) => (

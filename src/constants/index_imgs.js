@@ -1,4 +1,4 @@
-// Importaciones/Exportaciones de Imagenes dentro del diseño con el objetivo de modularizar el codigo.
+// Importaciones/Exportaciones de Imagenes con el objetivo de modularizar el codigo.
 
 // Banner debajo del Hero.
 import Atlassian from "/img/Banner/Atlassian.png"
