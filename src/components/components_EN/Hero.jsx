@@ -1,7 +1,18 @@
-import { useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Typed from 'typed.js';
+import Form from "../components_EN/Form";
 
 const Hero = () => {
+
+  // Estado para abrir y cerrar el Dropdown del Holding
+  const [showForm, setShowForm] = useState(false);
+
+  // Función abrir/cerrar dropdown del Holding
+  const toggleShowForm = () => {
+    setShowForm(!showForm);
+  };
+
+  // Typed.js 
   const titleRef = useRef(null);
 
   useEffect(() => {
@@ -39,10 +50,11 @@ const Hero = () => {
           <a href='#services'>
             <button className="button-gradient">Our Services</button>
           </a>
-          <button className="button-gradient">Contact</button>
+          <button className="button-gradient" onClick={toggleShowForm}>Contact</button>
         </div>
 
       </div>
+      {showForm && <Form onClose={() => setShowForm(false)} />}
     </section>
   )
 }

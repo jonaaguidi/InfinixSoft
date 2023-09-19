@@ -20,11 +20,18 @@ const Header = () => {
   // Función abrir/cerrar dropdown del Holding
   const toggleDropdownHolding = () => {
     setShowDropdownHolding(!showDropdownHolding);
+    if (showDropdownHolding === false && showDropdownFlags === true) {
+      setShowDropdownFlags(false);
+    }
   };
+
   // Función abrir/cerrar dropdown de las Flags.
   const toggleDropdownFlags = () => {
     setShowDropdownFlags(!showDropdownFlags);
-  };  
+    if (showDropdownFlags === false && showDropdownHolding === true) {
+      setShowDropdownHolding(false);
+    }
+  };
   
   // Efecto para manejar el click global para cerrar los Dropdowns
   useEffect(() => {
@@ -59,17 +66,17 @@ const Header = () => {
 
       <div className="flex items-center z-50 gap-4 mt-2 max-[580px]:gap-3 max-[470px]:gap-2 max-[400px]:gap-0">
         <a className=" flex items-center justify-center gap-1.5 cursor-pointer " href="/">
-          <img src={EN} alt="English" className="relative max-[420px]:w-[20px]" />
+          <img src={EN} alt="English" className="flags relative max-[420px]:w-[20px]" />
           <img className="w-[28px] opacity-70 hover:bg-[#242427] hover:rounded-lg hover:opacity-100 cursor-pointer max-[580px]:p-2 min-[561px]:hidden" src={Arrow} alt="arrow" onClick={(e) => { e.preventDefault(); toggleDropdownFlags();}} />
           {showDropdownFlags && <Dropdown_Flags />}
         </a>
-        <a className="cursor-pointer max-[560px]:hidden" href="/es">
+        <a className="flags max-[560px]:hidden" href="/es">
           <img src={ES} alt="Spanish" />
         </a>
-        <a className="cursor-pointer max-[560px]:hidden" href="/br">
+        <a className="flags max-[560px]:hidden" href="/br">
           <img src={BR} alt="Portuguese" />
         </a>
-        <div className="ml-12 cursor-pointer max-[580px]:ml-5">
+        <div className="ml-12 cursor-pointer max-[580px]:ml-6">
           <button>
             <img className="p-3 mt-1 bg-[#171718] rounded-full opacity-80 hover:opacity-100" src={Burger} alt="menu" />
           </button>
