@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "../../styles/index.css";
 import Logo from "/img/Header/logo.svg"
 import Burger from "/img/Header/burger_menu.svg"
@@ -7,7 +8,7 @@ import ES from "/img/Header/spain.png"
 import BR from "/img/Header/brazil.png"
 import Dropdown_Holding from "./Dropdown_Holding.jsx";
 import Dropdown_Flags from "./Dropdown_Flags";
-import { useEffect, useState } from "react";
+import Dropdown_Menu from "./Dropdown_Menu";
 
 
 const Header = () => {
@@ -16,23 +17,37 @@ const Header = () => {
   const [showDropdownHolding, setShowDropdownHolding] = useState(false);
   // Estado para abrir y cerrar el Dropdown de las Flags.
   const [showDropdownFlags, setShowDropdownFlags] = useState(false);
+  // Estado para abrir y cerrar el Dropdown del Menú.
+  const [showDropdownMenu, setShowDropdownMenu] = useState(false);
 
   // Función abrir/cerrar dropdown del Holding
   const toggleDropdownHolding = () => {
     setShowDropdownHolding(!showDropdownHolding);
-    if (showDropdownHolding === false && showDropdownFlags === true) {
+    if (!showDropdownHolding) {
       setShowDropdownFlags(false);
+      setShowDropdownMenu(false);
     }
   };
 
   // Función abrir/cerrar dropdown de las Flags.
   const toggleDropdownFlags = () => {
     setShowDropdownFlags(!showDropdownFlags);
-    if (showDropdownFlags === false && showDropdownHolding === true) {
+    if (!showDropdownFlags) {
       setShowDropdownHolding(false);
+      setShowDropdownMenu(false);
     }
   };
-  
+
+  // Función abrir/cerrar dropdown de Menú.
+  const toggleDropdownMenu = () => {
+    setShowDropdownMenu(!showDropdownMenu);
+    if (!showDropdownMenu) {
+      setShowDropdownHolding(false);
+      setShowDropdownFlags(false);
+    }
+  };
+
+
   // Efecto para manejar el click global para cerrar los Dropdowns
   useEffect(() => {
     const handleGlobalClick = (event) => {
@@ -40,6 +55,7 @@ const Header = () => {
       if (event.target.closest("main")) {
         setShowDropdownHolding(false);
         setShowDropdownFlags(false);
+        setShowDropdownMenu(false);
       }
     };
 
@@ -65,9 +81,9 @@ const Header = () => {
       </div>
 
       <div className="flex items-center z-50 gap-4 mt-2 max-[580px]:gap-3 max-[470px]:gap-2 max-[400px]:gap-0">
-        <a className=" flex items-center justify-center gap-1.5 cursor-pointer " href="/">
+        <a className=" flex items-center justify-center gap-1.5 cursor-pointer " href="#">
           <img src={EN} alt="English" className="flags relative max-[420px]:w-[20px]" />
-          <img className="w-[28px] opacity-70 hover:bg-[#242427] hover:rounded-lg hover:opacity-100 cursor-pointer max-[580px]:p-2 min-[561px]:hidden" src={Arrow} alt="arrow" onClick={(e) => { e.preventDefault(); toggleDropdownFlags();}} />
+          <img className="w-[28px] opacity-70 hover:bg-[#242427] hover:rounded-lg hover:opacity-100 cursor-pointer max-[580px]:p-2 min-[561px]:hidden" src={Arrow} alt="arrow" onClick={(e) => { e.preventDefault(); toggleDropdownFlags(); }} />
           {showDropdownFlags && <Dropdown_Flags />}
         </a>
         <a className="flags max-[560px]:hidden" href="/es">
@@ -77,9 +93,10 @@ const Header = () => {
           <img src={BR} alt="Portuguese" />
         </a>
         <div className="ml-12 cursor-pointer max-[580px]:ml-6">
-          <button>
-            <img className="p-3 mt-1 bg-[#171718] rounded-full opacity-80 hover:opacity-100" src={Burger} alt="menu" />
+          <button onClick={toggleDropdownMenu}>
+            <img className="p-4 bg-[#171718] rounded-full opacity-90 max-[560px]:p-3" src={Burger} alt="menu" />
           </button>
+          {showDropdownMenu && <Dropdown_Menu />}
         </div>
       </div>
 

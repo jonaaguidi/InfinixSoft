@@ -12,7 +12,7 @@ const Form = ({ onClose }) => {
         // Esperar a que termine la animación y luego cerrar el form.
         setTimeout(() => {
             onClose();
-        }, 2500);
+        }, 1500);
     };
 
     return (

@@ -59,13 +59,17 @@
   }
 
   .flags {
-    @apply cursor-pointer opacity-90;
+    @apply cursor-pointer opacity-80;
     transition: transform 0.3s ease-in-out;
   }
 
   .flags:hover {
     opacity: 1;
-    transform: scale(1.090);
+    transform: scale(1.09);
+  }
+
+  .menuitems {
+    @apply flex items-center cursor-pointer py-3 px-4 rounded-lg hover:bg-black hover:text-[#DB3957] focus:bg-black focus:text-[#DB3957] active:bg-black active:text-[#DB3957];
   }
 
   .button-gradient {
@@ -209,7 +213,7 @@
   }
 
   .transition-wipe-in-down {
-    animation: wipe-in-down 2.5s cubic-bezier(0.25, 1, 0.3, 1) both;
+    animation: wipe-in-down 1.5s cubic-bezier(0.25, 1, 0.3, 1) both;
   }
 
   /* Animación de Salida para el Form */
@@ -223,6 +227,6 @@
   }
 
   .transition-wipe-out-up {
-    animation: wipe-out-up 2.5s cubic-bezier(0.25, 1, 0.3, 1) both;
+    animation: wipe-out-up 1.5s cubic-bezier(0.25, 1, 0.3, 1) both;
   }
 }

@@ -104,16 +104,6 @@ const Team = [
     position: "Partner - Brazil",
     icon: lis
   }, 
-  {
-    name: 'Luis Paez',
-    position: "Business Developer Manager",
-    icon: luis
-  }, 
-  {
-    name: 'Luis Paez',
-    position: "Business Developer Manager",
-    icon: luis
-  }, 
 ];
 
 export { Team };

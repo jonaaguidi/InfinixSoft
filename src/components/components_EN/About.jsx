@@ -6,7 +6,7 @@ import logo3 from "/img/Team/team_logo3.svg";
 const About = () => {
 
     return (
-        <section className="w-fit h-fit mx-auto px-28 py-20 flex items-center justify-between gap-24 max-[1300px]:gap-4 max-[950px]:gap-0 max-[880px]:px-14 max-[675px]:px-7">
+        <section id="about" className="w-fit h-fit mx-auto px-28 py-20 flex items-center justify-between gap-24 max-[1300px]:gap-4 max-[950px]:gap-0 max-[880px]:px-14 max-[675px]:px-7">
             <div>
                 <img width={620} className="rounded-2xl max-[950px]:hidden" src={AboutImage} alt="About"></img>
             </div>
