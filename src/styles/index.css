@@ -102,6 +102,27 @@
     transform: scale(1.028);
   }
 
+  .button-gradient_2 {
+    display: inline-block;
+    padding: 12px;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    background-color: transparent;
+    background: linear-gradient(#171718, #171718),
+      radial-gradient(
+        circle,
+        rgba(31, 96, 193, 0.40) 5%,
+        rgba(219, 57, 87, 0.95) 120%
+      );
+    background-clip: padding-box, border-box;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: rgba(255,255,255, 0.12) -4px 2px 12px;
+  }
+
   #card_blur::before {
     content: "";
     position: absolute;

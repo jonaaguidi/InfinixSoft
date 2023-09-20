@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import "../../styles/index.css";
+import { useEffect, useState } from "react";
 import Logo from "/img/Header/logo.svg"
 import Burger from "/img/Header/burger_menu.svg"
 import Arrow from "/img/Header/arrow_dropdown.svg"
