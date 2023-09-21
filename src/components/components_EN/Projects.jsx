@@ -17,7 +17,7 @@ const Projects = () => {
           Come for the features.
           Stay for best ever help.
         </h3>
-        <h5 className="text-[18px] text-center text-[#C7CBE5]">InfinixSoft offers games, business and product development  (web, mobile, social and internet technologies)  to startup and enterprise clients.</h5>
+        <h5 className="text-[18px] text-center text-[#A1A1A9]">InfinixSoft offers games, business and product development  (web, mobile, social and internet technologies)  to startup and enterprise clients.</h5>
       </div>
 
       <div id="Future_Project" className="flex items-center justify-around py-20">
@@ -103,7 +103,7 @@ const Projects = () => {
           <div className="max-w-[482px]">
             <img src={Bombo} alt="Bombo" className="pb-6" />
             <p className="text-[12px] text-white font-semibold uppercase pb-3">Revolucionando la industria de ticketing con tecnología blockchain.</p>
-            <p className="text-[16px] font-normal text-[#868687] pb-6">Aplicación móvil, combinada con una plataforma administrativa de backend, ofrece una solución segura, transparente y eficiente para la gestión y venta de boletos utilizando la tecnología NFT y blockchain.</p>
+            <p className="text-[16px] font-normal text-[#A1A1A9] pb-6">Aplicación móvil, combinada con una plataforma administrativa de backend, ofrece una solución segura, transparente y eficiente para la gestión y venta de boletos utilizando la tecnología NFT y blockchain.</p>
             <button className="button-gradient">Visit Website Now</button>
           </div>
 
@@ -164,8 +164,6 @@ const Projects = () => {
 
         </div>
       </div>
-
-
 
     </section>
   )

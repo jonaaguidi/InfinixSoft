@@ -7,7 +7,7 @@ const Services = () => {
                 <h2 className="text-[52px] text-[#F4F5F6] font-bold pb-6 max-[458px]:text-2xl">
                     Services
                 </h2>
-                <h4 className="text-[#C7CBE5] text-[18px] font-normal max-[580px]:text-sm">
+                <h4 className="text-[#A1A1A9] text-[18px] font-normal max-[580px]:text-sm">
                     We provide our clients as many necessary steps to successfully design, develop and launch a web or mobile app.
                 </h4>
             </div>
@@ -17,7 +17,7 @@ const Services = () => {
                         <div className="flex flex-col justify-center p-10 bg-[#18181B] h-[316px] rounded-lg border-gradient z-20 max-[1350px]:h-[352px] max-[916px]:h-[364px] max-[440px]:h-[348git px]">
                             <img className="pb-6" src={card.icon} width={42} height={42} alt={card.title} />
                             <h4 className="text-[#F4F5F6] text-[21px] font-bold pb-3">{card.title}</h4> 
-                            <p className="text-[#777E90] text-[16px] font-normal">{card.content}</p>
+                            <p className="text-[#A1A1A9] text-[16px] font-normal">{card.content}</p>
                         </div>
                     </div>
                 ))}

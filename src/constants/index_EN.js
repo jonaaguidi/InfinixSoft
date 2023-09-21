@@ -160,6 +160,50 @@ const services  = [
     content: "We provide to our clients developing, configuring and managing your mobile apps with SAP integration.",
     icon: service8
   }, 
+  {
+    title: 'Artificial Intelligence Solutions',
+    content: "Empowering industries with cutting-edge AI solutions, tailored for your business success.",
+    icon: service4
+  }, 
+];
+export { services };
+
+// PROJECTS DATA
+import bombo from "/img/Projects/bombo_image_2.png"
+
+
+const Card_Projects_data  = [
+  {
+    title: 'BOMBO APP',
+    subtitle: "Mantenete actualizado de las próximas fechas & rumores.",
+    image: bombo
+  }, 
+  {
+    title: 'BOMBO APP 2',
+    subtitle: "Mantenete actualizado de las próximas fechas & rumores.",
+    image: bombo
+  }, 
+  {
+    title: 'BOMBO APP 3',
+    subtitle: "Mantenete actualizado de las próximas fechas & rumores.",
+    image: bombo
+  }, 
+  {
+    title: 'BOMBO APP 4',
+    subtitle: "Mantenete actualizado de las próximas fechas & rumores.",
+    image: bombo
+  }, 
+  {
+    title: 'BOMBO APP 5',
+    subtitle: "Mantenete actualizado de las próximas fechas & rumores.",
+    image: bombo
+  }, 
+  {
+    title: 'BOMBO APP 6',
+    subtitle: "Mantenete actualizado de las próximas fechas & rumores.",
+    image: bombo
+  }, 
+ 
 ];
 
-export { services };
+export { Card_Projects_data };

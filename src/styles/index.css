@@ -38,6 +38,71 @@
 
 /* Estilos para componentes (Abstraer clases) */
 @layer components {
+  .menu-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 12px;
+    padding: 10px;
+    z-index: 999;
+    border-radius: 40px;
+    transition: background 0.3s ease;
+  }
+  .menu-button:hover {
+    background: black;
+    opacity: 1;
+  }
+
+  .menu-button:active {
+    background: black;
+    opacity: 1;
+  }
+
+  .menu-button:focus {
+    background: black;
+    opacity: 1;
+  }
+
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    width: 30px;
+    height: 32px;
+    padding: 4px;
+    cursor: pointer;
+    opacity: 0.6;
+    padding-bottom: 6px;
+    transition: opacity 0.3s ease;
+  }
+
+  .menu-icon:hover {
+    opacity: 1;
+  }
+
+  .span-1,
+  .span-2,
+  .span-3 {
+    width: 100%;
+    height: 8px;
+    background-color: #db3957;
+    margin: 2px 0;
+    transition: transform 0.3s ease;
+  }
+
+  .open-span-1 {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .open-span-2 {
+    opacity: 0;
+  }
+
+  .open-span-3 {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
   .bg-hero {
     @apply w-full h-screen bg-center bg-cover min-h-[500px] relative z-40;
     background-image: url("/img/Hero/Background_Hero.png");
@@ -111,7 +176,7 @@
     background: linear-gradient(#171718, #171718),
       radial-gradient(
         circle,
-        rgba(31, 96, 193, 0.40) 5%,
+        rgba(31, 96, 193, 0.4) 5%,
         rgba(219, 57, 87, 0.95) 120%
       );
     background-clip: padding-box, border-box;
@@ -120,7 +185,7 @@
     font-weight: 600;
     cursor: pointer;
     overflow: hidden;
-    box-shadow: rgba(255,255,255, 0.12) -4px 2px 12px;
+    box-shadow: rgba(255, 255, 255, 0.12) -4px 2px 12px;
   }
 
   #card_blur::before {
@@ -135,6 +200,27 @@
     height: 100%;
     filter: blur(40px);
     z-index: -1;
+  }
+
+  #Card_project:nth-child(2) {
+    margin-top: 116px;
+  }
+  #Card_project:nth-child(5) {
+    margin-bottom: 116px;
+  }
+
+  #Card_project::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/Culture/blur_cards.png");
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%; /* Default 100%% */
+    height: 100%;
+    filter: blur(40px);
+    z-index: -10;
   }
 
   /* Cursor interior */
@@ -161,28 +247,44 @@
     transform: translate(-50%, -50%);
     z-index: 9998;
   }
+  .children {
+    pointer-events: none;
+}
+
+.cubito {
+    opacity: 0;
+    pointer-events: none;
+     border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.774);
+    filter: blur(30px);
+}
+
+.button-cute {
+    isolation: isolate;
+    overflow: hidden;
+    align-items: center;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border-radius: 32px;
+    box-shadow: inset 0 -7px 11px #eae6ff1f;
+    display: flex;
+    padding: 7px 20px;
+    color: #ffffff;
+    position: relative;
+    width: -moz-max-content;
+    width: max-content;
+    border: 1px solid #9EA4D5;
+    font-weight: 400;
+    transition: .45s cubic-bezier(.6, .6, 0, 1) box-shadow;
+}
+
+.button-cute:hover {
+    box-shadow: inset 0 -7px 11px #fcf2f23d;
+}
 }
 
 /* Estilos de Utilidades (Animaciones/Sombras/Degradados) */
 @layer utilities {
-  .border-gradient {
-    border: 1px solid transparent;
-    background-color: transparent;
-    border-radius: 16px;
-    background: radial-gradient(circle at 100% 100%, #18181b 0, transparent 1px)
-        0% 0%/8px 8px no-repeat,
-      radial-gradient(circle at 0 100%, #18181b 0, transparent 1px) 100% 0%/8px
-        8px no-repeat,
-      radial-gradient(circle at 100% 0, #18181b 0, transparent 1px) 0% 100%/8px
-        8px no-repeat,
-      radial-gradient(circle at 0 0, #18181b 0, transparent 1px) 100% 100%/8px
-        8px no-repeat,
-      linear-gradient(#18181b, #18181b) 50% 50% / calc(100% - 1px)
-        calc(100% - 2px) no-repeat,
-      linear-gradient(45deg, #db3957 30%, #1f60c1 70%);
-    background-clip: padding-box, border-box;
-  }
-
   .border-gradient {
     border: 1px solid transparent;
     background-color: transparent;
@@ -211,6 +313,20 @@
     cursor: pointer;
   }
 
+  .border-gradient_2 {
+    border: 1px solid transparent;
+    background-color: transparent;
+    background: linear-gradient(#171718, #171718),
+      radial-gradient(
+        circle,
+        rgba(31, 96, 193, 0.7) 15%,
+        rgba(219, 57, 87, 0.5) 120%
+      );
+    background-clip: padding-box, border-box;
+    border-radius: 4px;
+    transition: background 0.5s, transform 0.5s;
+  }
+
   #span {
     color: #db3957;
   }
@@ -220,7 +336,7 @@
   }
 
   .shadow-navbar {
-    box-shadow: 2px 2px 44px black;
+    box-shadow: 1px 1px 30px black;
   }
 
   /* Animación de Entrada para el Form */

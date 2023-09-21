@@ -83,3 +83,72 @@ const Holding_Dropdown = [
 ];
 
 export { Holding_Dropdown };
+
+
+// Clients DATA
+import AlaMaula from "/img/clients/alamaula.webp"
+import Alpeh from "/img/clients/alpeh.webp"
+import barCrawlNation from "/img/clients/barCrawlNation.webp"
+import bjfanatics from "/img/clients/bjfanatics-logo.webp"
+import bondacom from "/img/clients/bondacom.webp"
+import Bonus from "/img/clients/Bonus.webp"
+import cencosud from "/img/clients/cencosud.webp"
+import certicamara from "/img/clients/certicamara.webp"
+import cisco from "/img/clients/cisco.webp"
+import clickStream from "/img/clients/clickStream.webp"
+import colegioescribanos from "/img/clients/colegio-escribanos.webp"
+import datingly from "/img/clients/datingly.webp"
+
+
+const Clients = [
+  {
+    name: 'AlaMaula',
+    icon: AlaMaula,
+  },
+  {
+    name: 'Alpeh',
+    icon: Alpeh,
+  },
+  {
+    name: 'barCrawlNation',
+    icon: barCrawlNation,
+  },
+  {
+    name: 'bjfanatics',
+    icon: bjfanatics,
+  },
+  {
+    name: 'bondacom',
+    icon: bondacom,
+  },
+  {
+    name: 'Bonus',
+    icon: Bonus,
+  },
+  {
+    name: 'Cencosud',
+    icon: cencosud,
+  },
+  {
+    name: 'certicamara',
+    icon: certicamara,
+  },
+  {
+    name: 'Cisco',
+    icon: cisco,
+  },
+  {
+    name: 'clickStream',
+    icon: clickStream,
+  },
+  {
+    name: 'colegioescribanos',
+    icon: colegioescribanos,
+  },
+  {
+    name: 'datingly',
+    icon: datingly,
+  },
+];
+
+export { Clients };

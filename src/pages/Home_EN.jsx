@@ -7,6 +7,8 @@ import Team from "../components/components_EN/Team"
 import Services from "../components/components_EN/Services"
 import Cursor from "../components/components_EN/Cursor"
 import Projects from "../components/components_EN/Projects"
+import Projects_Cards from "../components/components_EN/Projects_Cards"
+import Partners from "../components/components_EN/Partners"
 
 const Home_EN = () => {
   return (
@@ -20,6 +22,8 @@ const Home_EN = () => {
         <Team />
         <Services />
         <Projects />
+        <Projects_Cards />
+        <Partners />
       </main>
       <Cursor />
     </>
