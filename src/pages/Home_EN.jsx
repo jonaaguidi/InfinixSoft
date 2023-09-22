@@ -5,10 +5,13 @@ import About from "../components/components_EN/About"
 import Culture from "../components/components_EN/Culture"
 import Team from "../components/components_EN/Team"
 import Services from "../components/components_EN/Services"
-import Cursor from "../components/components_EN/Cursor"
 import Projects from "../components/components_EN/Projects"
 import Projects_Cards from "../components/components_EN/Projects_Cards"
 import Partners from "../components/components_EN/Partners"
+import Blog from "../components/components_EN/Blog"
+import WaveSection from "../components/components_EN/Wave"
+import Footer from "../components/components_EN/Footer"
+import Cursor from "../components/components_EN/Cursor"
 
 const Home_EN = () => {
   return (
@@ -24,7 +27,9 @@ const Home_EN = () => {
         <Projects />
         <Projects_Cards />
         <Partners />
+        <Blog />
       </main>
+      <Footer />
       <Cursor />
     </>
   )

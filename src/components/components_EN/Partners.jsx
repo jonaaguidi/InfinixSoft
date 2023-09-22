@@ -1,10 +1,9 @@
 import Marquee from "react-fast-marquee";
-import { Clients } from "../../constants/index_imgs"; // Importa la información de clientes
-import Button from "./Button";
+import { Clients } from "../../constants/index_imgs"; // Data de Clients
 
 const Partners = () => {
     return (
-        <section className="w-full flex flex-col justify-center items-center mx-auto py-10">
+        <section className="w-full flex flex-col justify-center items-center mx-auto py-20">
             <div className="max-w-[640px] mx-auto py-20 flex flex-col items-center justify-center">
                 <h3 className="text-[52px] text-center font-bold text-white leading-[60px] pb-6">
                     Trusted by leading brands
@@ -56,8 +55,6 @@ const Partners = () => {
                         </div>
                     ))}
                 </Marquee>
-
-                <Button />
             </div>
         </section>
     );

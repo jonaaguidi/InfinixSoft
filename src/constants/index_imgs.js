@@ -39,6 +39,37 @@ const BannerLogos = [
 export { BannerLogos };
 
 
+// Banner del Footer.
+import OpenAI from "/img/Footer/openai.svg"
+import React from "/img/Footer/React.svg"
+import Android from "/img/Footer/android.svg"
+
+const BannerLogos2 = [
+  {
+    name: 'OpenAI',
+    icon: OpenAI,
+  },
+  {
+    name: 'AWS',
+    icon: AWS,
+  },
+  {
+    name: 'React',
+    icon: React,
+  },
+  {
+    name: 'Android',
+    icon: Android,
+  },
+  {
+    name: 'Isotipo',
+    icon: Isotipo,
+  },
+];
+
+export { BannerLogos2 };
+
+
 // Holding Dropdown (Todo el holding menos InfinixSoft)
 import InfinixHolding from "/img/Hero/Infinix_Holding.svg"
 import InfinixQA from "/img/Hero/Infinix_QA.svg"
@@ -52,7 +83,7 @@ const Holding_Dropdown = [
     name: 'Infinix Holding',
     icon: InfinixHolding,
     link: "https://infinixholdinggroup.com/"
-  }, 
+  },
   {
     name: 'Infinix Social',
     icon: InfinixSocial,
@@ -85,7 +116,7 @@ const Holding_Dropdown = [
 export { Holding_Dropdown };
 
 
-// Clients DATA
+// Clients DATA (Marquee Section)
 import AlaMaula from "/img/clients/alamaula.webp"
 import Alpeh from "/img/clients/alpeh.webp"
 import barCrawlNation from "/img/clients/barCrawlNation.webp"

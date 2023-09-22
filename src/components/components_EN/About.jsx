@@ -28,24 +28,3 @@ const About = () => {
 }
 
 export default About
-
-{/*
-<div className="w-fit max-w-[693px] flex flex-col gap-8 z-50" >
-        <h3 className="text-2xl max-[1120px]:text-xl">Nuestras Métricas: <span className="font-semibold">El Reflejo de Nuestros Éxitos Empresariales</span></h3>
-            <div className="flex gap-14 max-[470px]:gap-6">
-                <div className="flex flex-col gap-3">
-                        <p className="font-bold text-5xl max-[1175px]:text-2xl">650<span className="text-[#DB3957]"> +</span></p>
-                        <p className="text-lg font-normal max-[1175px]:text-sm">Completed Projects</p>
-                </div>
-                <div className="flex flex-col gap-3">
-                        <p className="font-bold text-5xl max-[1175px]:text-2xl">120<span className="text-[#DB3957]"> +</span></p>
-                        <p className="text-lg font-normal max-[1175px]:text-sm">Clients</p>
-                </div>
-                <div className="flex flex-col gap-3">
-                        <p className="font-bold text-5xl text-center max-[1175px]:text-2xl">5</p>
-                        <p className="text-lg font-normal max-[1175px]:text-sm">Locations</p>
-                </div>
-        </div>
-</div> */
-
-}
