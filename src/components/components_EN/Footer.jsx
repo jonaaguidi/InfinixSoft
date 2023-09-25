@@ -7,7 +7,7 @@ const Footer = () => {
       <WaveSection />
       <section className="w-full flex flex-col items-center px-28 py-20 bg-[#242427]">
 
-        <div className="w-fit max-w-[693px] flex flex-col gap-8 z-50">
+        <div className="w-fit max-w-[693px] flex flex-col gap-8 z-20">
           <div className="flex gap-14 max-[470px]:gap-6 text-center">
             <div className="flex flex-col gap-3">
               <p className="font-bold text-5xl max-[1175px]:text-2xl">
@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center gap-20 pt-12 pb-20">
+        <div className="flex items-center justify-center flex-wrap gap-20 py-12">
           {BannerLogos2.map((logo) => (
             <img
               key={logo.name}
