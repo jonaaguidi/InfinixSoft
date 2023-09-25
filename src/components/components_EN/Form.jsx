@@ -58,7 +58,7 @@ const Form = ({ onClose }) => {
             </div>
 
             {/* Formulario */}
-            <div className="w-[496px] h-fit bg-transparent shadow-navbar p-10 rounded-lg relative top-8 border-[2px] border-[#db3957]">
+            <div className="w-[496px] h-fit bg-transparent shadow-form p-10 rounded-lg relative top-8 border-[2px] border-[#db3957]">
                 <h3 className='text-center text-[32px] font-bold pb-12'>Your Dream, Our <span className='text-[#db3957]'>Dev.</span></h3>
                 <form className=''>
 

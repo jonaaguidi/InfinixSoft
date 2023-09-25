@@ -316,6 +316,10 @@
     box-shadow: 1px 1px 30px black;
   }
 
+  .shadow-form {
+    box-shadow: 1px 1px 16px #db3957;
+  }
+
   /* Animación de Entrada para el Form */
   @keyframes wipe-in-down {
     from {
