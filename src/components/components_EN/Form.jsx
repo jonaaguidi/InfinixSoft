@@ -19,7 +19,7 @@ const Form = ({ onClose }) => {
 
 
     return (
-        <div className={`fixed z-max top-0 left-0 w-screen h-screen bg-[#171718] px-28 flex gap-20 justify-center items-center transition-wipe-in-down ${shouldAnimateOut ? 'transition-wipe-out-up' : ''}`}>
+        <div className={`fixed z-max top-6 left-0 w-screen h-screen bg-[#171718] px-28 flex gap-20 justify-center items-center transition-wipe-in-down ${shouldAnimateOut ? 'transition-wipe-out-up' : ''}`}>
             
             {/* Text "Contact" */}
             <div className='bg-transparent p-10 rounded-lg'>
@@ -58,14 +58,14 @@ const Form = ({ onClose }) => {
             </div>
 
             {/* Formulario */}
-            <div className="w-[496px] h-fit bg-transparent shadow-form p-10 rounded-lg relative top-8 border-[2px] border-[#db3957]">
+            <div className="w-[496px] h-fit bg-transparent shadow-form p-10 rounded-lg relative top-6 border-[2px] border-[#db3957]">
                 <h3 className='text-center text-[32px] font-bold pb-12'>Your Dream, Our <span className='text-[#db3957]'>Dev.</span></h3>
-                <form className=''>
+                <form className='flex flex-col items-center justify-center'>
 
                     {/* Close Button */}
                     <button
                         onClick={handleClose}
-                        className="absolute px-3 py-1.5 text-2xl top-2 right-2 text-gray-600 hover:text-white cursor-pointer">
+                        className="absolute px-3 py-1.5 rounded-full text-lg top-2 right-2 text-gray-600 hover:text-white cursor-pointer">
                         X
                     </button>
 
@@ -129,7 +129,7 @@ const Form = ({ onClose }) => {
                     </div>
 
                     {/* Button "Send" */}
-                    <button className="button-gradient w-full">SEND</button>
+                    <button className="button-gradient w-[300px]">Send Email</button>
 
                 </form>
 

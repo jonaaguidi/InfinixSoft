@@ -41,16 +41,16 @@ const Hero = () => {
     <section id='hero' className="bg-hero flex items-center justify-center">
       <div className="flex flex-col items-center z-20 w-[576px]">
 
-        <div className="py-10">
+        <div className="py-8">
           <h1 ref={titleRef} className="h-[72px] text-center text-[52px] text-[#F4F5F6] font-bold pb-2 flex items-center justify-center max-[580px]:text-[32px] max-[580px]:px-4 max-[364px]:text-[28px]"></h1>
           <h5 className="text-center text-xl text-[#F4F5F6] max-[580px]:text-[14px] max-[580px]:px-10">Discover how InfinixSoft can help you create the <span className='font-semibold'>Perfect Strategy</span> for your business.</h5>
         </div>
 
         <div className="flex gap-10 items-center justify-center max-[580px]:gap-8">
           <a href='#services'>
-            <button className="button-gradient">Our Services</button>
+            <button className="button-gradient transition duration-400 hover:shadow-button">Our Services</button>
           </a>
-          <button className="button-gradient" onClick={toggleShowForm}>Contact</button>
+          <button className="button-gradient transition duration-400 hover:shadow-button" onClick={toggleShowForm}>Contact</button>
         </div>
 
       </div>

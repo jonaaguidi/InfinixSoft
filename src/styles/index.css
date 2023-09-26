@@ -35,8 +35,8 @@
     background: #db3957;
   }
   ::selection {
-  background: #db3957;
-}
+    background: #db3957;
+  }
 }
 
 /* Estilos para componentes (Abstraer clases) */
@@ -142,15 +142,16 @@
 
   .button-gradient {
     display: inline-block;
-    padding: 20px 32px;
+    padding: 14px 28px;
     border: 2px solid transparent;
     border-radius: 999px;
     background-color: transparent;
-    background: linear-gradient(#171718, #171718),
-      radial-gradient(
-        circle,
-        rgba(31, 96, 193, 0.35) 25%,
-        rgba(219, 57, 87, 0.95) 120%
+    background: linear-gradient(#1f1f22, #131315),
+      linear-gradient(
+        to right,
+        rgba(219, 57, 87, 0.70),
+        rgba(219, 57, 87, 0.85),
+        rgba(219, 57, 87, 0.70)
       );
     background-clip: padding-box, border-box;
     color: white;
@@ -160,9 +161,6 @@
     transition: transform 0.3s ease-in-out;
   }
 
-  .button-gradient:hover {
-    transform: scale(1.028);
-  }
   .button-gradient:active {
     transform: scale(1.028);
   }
@@ -173,14 +171,10 @@
   .button-gradient_2 {
     display: inline-block;
     padding: 12px;
-    border: 2px solid transparent;
+    border: 1px solid #a1a1a2;
     border-radius: 999px;
     background-color: transparent;
-    background: linear-gradient(#171718, #171718),
-      radial-gradient(
-        circle,
-        rgba(31, 96, 193, 0.4) 5%,
-        rgba(219, 57, 87, 0.95) 120%
+    background: linear-gradient(#1f1f22, #131315),
       );
     background-clip: padding-box, border-box;
     color: white;
@@ -250,8 +244,8 @@
   /* Cursor exterior */
   .cursor-outer {
     position: fixed;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border: 1px solid #db3957;
     border-radius: 50%;
     pointer-events: none;
@@ -268,8 +262,8 @@
     background: linear-gradient(#171718, #171718),
       radial-gradient(
         circle,
-        rgba(31, 96, 193, 0.7) 15%,
-        rgba(219, 57, 87, 0.5) 120%
+        rgba(31, 96, 193, 0.55) 15%,
+        rgba(219, 57, 87, 0.6) 120%
       );
     background-clip: padding-box, border-box;
     border-radius: 4px;
@@ -317,7 +311,11 @@
   }
 
   .shadow-form {
-    box-shadow: 1px 1px 16px #db3957;
+    box-shadow: 0px 0px 4px #db3957;
+  }
+
+  .shadow-button {
+    box-shadow: 0px 0px 6px #db3957;
   }
 
   /* Animación de Entrada para el Form */

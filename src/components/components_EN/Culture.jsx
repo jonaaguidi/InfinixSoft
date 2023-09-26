@@ -11,7 +11,7 @@ const Culture = () => {
           En InfinixSoft, nuestros valores de <span className="font-bold text-white">excelencia, innovación, colaboración y responsabilidad social</span> guían cada acción y proyecto que emprendemos.
         </h4>
         <a href='#services'>
-            <button id="card_blur" className="button-gradient">Our Services</button>
+            <button id="card_blur" className="button-gradient hover:shadow-button">Our Services</button>
         </a>
       </div>
       <div className="max-w-[1220px] flex justify-center flex-wrap pt-20 gap-6 max-[832px]:gap-12 max-[800px]:gap-7">
