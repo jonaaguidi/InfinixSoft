@@ -140,9 +140,9 @@
     @apply flex items-center cursor-pointer py-3 px-4 rounded-lg hover:bg-black hover:text-[#DB3957] focus:bg-black focus:text-[#DB3957] active:bg-black active:text-[#DB3957];
   }
 
-  .button-gradient {
+  .button-primary {
     display: inline-block;
-    padding: 14px 28px;
+    padding: 18px 32px;
     border: 2px solid transparent;
     border-radius: 999px;
     background-color: transparent;
@@ -158,20 +158,26 @@
     font-size: 14px;
     cursor: pointer;
     overflow: hidden;
-    transition: transform 0.3s ease-in-out;
   }
-
-  .button-gradient:active {
-    transform: scale(1.028);
-  }
-  .button-gradient:focus {
-    transform: scale(1.028);
-  }
-
-  .button-gradient_2 {
+  
+  .button-secondary {
     display: inline-block;
-    padding: 12px;
-    border: 1px solid #a1a1a2;
+    padding: 18px 32px;
+    border: 2px solid #868687;
+    border-radius: 999px;
+    background-color: transparent;
+    background: linear-gradient(#1f1f22, #131315);
+    background-clip: padding-box, border-box;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 14px;
+    border: 1px solid #868687;
     border-radius: 999px;
     background-color: transparent;
     background: linear-gradient(#1f1f22, #131315),
@@ -180,23 +186,9 @@
     color: white;
     font-size: 12px;
     font-weight: 600;
-    cursor: pointer;
     overflow: hidden;
-    box-shadow: rgba(255, 255, 255, 0.12) -4px 2px 12px;
-  }
-
-  #card_blur::before {
-    content: "";
-    position: absolute;
-    background-image: url("/img/Culture/blur_cards.png");
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    left: 0;
-    width: 100%; /* Default 100%% */
-    height: 100%;
-    filter: blur(40px);
-    z-index: -1;
+    cursor: default;
+    box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.10) ;
   }
 
   #Card_project:nth-child(2) {
@@ -227,31 +219,6 @@
     background-image: url("/img/Wave/Wave.svg");
     background-size: 1000px 100px;
   }
-
-  /* Cursor interior */
-  .cursor-inner {
-    position: fixed;
-    width: 8px;
-    height: 8px;
-    background-color: #db3957;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: transform 0.2s ease;
-    z-index: 9999;
-  }
-
-  /* Cursor exterior */
-  .cursor-outer {
-    position: fixed;
-    width: 32px;
-    height: 32px;
-    border: 1px solid #db3957;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: 9998;
-  }
 }
 
 /* Estilos de Utilidades (Animaciones/Sombras/Degradados) */
@@ -262,9 +229,10 @@
     background: linear-gradient(#171718, #171718),
       radial-gradient(
         circle,
-        rgba(31, 96, 193, 0.55) 15%,
-        rgba(219, 57, 87, 0.6) 120%
+        rgba(31, 96, 193, 0.45) 15%,
+        rgba(219, 57, 87, 0.45) 120%
       );
+    box-shadow: -28px 28px 51px 0px rgba(0, 0, 0, 0.18);
     background-clip: padding-box, border-box;
     border-radius: 4px;
     transition: background 0.5s, transform 0.5s;
@@ -315,7 +283,7 @@
   }
 
   .shadow-button {
-    box-shadow: 0px 0px 6px #db3957;
+    box-shadow: 0px 0px 4px #db3957;
   }
 
   /* Animación de Entrada para el Form */

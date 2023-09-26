@@ -13,8 +13,8 @@ const Blog = () => {
                     <h3 className="text-[32px] font-bold pb-6">¡Conoce Nuestro Blog!</h3>
                     <p className="text-[#A1A1A9] text-[18px] font-normal">Descubre todos nuestros artículos donde exploramos el fascinante mundo de la tecnología, innovaciones y mucho más.</p>
                 </div>
-                <button className="button-gradient h-fit flex justify-center items-center gap-2">
-                    Explorar Blog
+                <button className="button-primary h-fit flex justify-center items-center gap-2">
+                    <a href="www.infinixsoft.com/blog" target="_blank">Explorar Blog</a>
                     <img src={Arrow} alt="Arrow"></img>
                 </button>
             </div>
@@ -22,8 +22,8 @@ const Blog = () => {
             <div className="flex justify-between items-center pt-10 pb-20">
                 <img src={Image} alt="BlogImage" width={558} height={369}></img>
                 <div className="flex flex-col gap-6">
-                    <button className="button-gradient_2 w-fit font-normal flex items-center gap-2 shadow-none">
-                        <img src={Icon} alt="Icon"/>
+                    <button className="badge w-fit font-normal flex items-center gap-2 shadow-none">
+                        <img src={Icon} alt="Icon" />
                         NOVEDADES
                     </button>
                     <div className="max-w-[520px]">

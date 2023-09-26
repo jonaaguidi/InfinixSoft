@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 import Arrow from "/img/Form/arrow_contact.svg"
+import Logo from "/img/Header/logo.svg"
 
 const Form = ({ onClose }) => {
 
@@ -19,8 +20,8 @@ const Form = ({ onClose }) => {
 
 
     return (
-        <div className={`fixed z-max top-6 left-0 w-screen h-screen bg-[#171718] px-28 flex gap-20 justify-center items-center transition-wipe-in-down ${shouldAnimateOut ? 'transition-wipe-out-up' : ''}`}>
-            
+        <div className={`fixed overflow-y-auto z-max top-0 left-0 w-screen h-screen bg-[#171718] px-24 flex gap-16 justify-center items-center transition-wipe-in-down ${shouldAnimateOut ? 'transition-wipe-out-up' : ''}`}>
+
             {/* Text "Contact" */}
             <div className='bg-transparent p-10 rounded-lg'>
                 <h3 className='text-[42px] font-bold pb-2'>Contact</h3>
@@ -58,16 +59,12 @@ const Form = ({ onClose }) => {
             </div>
 
             {/* Formulario */}
-            <div className="w-[496px] h-fit bg-transparent shadow-form p-10 rounded-lg relative top-6 border-[2px] border-[#db3957]">
-                <h3 className='text-center text-[32px] font-bold pb-12'>Your Dream, Our <span className='text-[#db3957]'>Dev.</span></h3>
-                <form className='flex flex-col items-center justify-center'>
+            <div className="w-[496px] h-fit bg-transparent shadow-form p-10 rounded-lg relative top-6 border-[2px] border-[#db3957] border-opacity-70">
+                <div className='flex items-center justify-center pb-10'>
+                    <img src={Logo} alt='Logotype' />
+                </div>
 
-                    {/* Close Button */}
-                    <button
-                        onClick={handleClose}
-                        className="absolute px-3 py-1.5 rounded-full text-lg top-2 right-2 text-gray-600 hover:text-white cursor-pointer">
-                        X
-                    </button>
+                <form className='flex flex-col items-center justify-center'>
 
                     {/* Name Inputs */}
                     <div className="grid md:grid-cols-2 md:gap-6">
@@ -76,13 +73,13 @@ const Form = ({ onClose }) => {
                                 type="text"
                                 name="floating_first_name"
                                 id="floating_first_name"
-                                className="block py-2.5 px-2 rounded-sm w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#db3957] peer"
+                                className="block py-2.5 px-2 rounded-sm w-full text-sm text-white bg-transparent border-0 border-b-2 border-[#A1A1A9] appearance-none focus:outline-none focus:ring-0 focus:border-[#db3957] peer"
                                 placeholder=" "
                                 required
                             />
                             <label
                                 htmlFor="floating_first_name"
-                                className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#db3957] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                                className="peer-focus:font-medium absolute text-sm text-[#A1A1A9] duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#db3957] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                                 First Name
                             </label>
                         </div>
@@ -91,13 +88,13 @@ const Form = ({ onClose }) => {
                                 type="text"
                                 name="floating_last_name"
                                 id="floating_last_name"
-                                className="block py-2.5 px-2 rounded-sm w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#db3957] peer"
+                                className="block py-2.5 px-2 rounded-sm w-full text-sm text-white bg-transparent border-0 border-b-2 border-[#A1A1A9] appearance-none focus:outline-none focus:ring-0 focus:border-[#db3957] peer"
                                 placeholder=" "
                                 required
                             />
                             <label
                                 htmlFor="floating_last_name"
-                                className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#db3957] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                                className="peer-focus:font-medium absolute text-sm text-[#A1A1A9] duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#db3957] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                                 Last Name
                             </label>
                         </div>
@@ -106,14 +103,14 @@ const Form = ({ onClose }) => {
 
                     {/* Email Input */}
                     <div className="relative z-0 w-full mb-12 group">
-                        <input type="Email" name="floating_Email" id="floating_Email" className="block py-2.5 px-2 rounded-sm w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#db3957] peer" placeholder="" required />
-                        <label htmlFor="floating_Email" className="peer-focus:font-medium p-1 absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-0 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#db3957] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
+                        <input type="Email" name="floating_Email" id="floating_Email" className="block py-2.5 px-2 rounded-sm w-full text-sm text-white bg-transparent border-0 border-b-2 border-[#A1A1A9] appearance-none focus:outline-none focus:ring-0 focus:border-[#db3957] peer" placeholder="" required />
+                        <label htmlFor="floating_Email" className="peer-focus:font-medium p-1 absolute text-sm text-[#A1A1A9] duration-300 transform -translate-y-6 scale-75 top-0 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#db3957] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
                     </div>
 
                     {/* Company Input */}
                     <div className="relative z-0 w-full mb-12 group">
-                        <input type="Company" name="floating_company" id="floating_company" className="block py-2.5 px-2 rounded-sm w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#db3957] peer" placeholder="" required />
-                        <label htmlFor="floating_company" className="peer-focus:font-medium p-1 absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-0 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#db3957] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company</label>
+                        <input type="Company" name="floating_company" id="floating_company" className="block py-2.5 px-2 rounded-sm w-full text-sm text-white bg-transparent border-0 border-b-2 border-[#A1A1A9] appearance-none focus:outline-none focus:ring-0 focus:border-[#db3957] peer" placeholder="" required />
+                        <label htmlFor="floating_company" className="peer-focus:font-medium p-1 absolute text-sm text-[#A1A1A9] duration-300 transform -translate-y-6 scale-75 top-0 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#db3957] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company</label>
                     </div>
 
                     {/* Message Textarea */}
@@ -121,19 +118,28 @@ const Form = ({ onClose }) => {
                         <textarea
                             name="floating_message"
                             id="floating_message"
-                            className="block py-2.5 px-2 w-full h-32 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#db3957] peer"
+                            className="block py-2.5 px-2 w-full h-20 text-sm text-white bg-transparent border-0 border-b-2 border-[#A1A1A9] appearance-none focus:outline-none focus:ring-0 focus:border-[#db3957] peer"
                             placeholder=""
                             required
                         />
-                        <label htmlFor="floating_message" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-0 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#db3957] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your Message</label>
+                        <label htmlFor="floating_message" className="peer-focus:font-medium absolute text-sm text-[#A1A1A9] duration-300 transform -translate-y-6 scale-75 top-0 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#db3957] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your Message</label>
                     </div>
 
                     {/* Button "Send" */}
-                    <button className="button-gradient w-[296px] transition duration-400 hover:shadow-button">Send Email</button>
+                    <button className="button-secondary w-[296px]">Send Email</button>
 
                 </form>
 
             </div>
+
+            {/* Close Button */}
+            <button
+                onClick={handleClose}
+                className="flex px-3 py-1.5 self-start mt-40 cursor-pointer transition duration-400 hover:scale-105">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#a1a1a9" height="16px" width="16px" version="1.1" id="Capa_1" viewBox="0 0 460.775 460.775">
+                    <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55  c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55  c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505  c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55  l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719  c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z" />
+                </svg>
+            </button>
 
         </div>
     );

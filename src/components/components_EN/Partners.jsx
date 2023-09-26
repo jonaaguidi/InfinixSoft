@@ -19,7 +19,7 @@ const Partners = () => {
                     pauseOnHover={true}
                     gradient={true}
                     gradientColor={[23, 23, 24]}
-                    gradientWidth={196}
+                    gradientWidth={296}
                 >
                     {Clients.map((client, index) => (
                         <div key={index} className="mx-10">
@@ -33,7 +33,7 @@ const Partners = () => {
                     pauseOnHover={true}
                     gradient={true}
                     gradientColor={[23, 23, 24]}
-                    gradientWidth={196}
+                    gradientWidth={296}
                 >
                     {Clients.map((client, index) => (
                         <div key={index} className="mx-10">
@@ -47,7 +47,7 @@ const Partners = () => {
                     pauseOnHover={true}
                     gradient={true}
                     gradientColor={[23, 23, 24]}
-                    gradientWidth={196}
+                    gradientWidth={296}
                 >
                     {Clients.map((client, index) => (
                         <div key={index} className="mx-10">

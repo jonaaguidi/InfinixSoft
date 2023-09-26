@@ -1,7 +1,6 @@
 import "../../styles/index.css";
 import { useEffect, useState } from "react";
 import Logo from "/img/Header/logo.svg"
-
 import Arrow from "/img/Header/arrow_dropdown.svg"
 import EN from "/img/Header/united-states-of-america.png"
 import ES from "/img/Header/spain.png"

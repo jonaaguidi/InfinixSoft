@@ -16,11 +16,16 @@ const Services = () => {
                     <div id="card_blur" key={card.title} className="max-w-[390px] z-10 relative max-[1350px]:w-[340px] max-[1163px]:w-[390px] max-[916px]:w-[340px] max-[816px]:w-[396px] max-[440px]:w-[320px]">
                         <div className="flex flex-col justify-center p-10 bg-[#18181B] h-[316px] rounded-lg border-gradient z-20 max-[1350px]:h-[352px] max-[916px]:h-[364px] max-[440px]:h-[348git px]">
                             <img className="pb-6" src={card.icon} width={42} height={42} alt={card.title} />
-                            <h4 className="text-[#F4F5F6] text-[21px] font-bold pb-3">{card.title}</h4> 
+                            <h4 className="text-[#F4F5F6] text-[21px] font-bold pb-3">{card.title}</h4>
                             <p className="text-[#A1A1A9] text-[16px] font-normal">{card.content}</p>
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="w-full flex justify-center items-center pt-20">
+                <a href='#services'>
+                    <button className="button-primary transition duration-400 hover:shadow-button">Get Started</button>
+                </a>
             </div>
         </section>
     )

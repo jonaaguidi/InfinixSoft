@@ -11,12 +11,12 @@ const Culture = () => {
           En InfinixSoft, nuestros valores de <span className="font-bold text-white">excelencia, innovación, colaboración y responsabilidad social</span> guían cada acción y proyecto que emprendemos.
         </h4>
         <a href='#services'>
-            <button id="card_blur" className="button-gradient transition duration-400 hover:shadow-button">Our Services</button>
+            <button className="button-primary transition duration-400 hover:shadow-button">Our Services</button>
         </a>
       </div>
       <div className="max-w-[1220px] flex justify-center flex-wrap pt-20 gap-6 max-[832px]:gap-12 max-[800px]:gap-7">
         {Culture_cards.map((card) => (
-          <div id="card_blur" key={card.title} className="max-w-[390px] z-10 relative max-[1442px]:w-[356px] max-[400px]:w-[304px]">
+          <div key={card.title} className="max-w-[390px] z-10 relative max-[1442px]:w-[356px] max-[400px]:w-[304px]">
             <div className="flex flex-col p-10 bg-[#171718] h-[268px] rounded-lg border-gradient z-20 justify-center items-start max-[400px]:h-[300px]">
               <img className="pb-4" src={card.icon} width={48} height={48} alt={card.title} />
               <h4 className="text-[#FCFCFD] text-[21px] font-bold pb-3 max-[400px]:p-0">{card.title}</h4>

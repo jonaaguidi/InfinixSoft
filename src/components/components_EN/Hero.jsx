@@ -29,6 +29,7 @@ const Hero = () => {
       loop: true,
       showCursor: false,
     };
+    
 
     const typed = new Typed(titleRef.current, options);
 
@@ -48,9 +49,9 @@ const Hero = () => {
 
         <div className="flex gap-10 items-center justify-center max-[580px]:gap-8">
           <a href='#services'>
-            <button className="button-gradient transition duration-400 hover:shadow-button">Our Services</button>
+            <button className="button-primary transition duration-400 hover:shadow-button">Our Services</button>
           </a>
-          <button className="button-gradient transition duration-400 hover:shadow-button" onClick={toggleShowForm}>Contact</button>
+          <button className="button-secondary" onClick={toggleShowForm}>Contact</button>
         </div>
 
       </div>

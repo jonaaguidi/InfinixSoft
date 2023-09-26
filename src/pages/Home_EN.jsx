@@ -9,9 +9,7 @@ import Projects from "../components/components_EN/Projects"
 import Projects_Cards from "../components/components_EN/Projects_Cards"
 import Partners from "../components/components_EN/Partners"
 import Blog from "../components/components_EN/Blog"
-import WaveSection from "../components/components_EN/Wave"
 import Footer from "../components/components_EN/Footer"
-import Cursor from "../components/components_EN/Cursor"
 
 const Home_EN = () => {
   return (
@@ -30,7 +28,6 @@ const Home_EN = () => {
         <Blog />
       </main>
       <Footer />
-      <Cursor />
     </>
   )
 }

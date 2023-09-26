@@ -1,7 +1,16 @@
 import WaveSection from "../components_EN/Wave";
+import Form from "../components_EN/Form"
 import { BannerLogos2 } from "../../constants/index_imgs"
+import { useState } from "react";
 
 const Footer = () => {
+  const [showForm, setShowForm] = useState(false);
+
+  // Función para mostrar el formulario cuando se hace clic en el botón
+  const handleShowForm = () => {
+    setShowForm(true);
+  };
+
   return (
     <>
       <WaveSection />
@@ -30,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center flex-wrap gap-20 py-12">
+        <div className="flex items-center justify-center flex-wrap gap-20 py-20">
           {BannerLogos2.map((logo) => (
             <img
               key={logo.name}
@@ -41,9 +50,9 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="w-full py-20 flex flex-col items-center justify-center gap-4 text-center">
+        <div className="w-full py-40 flex flex-col items-center justify-center gap-4 text-center">
           <h4 className="w-[548px] text-[32px] font-bold">Take your Business to the Next level with Infinix<span className="text-[#DB3957]">Soft.</span></h4>
-          <button className="button-gradient">Let’s Speak Now</button>
+           <button onClick={handleShowForm} className="button-primary">Let’s Speak Now</button>
         </div>
 
         <div className="w-full flex justify-between px-28 pt-10 border-t-[1px] border-[#DFE0E3]">
@@ -66,7 +75,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+        {showForm && <Form onClose={() => setShowForm(false)} />}
       </section>
+      
     </>
   );
 };

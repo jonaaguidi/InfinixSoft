@@ -170,7 +170,8 @@ export { services };
 
 // PROJECTS DATA
 import bombo from "/img/Projects/bombo_image_2.png"
-
+import evJungle from "/img/Projects/evJungle.png"
+import sportyfanPet from "/img/Projects/sportyfanPet.png"
 
 const Card_Projects_data  = [
   {
@@ -179,31 +180,30 @@ const Card_Projects_data  = [
     image: bombo
   }, 
   {
-    title: 'BOMBO APP 2',
+    title: 'Ev Jungle',
+    subtitle: "Ev Jungle, todos los cargadores y la información más confiable.",
+    image: evJungle
+  }, 
+  {
+    title: 'SportyFanPet',
+    subtitle: "Ahora podes asociar a tus mascotas a tu club oficialmente.",
+    image: sportyfanPet
+  }, 
+  {
+    title: 'BOMBO APP',
     subtitle: "Mantenete actualizado de las próximas fechas & rumores.",
     image: bombo
   }, 
   {
-    title: 'BOMBO APP 3',
-    subtitle: "Mantenete actualizado de las próximas fechas & rumores.",
-    image: bombo
+    title: 'Ev Jungle',
+    subtitle: "Ev Jungle, todos los cargadores y la información más confiable.",
+    image: evJungle
   }, 
   {
-    title: 'BOMBO APP 4',
-    subtitle: "Mantenete actualizado de las próximas fechas & rumores.",
-    image: bombo
+    title: 'SportyFanPet',
+    subtitle: "Ahora podes asociar a tus mascotas a tu club oficialmente.",
+    image: sportyfanPet
   }, 
-  {
-    title: 'BOMBO APP 5',
-    subtitle: "Mantenete actualizado de las próximas fechas & rumores.",
-    image: bombo
-  }, 
-  {
-    title: 'BOMBO APP 6',
-    subtitle: "Mantenete actualizado de las próximas fechas & rumores.",
-    image: bombo
-  }, 
- 
 ];
 
 export { Card_Projects_data };

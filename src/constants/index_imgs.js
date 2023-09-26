@@ -7,6 +7,7 @@ import HubSpot from "/img/Banner/HubSpot.png"
 import Isotipo from "/img/Banner/isotipo.png"
 import Magento from "/img/Banner/Magento.png"
 import Shopify from "/img/Banner/Shopify.png"
+import Stellar from "/img/Banner/Stellar.png"
 
 
 const BannerLogos = [
@@ -39,12 +40,8 @@ const BannerLogos = [
     icon: OpenAI,
   },
   {
-    name: 'React',
-    icon: React,
-  },
-  {
-    name: 'Android',
-    icon: Android,
+    name: 'Stellar',
+    icon: Stellar,
   },
 ];
 

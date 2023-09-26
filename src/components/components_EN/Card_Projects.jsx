@@ -6,7 +6,7 @@ const Card_Projects = ({ image, title, subtitle }) => {
             <p className="text-[24px] font-bold">{title}</p>
             <p className="text-center text-[#A1A1A9]">{subtitle}</p>
         </div>
-        <button className="button-gradient flex items-center">View Project</button>
+        <button className="button-secondary p-6 flex items-center">View Project</button>
     </div>
   )
 }

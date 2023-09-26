@@ -22,7 +22,7 @@ const Projects_Cards = () => {
                 ))}
             </div>
 
-            <button id="card_blur" className="button-gradient max-w-fit "><a href="/projects" target="no_blank">View More</a></button>
+            <button id="card_blur" className="button-primary max-w-fit "><a href="/projects" target="no_blank">View More</a></button>
 
         </section>
     )
