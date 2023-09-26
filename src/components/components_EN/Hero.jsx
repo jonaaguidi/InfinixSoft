@@ -38,7 +38,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id='hero' className="bg-hero flex items-center justify-center">
+    <section id='hero' className="bg-hero h-[90vh] flex items-center justify-center">
       <div className="flex flex-col items-center z-20 w-[576px]">
 
         <div className="py-8">

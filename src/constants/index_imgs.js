@@ -34,6 +34,18 @@ const BannerLogos = [
     name: 'AWS',
     icon: AWS,
   },
+  {
+    name: 'OpenAI',
+    icon: OpenAI,
+  },
+  {
+    name: 'React',
+    icon: React,
+  },
+  {
+    name: 'Android',
+    icon: Android,
+  },
 ];
 
 export { BannerLogos };

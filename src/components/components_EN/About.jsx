@@ -10,9 +10,8 @@ const About = () => {
             <div>
                 <img width={620} className="rounded-2xl max-[950px]:hidden" src={AboutImage} alt="About"></img>
             </div>
-            <div className="flex flex-col justify-center gap-4">
+            <div className="flex flex-col justify-center gap-0">
                 <div className="w-fit max-w-[693px] flex flex-col gap-8">
-                    <h5 className="text-2xl font-semibold max-[1120px]:text-xl">We are Infinix<span className="text-[#DB3957]">soft.</span></h5>
                     <h3 className="font-normal text-4xl text-[#F4F5F6] max-[1120px]:text-2xl">InfinixSoft offers games, business and product development (web, mobile, social and internet technologies) to startup and enterprise clients.</h3>
                 </div>
 

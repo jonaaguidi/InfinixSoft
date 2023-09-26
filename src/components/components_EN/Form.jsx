@@ -129,7 +129,7 @@ const Form = ({ onClose }) => {
                     </div>
 
                     {/* Button "Send" */}
-                    <button className="button-gradient w-[300px]">Send Email</button>
+                    <button className="button-gradient w-[296px] transition duration-400 hover:shadow-button">Send Email</button>
 
                 </form>
 
