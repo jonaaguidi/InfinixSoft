@@ -2,6 +2,9 @@
 import { useState } from 'react';
 import Arrow from "/img/Form/arrow_contact.svg"
 import Logo from "/img/Header/logo.svg"
+import { BsEnvelopeFill } from "react-icons/bs";
+
+
 
 const Form = ({ onClose }) => {
 
@@ -126,7 +129,10 @@ const Form = ({ onClose }) => {
                     </div>
 
                     {/* Button "Send" */}
-                    <button className="button-secondary w-[296px]">Send Email</button>
+                    <button className="button-secondary w-[236px] transition duration-600 hover:shadow-button_secondary flex items-center justify-center gap-3">
+                        Send Email
+                        <span className='text-[18px]'><BsEnvelopeFill /></span>
+                    </button>
 
                 </form>
 

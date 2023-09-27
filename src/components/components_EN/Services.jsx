@@ -1,6 +1,16 @@
+import { useState } from "react";
 import { services } from "../../constants/index_EN";
+import Form from "./Form";
+import { BsLightbulb, BsLightbulbFill, BsLightningFill } from "react-icons/bs";
 
 const Services = () => {
+
+    const [showForm, setShowForm] = useState(false);
+
+    // Función para mostrar el formulario cuando se hace clic en el botón
+    const handleShowForm = () => {
+      setShowForm(true);
+    };
     return (
         <section id="services" className="max-w-[1220px] py-20 mx-auto flex flex-col items-start max-[1350px]:px-14 max-[520px]:px-7">
             <div className="max-w-[538px] flex flex-col items-start">
@@ -23,10 +33,14 @@ const Services = () => {
                 ))}
             </div>
             <div className="w-full flex justify-center items-center pt-20">
-                <a href='#services'>
-                    <button className="button-primary transition duration-400 hover:shadow-button">Get Started</button>
+                <a onClick={handleShowForm}>
+                    <button onClick={handleShowForm} className="button-primary transition duration-400 hover:shadow-button flex items-center justify-center gap-3">
+                    Get Started
+                    <span className="text-[yellow] text-[15px]"><BsLightbulbFill /></span>
+                    </button>
                 </a>
             </div>
+            {showForm && <Form onClose={() => setShowForm(false)} />}
         </section>
     )
 }

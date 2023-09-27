@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { BsArrowDown, BsEnvelopeFill } from "react-icons/bs";
 import Typed from 'typed.js';
 import Form from "../components_EN/Form";
 
@@ -29,7 +30,7 @@ const Hero = () => {
       loop: true,
       showCursor: false,
     };
-    
+
 
     const typed = new Typed(titleRef.current, options);
 
@@ -49,9 +50,15 @@ const Hero = () => {
 
         <div className="flex gap-10 items-center justify-center max-[580px]:gap-8">
           <a href='#services'>
-            <button className="button-primary transition duration-400 hover:shadow-button">Our Services</button>
+            <button className="button-primary transition duration-400 hover:shadow-button flex items-center justify-center gap-2">
+            Our Services
+            <span className='text-[16px] font-bold'><BsArrowDown /></span>
+            </button>
           </a>
-          <button className="button-secondary" onClick={toggleShowForm}>Contact</button>
+          <button className="button-secondary transition duration-400 hover:shadow-button_secondary flex items-center justify-center gap-2" onClick={toggleShowForm}>
+            Contact
+            <span className='text-[16px]'><BsEnvelopeFill /></span>
+          </button>
         </div>
 
       </div>

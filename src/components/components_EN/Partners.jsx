@@ -5,6 +5,7 @@ const Partners = () => {
     return (
         <section className="w-full flex flex-col justify-center items-center mx-auto py-20">
             <div className="max-w-[640px] mx-auto py-20 flex flex-col items-center justify-center">
+            <p className="badge py-3 px-6 text-[12px] text-center font-semibold text-white mb-6">OUR PARTNERS</p>
                 <h3 className="text-[52px] text-center font-bold text-white leading-[60px] pb-6">
                     Trusted by leading brands
                 </h3>

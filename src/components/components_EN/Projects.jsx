@@ -28,7 +28,7 @@ const Projects = () => {
             <img src={Future} alt="Future" className="pb-6" />
             <p className="text-[12px] text-white font-semibold uppercase pb-3">Transformando educación - Innovación educativa digital</p>
             <p className="text-[16px] font-normal text-[#868687] pb-6">FutureCard Visa® Debit: Cashback for eco-friendly spending. Earn 6% at FuturePartners and 5% on green choices like public transport, electric charging, and sustainable products. Future empowers you to make climate-conscious decisions, impacting 66% of carbon emissions. Join Future and earn FutureCoins through app Missions.</p>
-            <button className="button-primary">Visit Website Now</button>
+            <button className="button-primary  transition duration-400 hover:shadow-button">Visit Website Now</button>
           </div>
 
           <div className="flex flex-col gap-6">
@@ -104,7 +104,7 @@ const Projects = () => {
             <img src={Bombo} alt="Bombo" className="pb-6" />
             <p className="text-[12px] text-white font-semibold uppercase pb-3">Revolucionando la industria de ticketing con tecnología blockchain.</p>
             <p className="text-[16px] font-normal text-[#A1A1A9] pb-6">Aplicación móvil, combinada con una plataforma administrativa de backend, ofrece una solución segura, transparente y eficiente para la gestión y venta de boletos utilizando la tecnología NFT y blockchain.</p>
-            <button className="button-primary">Visit Website Now</button>
+            <button className="button-primary  transition duration-400 hover:shadow-button">Visit Website Now</button>
           </div>
 
           <div className="flex flex-col gap-6">
