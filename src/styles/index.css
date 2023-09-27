@@ -198,7 +198,7 @@
     margin-bottom: 116px;
   }
 
-  #Card_project::before {
+  #Card_projectX::before {
     content: "";
     position: absolute;
     background-image: url("/img/Culture/blur_cards.png");
@@ -258,8 +258,8 @@
     background: linear-gradient(#171718, #171718),
       radial-gradient(
         circle,
-        rgba(31, 96, 193, 0.7) 15%,
-        rgba(219, 57, 87, 0.85) 120%
+        rgba(31, 96, 193, 0.8) 20%,
+        rgba(219, 57, 87, 0.90) 120%
       );
     background-clip: padding-box, border-box;
     border-radius: 4px;

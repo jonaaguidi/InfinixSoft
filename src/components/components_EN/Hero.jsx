@@ -48,14 +48,14 @@ const Hero = () => {
           <h5 className="text-center text-xl text-[#F4F5F6] max-[580px]:text-[14px] max-[580px]:px-10">Discover how InfinixSoft can help you create the <span className='font-semibold'>Perfect Strategy</span> for your business.</h5>
         </div>
 
-        <div className="flex gap-10 items-center justify-center max-[580px]:gap-8">
+        <div className="flex gap-10 items-center justify-center max-[580px]:gap-8 max-[420px]:gap-2 max-[375px]:gap-0">
           <a href='#services'>
-            <button className="button-primary transition duration-400 hover:shadow-button flex items-center justify-center gap-2">
+            <button className="button-primary transition duration-400 hover:shadow-button flex items-center justify-center gap-2 max-[510px]:scale-90 max-[375px]:scale-[0.80]">
             Our Services
             <span className='text-[16px] font-bold'><BsArrowDown /></span>
             </button>
           </a>
-          <button className="button-secondary transition duration-400 hover:shadow-button_secondary flex items-center justify-center gap-2" onClick={toggleShowForm}>
+          <button className="button-secondary transition duration-400 hover:shadow-button_secondary flex items-center justify-center gap-2 max-[510px]:scale-90 max-[375px]:scale-[0.80]" onClick={toggleShowForm}>
             Contact
             <span className='text-[16px]'><BsEnvelopeFill /></span>
           </button>

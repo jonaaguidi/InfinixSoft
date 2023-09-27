@@ -5,7 +5,7 @@ const Culture = () => {
   return (
     <section className="w-full py-20 px-28 flex flex-col items-center max-[1000px]:px-14 max-[425px]:px-7">
       <div className="max-w-[838px] flex flex-col justify-center items-center">
-        <p className="badge py-3 px-6 text-[12px] text-center font-semibold text-white mb-2">OUR VALUES</p>
+        <p className="badge ml-3 py-3 px-6 text-[12px] text-center font-semibold text-white mb-2 max-[455px]:scale-[0.88]">OUR VALUES</p>
         <h2 className="max-w-[888px] text-[#FCFCFD] font-bold text-[42px] text-center  max-[1024px]:text-[32px] max-[455px]:text-[24px] max-[455px]:leading-8">
           La Base de Nuestra Cultura Empresarial
         </h2>
@@ -13,7 +13,7 @@ const Culture = () => {
           En InfinixSoft, nuestros valores de <span className="font-bold text-white">excelencia, innovación, colaboración y responsabilidad social</span> guían cada acción y proyecto que emprendemos.
         </h4>
         <a href='#services'>
-          <button className="button-primary transition duration-400 hover:shadow-button flex items-center justify-center gap-2">
+          <button className="button-primary ml-3 transition duration-400 hover:shadow-button flex items-center justify-center gap-2 max-[455px]:scale-[0.92]">
             Our Services
             <span className='text-[16px] font-bold'><BsArrowDown /></span>
           </button>
