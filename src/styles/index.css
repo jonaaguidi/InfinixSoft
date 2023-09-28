@@ -176,7 +176,7 @@
 
   .badge {
     display: inline-block;
-    padding: 14px;
+    padding: 12px ;
     border: 1px solid #868687;
     border-radius: 999px;
     background-color: transparent;
@@ -232,19 +232,19 @@
   }
 
   .border-gradient_2 {
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     background-color: transparent;
     background: linear-gradient(#171718, #171718),
       radial-gradient(
         circle,
-        rgba(31, 96, 193, 0.8) 20%,
-        rgba(219, 57, 87, 0.90) 120%
+        rgba(31, 96, 193, 0.5) 20%,
+        rgba(219, 57, 87, 0.70) 120%
       );
     background-clip: padding-box, border-box;
     border-radius: 4px;
     transition: transform 0.32s;
     cursor: pointer;
-    box-shadow: -28px 28px 51px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 48px  rgba(0, 0, 0, 0.60);
   }
 
   #span {
