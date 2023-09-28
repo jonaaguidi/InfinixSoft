@@ -5,6 +5,7 @@ import Home_ES from './pages/Home_ES.jsx'
 import Home_BR from './pages/Home_BR.jsx'
 import Projects from "./pages/Projects.jsx"
 import './styles/index.css'
+import './styles/buttons.scss'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -23,7 +23,7 @@ const Form = ({ onClose }) => {
 
 
     return (
-        <div className={`fixed overflow-y-auto z-max top-0 left-0 w-screen h-screen bg-[#171718] px-24 flex gap-16 justify-center items-center transition-wipe-in-down ${shouldAnimateOut ? 'transition-wipe-out-up' : ''} max-[1292px]:flex-col max-[1292px]:items-center max-[1292px]:justify-start max-[1292px]:top-24 max-[830px]:px-14 max-[672px]:px-7 max-[420px]:gap-8`}>
+        <div className={`fixed overflow-y-auto z-[990] top-0 left-0 w-screen h-screen bg-[#171718] px-24 flex gap-16 justify-center items-center transition-wipe-in-down ${shouldAnimateOut ? 'transition-wipe-out-up' : ''} max-[1292px]:flex-col max-[1292px]:items-center max-[1292px]:justify-start max-[1292px]:top-24 max-[1292px]:pb-48 max-[830px]:px-14 max-[672px]:px-7 max-[420px]:gap-8`}>
 
             {/* Text "Contact" */}
             <div className='bg-transparent p-10 rounded-lg max-[502px]:px-4 max-[455px]:px-0'>
@@ -73,7 +73,7 @@ const Form = ({ onClose }) => {
             </div>
 
             {/* Formulario */}
-            <div className="w-[496px] h-fit bg-transparent shadow-form p-10 rounded-lg relative top-6 border-[2px] border-[#db3957] border-opacity-70 max-[586px]:w-[396px] max-[501px]:w-[356px] max-[442px]:w-[316px]">
+            <div className="w-[496px] h-fit bg-transparent shadow-form p-10 rounded-lg relative top-6 border-[2px] border-[#db3957] border-opacity-70 max-[586px]:w-[396px] max-[501px]:w-[328px] max-[420px]:w-[296px] max-[442px]:top-2 max-[442px]:top-2">
                 <div className='flex items-center justify-center pb-10 max-[442px]:pb-8'>
                     <img src={Logo} alt='Logotype' />
                 </div>
@@ -81,7 +81,7 @@ const Form = ({ onClose }) => {
                 <form className='flex flex-col items-center justify-center'>
 
                     {/* Name Inputs */}
-                    <div className="grid sm:grid-cols-2 sm:gap-6 max-[420px]:gap-1.5">
+                    <div className="grid sm:grid-cols-2 sm:gap-6 max-[632px]:w-full max-[420px]:gap-1.5">
                         <div className="relative z-0 w-full mb-6 group max-[442px]:mb-4">
                             <input
                                 type="text"
@@ -140,7 +140,7 @@ const Form = ({ onClose }) => {
                     </div>
 
                     {/* Button "Send" */}
-                    <button className="button-secondary w-[236px] transition duration-600 hover:shadow-button_secondary flex items-center justify-center gap-3">
+                    <button className="btn-secondary btn-hover w-[236px] transition duration-600 hover:shadow-button_secondary flex items-center justify-center gap-3">
                         Send Email
                         <span className='text-[18px]'><BsEnvelopeFill /></span>
                     </button>
@@ -149,7 +149,7 @@ const Form = ({ onClose }) => {
 
             </div>
 
-            {/* Close Button */}
+            {/* Close Button Desktop */}
             <button
                 onClick={handleClose}
                 className="flex px-3 py-1.5 self-start mt-40 cursor-pointer transition duration-400 hover:scale-105 max-[1292px]:hidden">

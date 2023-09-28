@@ -1,4 +1,4 @@
-import { BsArrowDown } from "react-icons/bs";
+import { BsFillArrowDownCircleFill } from "react-icons/bs";
 import { Culture_cards } from "../../constants/index_EN";
 
 const Culture = () => {
@@ -13,9 +13,9 @@ const Culture = () => {
           En InfinixSoft, nuestros valores de <span className="font-bold text-white">excelencia, innovación, colaboración y responsabilidad social</span> guían cada acción y proyecto que emprendemos.
         </h4>
         <a href='#services'>
-          <button className="button-primary ml-3 transition duration-400 hover:shadow-button flex items-center justify-center gap-2 max-[455px]:scale-[0.92]">
+          <button className="btn-primary btn-hover ml-3 transition duration-400 hover:shadow-button flex items-center justify-center gap-2 max-[455px]:scale-[0.92]">
             Our Services
-            <span className='text-[16px] font-bold'><BsArrowDown /></span>
+            <span className='text-[16px] font-bold'><BsFillArrowDownCircleFill /></span>
           </button>
         </a>
       </div>

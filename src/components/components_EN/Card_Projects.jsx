@@ -1,5 +1,5 @@
 import { Tilt } from 'react-tilt'
-
+import { BsFillRocketFill } from "react-icons/bs";
 
 const Card_Projects = ({ image, title, subtitle }) => {
 
@@ -8,7 +8,7 @@ const Card_Projects = ({ image, title, subtitle }) => {
     max: 35,     // max tilt rotation (degrees)
     perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
     scale: 1.032,    // 2 = 200%, 1.5 = 150%, etc..
-    speed: 400,   // Speed of the enter/exit transition
+    speed: 480,   // Speed of the enter/exit transition
     transition: true,   // Set a transition on enter/exit.
     axis: null,   // What axis should be disabled. Can be X or Y.
     reset: true,    // If the tilt effect has to be reset on exit.
@@ -22,8 +22,9 @@ const Card_Projects = ({ image, title, subtitle }) => {
         <p className="text-[24px] font-bold">{title}</p>
         <p className="text-center text-[#A1A1A9]">{subtitle}</p>
       </div>
-      <Tilt options={defaultOptions}><button className="button-secondary p-4 flex items-center transition duration-400 hover:shadow-button_secondary">View Project</button></Tilt>
-      
+      <button className="btn-secondary btn-hover flex items-center gap-2 transition duration-400 hover:shadow-button_secondary">View Project
+      <BsFillRocketFill />
+      </button>
     </Tilt>
   )
 }

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { services } from "../../constants/index_EN";
 import Form from "./Form";
-import { BsLightbulb, BsLightbulbFill, BsLightningFill } from "react-icons/bs";
+import { BsLightbulbFill } from "react-icons/bs";
 
 const Services = () => {
 
@@ -23,7 +23,7 @@ const Services = () => {
             </div>
             <div className="max-w-[1220px] flex justify-start flex-wrap pt-20 gap-6 max-[1350px]:gap-4 max-[1163px]:justify-center max-[1163px]:gap-6">
                 {services.map((card) => (
-                    <div id="card_blur" key={card.title} className="max-w-[390px] z-10 relative max-[1350px]:w-[340px] max-[1163px]:w-[390px] max-[916px]:w-[340px] max-[816px]:w-[396px] max-[440px]:w-[320px]">
+                    <div key={card.title} className="max-w-[390px] z-10 relative max-[1350px]:w-[340px] max-[1163px]:w-[390px] max-[916px]:w-[340px] max-[816px]:w-[396px] max-[440px]:w-[320px]">
                         <div className="flex flex-col justify-center p-10 bg-[#18181B] h-[316px] rounded-lg border-gradient z-20 max-[1350px]:h-[352px] max-[916px]:h-[364px] max-[440px]:h-[348git px]">
                             <img className="pb-6" src={card.icon} width={42} height={42} alt={card.title} />
                             <h4 className="text-[#F4F5F6] text-[21px] font-bold pb-3">{card.title}</h4>
@@ -34,9 +34,9 @@ const Services = () => {
             </div>
             <div className="w-full flex justify-center items-center pt-20">
                 <a onClick={handleShowForm}>
-                    <button id="started" onClick={handleShowForm} className="button-primary transition duration-400 hover:shadow-button hover:button-light flex items-center justify-center gap-3">
+                    <button id="started" onClick={handleShowForm} className="btn-primary btn-hover transition duration-400 hover:shadow-button hover:button-light flex items-center justify-center gap-3">
                     Get Started
-                    <span onClick={handleShowForm} className="text-[#fffc62] opacity-80 text-[16px] transition duration-1000 hover:opacity-100 hover:scale-125 "><BsLightbulbFill /></span>
+                    <span onClick={handleShowForm} className="text-[#fffc62] opacity-80 text-[16px] transition duration-800 hover:opacity-100 hover:scale-110 "><BsLightbulbFill /></span>
                     </button>
                 </a>
             </div>

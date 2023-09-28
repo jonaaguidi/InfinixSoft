@@ -2,25 +2,40 @@ import Future from "/img/Projects/Future_logo.svg"
 import FutureImage from "/img/Projects/image_future.png"
 import Bombo from "/img/Projects/bombologo.svg"
 import BomboImage from "/img/Projects/Bombo_image.png"
-import Icon from "/img/Projects/icon.svg"
 import iosIcon from "/img/Projects/applelogo.svg"
 import androidIcon from "/img/Projects/Androidlogo.svg"
 import webIcon from "/img/Projects/weblogo.svg"
+import { BsAndroid2, BsApple, BsFillArrowDownCircleFill, BsFillArrowRightCircleFill, BsFillCreditCard2BackFill } from "react-icons/bs";
+import { FaAppStoreIos, FaNodeJs, FaReact } from "react-icons/fa"
+import { SlGraph } from "react-icons/sl";
+import { SiEthereum } from "react-icons/si"
+import { FaEarthAmericas } from "react-icons/fa6"
+
+
 
 const Projects = () => {
   return (
-    <section className="max-w-[1220px] mx-auto py-20">
+    <section className="max-w-[1220px] mx-auto py-20 max-[860px]:px-14 max-[480px]:px-7">
 
-      <div className="max-w-[640px] mx-auto py-20 flex flex-col items-center justify-center ">
+      <div className="max-w-[838px] mx-auto flex flex-col justify-center items-center">
         <p className="badge ml-2 py-3 px-6 text-[12px] text-center font-semibold text-white mb-2 max-[455px]:scale-[0.88]">OUR PROJECTS</p>
-        <h2 className="text-[52px] text-center font-bold text-white leading-[60px] py-5">
-          Come for the features.
+        <h2 className="max-w-[888px] text-[#FCFCFD] leading-[48px] font-bold text-[42px] text-center pb-3 max-[1024px]:text-[32px] max-[455px]:text-[24px] max-[455px]:leading-8">
+          Come for the features.<br></br>
           Stay for best ever help.
         </h2>
-        <h5 className="text-[18px] text-center text-[#A1A1A9]">InfinixSoft offers games, business and product development  (web, mobile, social and internet technologies)  to startup and enterprise clients.</h5>
+        <h4 className="max-w-[720px] text-xl text-[#A1A1A9] text-center pb-8 leading-[30px] max-[1024px]:text-[16px] max-[455px]:text-[14px] max-[455px]:leading-6">
+          InfinixSoft offers games, business and product development  (web, mobile, social and internet technologies)  to startup and enterprise clients.
+        </h4>
+        <a href='#projects'>
+          <button className="btn-primary btn-hover ml-2 transition duration-400 hover:shadow-button flex items-center justify-center gap-2 max-[455px]:scale-[0.92]">
+            See Projects
+            <span className='text-[16px] font-bold'><BsFillArrowDownCircleFill /></span>
+          </button>
+        </a>
       </div>
 
-      <div id="Future_Project" className="flex items-center justify-around py-20">
+
+      <div id="projects" className="flex items-center justify-around py-20">
 
         <div className="max-w-[546px] flex flex-col gap-10">
 
@@ -28,7 +43,11 @@ const Projects = () => {
             <img src={Future} alt="Future" className="pb-6" />
             <p className="text-[12px] text-white font-semibold uppercase pb-3">Transformando educación - Innovación educativa digital</p>
             <p className="text-[16px] font-normal text-[#868687] pb-6">FutureCard Visa® Debit: Cashback for eco-friendly spending. Earn 6% at FuturePartners and 5% on green choices like public transport, electric charging, and sustainable products. Future empowers you to make climate-conscious decisions, impacting 66% of carbon emissions. Join Future and earn FutureCoins through app Missions.</p>
-            <button className="button-primary  transition duration-400 hover:shadow-button">Visit Website Now</button>
+            <button className="btn-primary btn-hover transition duration-400 hover:shadow-button">
+              <a className=" w-fit flex items-center justify-center gap-2" href="https://www.future.green/" target="_blank" rel="noreferrer"> Visit Website Now
+                <span className="text-[16px]"><BsFillArrowRightCircleFill /></span>
+              </a>
+            </button>
           </div>
 
           <div className="flex flex-col gap-6">
@@ -36,11 +55,11 @@ const Projects = () => {
               <p className="text-[12px] font-semibold">AWARDS AND WINNING</p>
               <div className="flex gap-5">
                 <button className="badge flex items-center gap-2">
-                  <img src={Icon} alt="Icon" />
+                  <span className="text-[18px] mb-[2px]"><BsFillCreditCard2BackFill /></span>
                   VISA PARTNER
                 </button>
                 <button className="badge flex items-center gap-2">
-                  <img src={Icon} alt="Icon" />
+                  <span className="text-[18px] mb-[2px]"><FaEarthAmericas /></span>
                   PLANET CONTRIBUTION
                 </button>
               </div>
@@ -49,19 +68,19 @@ const Projects = () => {
               <p className="text-[12px] font-semibold">TECH STACK</p>
               <div className="flex gap-5">
                 <button className="badge flex items-center gap-2">
-                  <img src={Icon} alt="Icon" />
+                  <span className="text-[18px] mb-[2px]"><FaReact /></span>
                   REACT
                 </button>
                 <button className="badge flex items-center gap-2">
-                  <img src={Icon} alt="Icon" />
+                  <span className="text-[18px] mb-[2px]"><FaNodeJs /></span>
                   NODE.JS
                 </button>
                 <button className="badge flex items-center gap-2">
-                  <img src={Icon} alt="Icon" />
+                  <span className="text-[20px] mb-[2px]"><FaAppStoreIos /></span>
                   XCODE
                 </button>
                 <button className="badge flex items-center gap-2">
-                  <img src={Icon} alt="Icon" />
+                  <span className="text-[20px] mb-[2px]"><BsAndroid2 /></span>
                   ANDROID STUDIO
                 </button>
               </div>
@@ -104,19 +123,24 @@ const Projects = () => {
             <img src={Bombo} alt="Bombo" className="pb-6" />
             <p className="text-[12px] text-white font-semibold uppercase pb-3">Revolucionando la industria de ticketing con tecnología blockchain.</p>
             <p className="text-[16px] font-normal text-[#A1A1A9] pb-6">Aplicación móvil, combinada con una plataforma administrativa de backend, ofrece una solución segura, transparente y eficiente para la gestión y venta de boletos utilizando la tecnología NFT y blockchain.</p>
-            <button className="button-primary  transition duration-400 hover:shadow-button">Visit Website Now</button>
+            <button className="btn-primary btn-hover transition duration-400 hover:shadow-button">
+              <a className=" w-fit flex items-center justify-center gap-2" href="https://wearebombo.com/" target="_blank" rel="noreferrer"> Visit Website Now
+                <span className="text-[16px]"><BsFillArrowRightCircleFill /></span>
+              </a>
+            </button>
           </div>
 
           <div className="flex flex-col gap-6">
             <div className="flex flex-col items-start gap-3">
               <p className="text-[12px] font-semibold">AWARDS AND WINNING</p>
               <div className="flex gap-5">
-                <button className="badge flex items-center gap-2 uppercase">
-                  <img src={Icon} alt="Icon" />
+                <button className="badge flex justify-center items-center gap-2 uppercase">
+                  <span className="text-[18px] mb-1"><BsApple /></span>
                   Top #1 AppStore Downloads
                 </button>
                 <button className="badge flex items-center gap-2 uppercase">
-                  <img src={Icon} alt="Icon" />
+
+                  <span className="text-[18px]"><SlGraph /></span>
                   +130k Active Users {">"} 3 Months
                 </button>
               </div>
@@ -125,19 +149,19 @@ const Projects = () => {
               <p className="text-[12px] font-semibold">TECH STACK</p>
               <div className="flex gap-5">
                 <button className="badge flex items-center gap-2">
-                  <img src={Icon} alt="Icon" />
+                  <span className="text-[18px] mb-[2px]"><SiEthereum /></span>
                   SOLIDITY
                 </button>
                 <button className="badge flex items-center gap-2">
-                  <img src={Icon} alt="Icon" />
+                  <span className="text-[18px] mb-[2px]"><FaReact /></span>
                   REACT
                 </button>
                 <button className="badge flex items-center gap-2">
-                  <img src={Icon} alt="Icon" />
+                  <span className="text-[18px] mb-[2px]"><FaNodeJs /></span>
                   NODE.JS
                 </button>
                 <button className="badge flex items-center gap-2">
-                  <img src={Icon} alt="Icon" />
+                  <span className="text-[18px] mb-[2px]"><SiEthereum /></span>
                   ERC-721
                 </button>
               </div>

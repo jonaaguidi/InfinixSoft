@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { BsArrowDown, BsEnvelopeFill } from "react-icons/bs";
+import { BsEnvelopeFill, BsFillArrowDownCircleFill } from "react-icons/bs";
 import Typed from 'typed.js';
 import Form from "../components_EN/Form";
 
@@ -50,12 +50,12 @@ const Hero = () => {
 
         <div className="flex gap-10 items-center justify-center max-[580px]:gap-8 max-[420px]:gap-2 max-[375px]:gap-0">
           <a href='#services'>
-            <button className="button-primary transition duration-400 hover:shadow-button flex items-center justify-center gap-2 max-[510px]:scale-90 max-[375px]:scale-[0.80]">
+            <button className="btn-primary btn-anim btn-hover transition duration-400 hover:shadow-button flex items-center justify-center gap-2 max-[510px]:scale-90 max-[375px]:scale-[0.80]">
             Our Services
-            <span className='text-[16px] font-bold'><BsArrowDown /></span>
+            <span className='text-[16px] font-bold'><BsFillArrowDownCircleFill /></span>
             </button>
           </a>
-          <button className="button-secondary transition duration-400 hover:shadow-button_secondary flex items-center justify-center gap-2 max-[510px]:scale-90 max-[375px]:scale-[0.80]" onClick={toggleShowForm}>
+          <button className="btn-secondary btn-hover border-[#868687] transition duration-400 hover:shadow-button_secondary flex items-center justify-center gap-2 max-[510px]:scale-90 max-[375px]:scale-[0.80]" onClick={toggleShowForm}>
             Contact
             <span className='text-[16px]'><BsEnvelopeFill /></span>
           </button>
