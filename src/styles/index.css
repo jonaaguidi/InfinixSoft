@@ -232,13 +232,13 @@
   }
 
   .border-gradient_2 {
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     background-color: transparent;
     background: linear-gradient(#171718, #171718),
       radial-gradient(
         circle,
-        rgba(31, 96, 193, 0.5) 20%,
-        rgba(219, 57, 87, 0.70) 120%
+        rgba(31, 96, 193, 0.75) 30%,
+        rgba(219, 57, 87, 0.80) 110%
       );
     background-clip: padding-box, border-box;
     border-radius: 4px;
@@ -256,7 +256,7 @@
   }
 
   .shadow-navbar {
-    box-shadow: 1px 1px 30px black;
+    box-shadow: 1px 1px 12px black;
   }
 
   .shadow-form {

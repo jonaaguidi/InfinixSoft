@@ -16,7 +16,7 @@ const Card_Projects = ({ image, title, subtitle }) => {
   }
 
   return (
-    <Tilt options={defaultOptions} className="w-[328px] h-[427px] relative z-full px-6 py-10 border-gradient_2 flex flex-col items-center justify-center">
+    <Tilt options={defaultOptions} className="w-[328px] h-[427px] relative z-full px-6 py-10 border-gradient_2 flex flex-col items-center justify-center max-[1320px]:w-[308px]">
       <img width={150} height={150} src={image} alt={title} className="pb-10" />
       <div className="flex flex-col items-center justify-center gap-2 pb-6">
         <p className="text-[24px] font-bold">{title}</p>

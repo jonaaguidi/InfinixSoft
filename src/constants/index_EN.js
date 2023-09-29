@@ -85,6 +85,16 @@ const Team = [
     icon: luis
   }, 
   {
+    name: 'Luis Paez',
+    position: "Business Developer Manager",
+    icon: luis
+  }, 
+  {
+    name: 'Luis Paez',
+    position: "Business Developer Manager",
+    icon: luis
+  }, 
+  {
     name: 'Fernando Lepore',
     position: "Commercial Manager",
     icon: fernando
