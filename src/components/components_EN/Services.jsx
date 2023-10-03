@@ -12,8 +12,8 @@ const Services = () => {
       setShowForm(true);
     };
     return (
-        <section id="services" className="max-w-[1220px] py-20 mx-auto flex flex-col items-start max-[1350px]:px-14 max-[520px]:px-7">
-            <div className="max-w-[538px] flex flex-col items-start">
+        <section id="services" className="max-w-[1220px] py-20 mx-auto flex flex-col items-center max-[1350px]:px-14 max-[520px]:px-7">
+            <div className="max-w-[538px] flex flex-col self-start">
                 <h2 className="text-[52px] text-[#F4F5F6] font-bold pb-6 max-[458px]:text-2xl">
                     Services
                 </h2>
@@ -21,7 +21,7 @@ const Services = () => {
                     We provide our clients as many necessary steps to successfully design, develop and launch a web or mobile app.
                 </h4>
             </div>
-            <div className="max-w-[1220px] flex justify-start flex-wrap pt-20 gap-6 max-[1350px]:gap-4 max-[1163px]:justify-center max-[1163px]:gap-6">
+            <div className="max-w-[1220px] flex justify-start  flex-wrap pt-20 gap-6 max-[1350px]:gap-4 max-[1163px]:justify-center max-[1163px]:gap-6">
                 {services.map((card) => (
                     <div key={card.title} className="max-w-[390px] z-10 relative max-[1350px]:w-[340px] max-[1163px]:w-[390px] max-[916px]:w-[340px] max-[816px]:w-[396px] max-[440px]:w-[320px]">
                         <div className="flex flex-col justify-center p-10 bg-[#18181B] h-[316px] rounded-lg border-gradient z-20 max-[1350px]:h-[352px] max-[916px]:h-[364px] max-[440px]:h-[348git px]">
@@ -32,7 +32,7 @@ const Services = () => {
                     </div>
                 ))}
             </div>
-            <div className="w-full flex justify-center items-center pt-20">
+            <div className="w-full flex justify-center items-center pt-20 max-[460px]:pt-10">
                 <a onClick={handleShowForm}>
                     <button id="started" onClick={handleShowForm} className="btn-primary btn-hover transition duration-400 hover:shadow-button hover:button-light flex items-center justify-center gap-3">
                     Get Started

@@ -5,7 +5,7 @@ import Atlassian from "/img/Banner/Atlassian.png"
 import AWS from "/img/Banner/AWS.png"
 import HubSpot from "/img/Banner/HubSpot.png"
 import Isotipo from "/img/Banner/isotipo.png"
-import Magento from "/img/Banner/Magento.png"
+import Magento from "/img/Banner/Magento.svg"
 import Shopify from "/img/Banner/Shopify.png"
 import Stellar from "/img/Banner/Stellar.png"
 

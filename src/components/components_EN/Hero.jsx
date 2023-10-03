@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import { BsEnvelopeFill, BsFillArrowDownCircleFill } from "react-icons/bs";
 import Typed from 'typed.js';
 import Form from "../components_EN/Form";
 
@@ -52,12 +51,10 @@ const Hero = () => {
           <a href='#services'>
             <button className="btn-primary btn-anim btn-hover transition duration-400 hover:shadow-button flex items-center justify-center gap-2 max-[510px]:scale-90 max-[375px]:scale-[0.80]">
             Our Services
-            <span className='text-[16px] font-bold'><BsFillArrowDownCircleFill /></span>
             </button>
           </a>
           <button className="btn-secondary btn-hover border-[#868687] transition duration-400 hover:shadow-button_secondary flex items-center justify-center gap-2 max-[510px]:scale-90 max-[375px]:scale-[0.80]" onClick={toggleShowForm}>
             Contact
-            <span className='text-[16px]'><BsEnvelopeFill /></span>
           </button>
         </div>
 

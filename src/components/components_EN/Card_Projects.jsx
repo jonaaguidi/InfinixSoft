@@ -22,7 +22,7 @@ const Card_Projects = ({ image, title, subtitle }) => {
         <p className="text-[24px] font-bold">{title}</p>
         <p className="text-center text-[#A1A1A9]">{subtitle}</p>
       </div>
-      <button className="btn-secondary btn-hover flex items-center gap-2 transition duration-400 hover:shadow-button_secondary">View Project
+      <button className="btn-3 btn-hover flex items-center gap-2 transition duration-400 hover:shadow-button_secondary">View Project
       <BsFillRocketFill />
       </button>
     </Tilt>
