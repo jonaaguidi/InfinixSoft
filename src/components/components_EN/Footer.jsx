@@ -19,7 +19,7 @@ const Footer = () => {
       <footer className="w-full flex flex-col items-center justify-center px-28 py-20 bg-[#242427] max-[970px]:px-14 max-[560px]:px-7">
 
         <div className="w-fit mt-16 max-w-[693px] flex flex-col gap-8 z-20">
-          <div className="flex items-center gap-14 text-center max-[620px]:gap-7 max-[510px]:gap-4 max-[430px]:gap-2 max-[455px]:flex-wrap max-[455px]:justify-center max-[455px]:gap-10">
+          <div className="flex items-center gap-14 text-center max-[620px]:gap-7 max-[510px]:gap-4 max-[430px]:gap-2 max-[455px]:flex-wrap max-[455px]:justify-center">
             <div className="flex flex-col gap-3 max-[790px]:scale-90">
               <p className="font-bold text-5xl max-[520px]:text-3xl ">
                 650<span className="text-[#DB3957]">+</span>
@@ -28,13 +28,13 @@ const Footer = () => {
                 Completed Projects
               </p>
             </div>
-            <div className="flex flex-col gap-3 max-[790px]:scale-90">
+            <div className="flex flex-col gap-3 max-[790px]:scale-90 max-[425px]:mr-4">
               <p className="font-bold text-5xl max-[520px]:text-3xl">
                 120<span className="text-[#DB3957]">+</span>
               </p>
               <p className="text-lg font-normal">Clients</p>
             </div>
-            <div className="flex flex-col gap-3 max-[790px]:scale-90">
+            <div className="flex flex-col gap-3 max-[790px]:scale-90 max-[425px]:mt-4 max-[425px]:ml-4">
               <p className="font-bold text-5xl text-center max-[520px]:text-3xl">5</p>
               <p className="text-lg font-normal">Locations</p>
             </div>
