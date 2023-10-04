@@ -104,7 +104,7 @@
   }
 
   .bg-hero {
-    @apply w-full h-screen bg-center bg-cover min-h-[500px] relative z-40;
+    @apply w-full h-screen bg-center bg-cover min-h-[500px] relative z-0;
     background-image: url("/img/Hero/Background_Hero.png");
     background-repeat: no-repeat;
   }
@@ -235,7 +235,7 @@
     background: linear-gradient(#171718, #171718),
       radial-gradient(
         circle,
-        rgba(31, 96, 193, 0.75) 25%,
+        rgba(31, 96, 193, 0.45) 25%,
         rgba(219, 57, 87, 0.80) 140%
       );
     background-clip: padding-box, border-box;
@@ -254,7 +254,7 @@
   }
 
   .shadow-navbar {
-    box-shadow: 1px 1px 12px black;
+    box-shadow: 0px 0px 24px black;
   }
 
   .shadow-form {
@@ -300,7 +300,7 @@
   .hover-underline-animation {
     display: inline-block;
     position: relative;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
     color: white;
   }
 

@@ -1,6 +1,6 @@
 import Card_Projects from "./Card_Projects";
 import { Card_Projects_data } from "../../constants/index_EN";
-import { BsFillArrowDownCircleFill, BsFillPlusCircleFill } from "react-icons/bs";
+import Arrow from "/img/Blog/Arrow_2.svg"
 import { Tooltip } from 'react-tooltip'
 
 const Projects_Cards = () => {
@@ -16,7 +16,7 @@ const Projects_Cards = () => {
                 <a href='#projects-cards'>
                     <button className="btn-primary btn-hover ml-2 transition duration-400 hover:shadow-button flex items-center justify-center gap-2 max-[455px]:scale-[0.92]">
                         See Projects
-                        <span className='text-[16px] font-bold'><BsFillArrowDownCircleFill /></span>
+                        <img className="rotate-90 ml-1" src={Arrow} alt="Arrow"></img>
                     </button>
                 </a>
             </div>
@@ -39,9 +39,7 @@ const Projects_Cards = () => {
                 className="button-primary relative flex items-center justify-center gap-2 max-w-fit transition duration-400 hover:shadow-button"
             >
                 View More
-                <span className="text-[16px] mt-[1px]">
-                    <BsFillPlusCircleFill />
-                </span>
+
             </button>
 
             <Tooltip id="my-tooltip" data-tooltip-id="my-tooltip" data-tooltip-content="Coming Soon.." />

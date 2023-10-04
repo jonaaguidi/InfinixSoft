@@ -4,6 +4,7 @@ import infinix_logo from "/img/favicons/favicon_infinix.ico"
 import Form from "../components_EN/Form"
 import { BannerLogos2 } from "../../constants/index_imgs"
 import { useState } from "react";
+import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
   const [showForm, setShowForm] = useState(false);
@@ -60,10 +61,10 @@ const Footer = () => {
           </button>
         </div>
 
-        <div id="contact" className="w-full flex justify-between items-center px-28 pt-10 border-t-[1px] border-[#DFE0E3] max-[1300px]:flex-col max-[1300px]:gap-6 max-[980px]:px-14 max-[560px]:px-7">
+        <div id="contact" className="w-full flex justify-between items-center px-20 pt-10 border-t-[1px] border-[#DFE0E3] max-[1300px]:flex-col max-[1300px]:gap-6 max-[980px]:px-14 max-[560px]:px-7">
           <p className="text-[#F4F5F6] flex items-center gap-2">
             <img src={infinix_logo} width={24} height={24} alt="logotipo" />
-            Made by InfinixSoft © 2023 
+            Made by InfinixSoft © 2023
           </p>
           <ul className="flex items-center justify-center gap-8 cursor-pointer max-[980px]:flex-wrap max-[980px]:gap-5">
             <li className="hover-underline-animation">
@@ -82,6 +83,18 @@ const Footer = () => {
               <a href="#hero">Terms of Use</a>
             </li>
           </ul>
+          <div className="flex gap-5">
+            <a href="https://www.instagram.com/infinix.soft/" target="_blank" rel="noreferrer">
+              <span className="text-[20px]"><BsInstagram /></span>
+            </a>
+            <a href="https://twitter.com/InfinixSoft" target="_blank" rel="noreferrer">
+              <span className="text-[20px]"><BsTwitter /></span>
+            </a>
+            <a href="https://www.linkedin.com/company/infinixsoft/" target="_blank" rel="noreferrer">
+              <span className="text-[20px]"><BsLinkedin /></span>
+            </a>
+          </div>
+
         </div>
         {showForm && <Form onClose={() => setShowForm(false)} />}
       </footer>

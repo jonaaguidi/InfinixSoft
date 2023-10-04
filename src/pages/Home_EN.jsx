@@ -16,13 +16,17 @@ const Home_EN = () => {
     <>
       <Header />
       <main className="main">
-        <Hero />
+        
+        <Hero /> 
+        
         <Banner />
         <About />
         <Culture />
         <Team />
+        <div id='stars4'></div>
         <Services />
         <Projects />
+        <div id='stars5'></div>
         <Projects_Cards />
         <Partners />
         <Blog />

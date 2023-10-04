@@ -20,7 +20,7 @@ const Blog = () => {
             </div>
 
             <div className="flex justify-between items-center pt-10 pb-20 max-[1360px]:gap-8 max-[1080px]:flex-wrap max-[1080px]:gap-16 max-[1080px]:justify-center max-[500px]:scale-90">
-                <img className="max-[1360px]:scale-[0.85] max-[1080px]:scale-100 max-[840px]:w-[501px]" src={Image} alt="BlogImage" width={558} height={369}></img>
+                <img className="z-10 opacity-100 max-[1360px]:scale-[0.85] max-[1080px]:scale-100 max-[840px]:w-[501px]" src={Image} alt="BlogImage" width={558} height={369}></img>
                 <div className="flex flex-col gap-6">
                     <button className="badge w-fit font-normal flex items-center gap-2 shadow-none">
                         <img src={Icon} alt="Icon" />

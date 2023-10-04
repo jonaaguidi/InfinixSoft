@@ -36,7 +36,7 @@ const Services = () => {
                 <a onClick={handleShowForm}>
                     <button id="started" onClick={handleShowForm} className="btn-primary btn-hover transition duration-400 hover:shadow-button hover:button-light flex items-center justify-center gap-3">
                     Get Started
-                    <span onClick={handleShowForm} className="text-[#fffc62] opacity-80 text-[16px] transition duration-800 hover:opacity-100 hover:scale-110 "><BsLightbulbFill /></span>
+                    <span onClick={handleShowForm} className="text-[#fffc62] opacity-90 text-[16px] transition duration-800 hover:opacity-100 scale-110 "><BsLightbulbFill /></span>
                     </button>
                 </a>
             </div>

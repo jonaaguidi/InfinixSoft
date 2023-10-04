@@ -22,15 +22,6 @@ const Dropdown_Menu = () => {
           </a>
         </li>
 
-        <li role="menuitem">
-          <a
-            href="#culture"
-            className="menuitems"
-            rel='noreferrer'
-          >
-            <p>Culture</p>
-          </a>
-        </li>
 
         <li role="menuitem">
           <a

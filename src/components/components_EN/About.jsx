@@ -7,7 +7,7 @@ const About = () => {
 
     return (
         <section id="about" className="w-fit h-fit mx-auto px-28 py-20 flex items-center justify-between gap-24 max-[1300px]:gap-4 max-[950px]:gap-0 max-[880px]:px-14 max-[675px]:px-7">
-            <div>
+            <div className="z-10">
                 <img width={620} className="rounded-2xl max-[950px]:hidden" src={AboutImage} alt="About"></img>
             </div>
             <div className="flex flex-col justify-center gap-0">
@@ -16,10 +16,17 @@ const About = () => {
                 </div>
 
                 <div className="flex items-center pt-16 gap-16 max-[1384px]:gap-2 max-[1384px]:pt-8 max-[485px]:gap-10 max-[485px]:pt-4 max-[485px]:flex-wrap max-[485px]:justify-center">
-                    <img className="max-[1384px]:scale-75" src={logo1} alt="Upcity"></img>
-                    <img className="max-[1384px]:scale-75" src={logo2} alt="Design Rush"></img>
-                    <img className="max-[1384px]:scale-75"  src={logo3} alt="Clutch"></img>
+                    <a href="https://upcity.com/mobile-app-development/ipad/miami-fl?spotlight=profiles%2Finfinixsoft%2Fmiami" target="_blank" rel="noreferrer">
+                        <img className="max-[1384px]:scale-75 z-10" src={logo1} alt="Upcity" />
+                    </a>
+                    <a href="https://www.designrush.com/agency/profile/infinixsoft" target="_blank" rel="noreferrer">
+                        <img className="max-[1384px]:scale-75 z-10" src={logo2} alt="Design Rush" />
+                    </a>
+                    <a href="https://clutch.co/profile/infinixsoft#highlights" target="_blank" rel="noreferrer">
+                        <img className="max-[1384px]:scale-75 z-10" src={logo3} alt="Clutch" />
+                    </a>
                 </div>
+
 
             </div>
         </section>

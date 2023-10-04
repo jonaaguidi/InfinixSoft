@@ -110,7 +110,7 @@ const Projects = () => {
       <div id="Bombo_Project" className="flex items-center justify-center pt-24 max-[1210px]:scale-90 max-[1040px]:flex-col max-[1040px]:scale-100 max-[1040px]:flex-col-reverse">
         
         <div>
-          <img className="scale-105" src={BomboImage} width={605} height={556} />
+          <img className="scale-110" src={BomboImage} width={605} height={556} />
         </div>
 
         <div className="max-w-[546px] flex flex-col flex-end gap-10 max-[1440px]:scale-[0.90] max-[1040px]:scale-[0.85]">

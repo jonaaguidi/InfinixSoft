@@ -1,4 +1,4 @@
-import { BsFillArrowDownCircleFill } from "react-icons/bs";
+import Arrow from "/img/Blog/Arrow_2.svg"
 import { Culture_cards } from "../../constants/index_EN";
 
 const Culture = () => {
@@ -15,7 +15,7 @@ const Culture = () => {
         <a href='#services'>
           <button className="btn-primary btn-hover ml-3 transition duration-400 hover:shadow-button flex items-center justify-center gap-2 max-[455px]:scale-[0.92]">
             Our Services
-            <span className='text-[16px] font-bold'><BsFillArrowDownCircleFill /></span>
+            <img className="rotate-90 ml-1" src={Arrow} alt="Arrow"></img>
           </button>
         </a>
       </div>
