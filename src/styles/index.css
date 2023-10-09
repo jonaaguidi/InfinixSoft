@@ -103,72 +103,20 @@
     transform: translateY(-6px) rotate(-45deg);
   }
 
-  .bg-hero {
-    @apply w-full h-screen bg-center bg-cover min-h-[500px] relative z-0;
-    background-image: url("/img/Hero/Background_Hero.png");
-    background-repeat: no-repeat;
-  }
-
-  .bg-hero::after {
-    @apply absolute top-0 left-0 w-full h-full;
+  .overlayHero::before {
     content: "";
-    background: linear-gradient(
-      180deg,
-      #0c0c0d 8.97%,
-      rgba(12, 12, 13, 0.86) 23.96%,
-      rgba(12, 12, 13, 0.46) 58.33%,
-      rgba(12, 12, 13, 0.79) 85.94%,
-      #0c0c0d 97.92%
-    );
-    z-index: 1;
-  }
-
-  .flags {
-    @apply cursor-pointer opacity-80;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .flags:hover {
-    opacity: 1;
-    transform: scale(1.09);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 88vh;
+    background: linear-gradient(180deg, #171718 8.85%, rgba(23, 23, 24, 0.86) 23.96%, rgba(12, 12, 13, 0.46) 58.33%, rgba(23, 23, 24, 0.79) 85.94%, #171718 97.92%);
+    background-size: cover;
+    opacity: 0.99; 
   }
   
   .menuitems {
     @apply flex items-center cursor-pointer py-3 px-4 rounded-lg hover:bg-black hover:text-[#DB3957] focus:bg-black focus:text-[#DB3957] active:bg-black active:text-[#DB3957];
-  }
-
-  .button-primary {
-    display: inline-block;
-    padding: 18px 32px;
-    border: 2px solid transparent;
-    border-radius: 999px;
-    background-color: transparent;
-    background: linear-gradient(#1f1f22, #131315),
-      linear-gradient(
-        to right,
-        rgba(219, 57, 87, 0.65),
-        rgba(219, 57, 87, 0.75),
-        rgba(219, 57, 87, 0.65)
-      );
-    background-clip: padding-box, border-box;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-    overflow: hidden;
-  }
-
-  .button-secondary {
-    display: inline-block;
-    padding: 18px 32px;
-    border: 2px solid #868687;
-    border-radius: 999px;
-    background-color: transparent;
-    background: linear-gradient(#1f1f22, #131315);
-    background-clip: padding-box, border-box;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-    overflow: hidden;
   }
 
   .badge {
@@ -252,17 +200,13 @@
   .z-max {
     z-index: 999;
   }
-
-  .shadow-navbar {
-    box-shadow: 0px 0px 24px black;
-  }
-
+  
   .shadow-form {
     box-shadow: 0px 0px 8px #db3957;
   }
 
-  .shadow-button {
-    box-shadow: 0px 0px 6px #db3957;
+  .shadow-opacity {
+    background: rgba(182, 182, 182, 0.28); 
   }
   
   .shadow-button_secondary {

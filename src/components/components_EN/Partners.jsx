@@ -3,7 +3,7 @@ import { Clients } from "../../constants/index_imgs"; // Data de Clients
 
 const Partners = () => {
     return (
-        <section className="w-full flex flex-col justify-center items-center mx-auto py-20">
+        <section className="w-full z-max flex flex-col justify-center items-center mx-auto py-20 pb-60">
             <div className="max-w-[838px] py-20 mx-auto flex flex-col justify-center items-center max-[1024px]:py-10 max-[810px]:px-14 max-[510px]:px-7">
                 <p className="badge py-3 px-6 text-[12px] text-center font-semibold text-white mb-2 max-[1024px]:scale-[0.88]">OUR PARTNERS</p>
                 <h2 className="max-w-[888px] text-[#FCFCFD] leading-[58px] font-bold text-[52px] text-center pb-3 max-[1024px]:text-[32px] max-[1024px]:leading-[40px] max-[455px]:text-[24px] max-[455px]:leading-8">
@@ -13,7 +13,7 @@ const Partners = () => {
                     InfinixSoft offers games, business and product development  (web, mobile, social and internet technologies)  to startup and enterprise clients.
                 </h4>
             </div>
-            <div className="flex flex-col gap-20 scale-90 max-[1024px]:scale-[0.65]">
+            <div className="flex flex-col gap-20 scale-90 max-[1024px]:scale-[0.65] overflow-hidden">
                 <Marquee
                     direction="right"
                     speed={45}

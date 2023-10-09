@@ -140,7 +140,7 @@ const Form = ({ onClose }) => {
                     </div>
 
                     {/* Button "Send" */}
-                    <button className="btn-secondary btn-hover w-[236px] transition duration-600 hover:shadow-button_secondary flex items-center justify-center gap-3">
+                    <button  className="btn-secondary btn-hover w-[236px] transition duration-600 hover:shadow-button_secondary flex items-center justify-center gap-3">
                         Send Email
                         <span className='text-[18px]'><BsEnvelopeFill /></span>
                     </button>
@@ -151,6 +151,7 @@ const Form = ({ onClose }) => {
 
             {/* Close Button Desktop */}
             <button
+                type='submit'
                 onClick={handleClose}
                 className="flex px-3 py-1.5 self-start mt-40 cursor-pointer transition duration-400 hover:scale-105 max-[1292px]:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="#a1a1a9" height="16px" width="16px" version="1.1" id="Capa_1" viewBox="0 0 460.775 460.775">

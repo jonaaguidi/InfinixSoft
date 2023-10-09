@@ -4,9 +4,9 @@ $anim-duration: 3.3; // in seconds
 $anim-speed: 0.7; // in seconds
 
 :root {
-  --btn-border: 2px solid rgba(219, 57, 87, 0.65);
+  --btn-border: 1.18px solid #6F7284;
   --btn-border_2: 2px solid #A1A1A9;
-  --btn-bg: linear-gradient(#1f1f22, #131315); // #333
+  --btn-bg: rgba(182, 182, 182, 0.15); 
   --btn-text-color: #f4f4f4;
 
   --shine-degree: 120deg;
@@ -28,13 +28,14 @@ $anim-speed: 0.7; // in seconds
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
-  font-size: 14px;
-  padding: 18px 32px;
-  border-radius: 999px;
+  font-size: 15px;
+  padding: 17px 22px;
+  border-radius: 45.4px;
   text-decoration: none;
   border: var(--btn-border);
   color: var(--btn-text-color);
   background: var(--btn-bg);
+  font-weight: 400;
 
   &::before {
     content: "";

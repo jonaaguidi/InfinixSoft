@@ -6,7 +6,6 @@ import Home_BR from './pages/Home_BR.jsx'
 import Projects from "./pages/Projects.jsx"
 import './styles/index.css'
 import './styles/buttons.scss'
-import './styles/background.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -1,73 +1,45 @@
-import { useState, useEffect, useRef } from 'react';
-import Typed from 'typed.js';
+import { useState } from 'react';
 import Form from "../components_EN/Form";
 import Arrow from "/img/Blog/Arrow_2.svg"
+import Video from "/img/Hero/backgroundHero.mp4"
 
 const Hero = () => {
 
-  // Estado para abrir y cerrar el Dropdown del Holding
+  // Estado para abrir y cerrar el Form
   const [showForm, setShowForm] = useState(false);
 
-  // Función abrir/cerrar dropdown del Holding
+  // Función para abrir/cerrar el Form.
   const toggleShowForm = () => {
     setShowForm(!showForm);
   };
 
-  // Typed.js 
-  const titleRef = useRef(null);
-
-  useEffect(() => {
-    const options = {
-      strings: [
-        'Your Dream, Our<span id="span">&nbsp;Dev.</span>',
-        'We Are Infinix<span id="span">Soft.</span>', // Lista de Textos
-      ],
-      contentType: 'html',
-      typeSpeed: 80,
-      backSpeed: 80,
-      backDelay: 1500,
-      startDelay: 300,
-      loop: true,
-      showCursor: false,
-    };
-
-
-    const typed = new Typed(titleRef.current, options);
-
-    return () => {
-      typed.destroy();
-    };
-  }, []);
-
   return (
     <>
-      <div id='stars'></div>
-      <div id='stars2'></div>
-      <div id='stars3'></div>
-      <section id='hero' className="bg-hero h-[90vh] flex items-center justify-center">
+      <section id='hero' className="z-20 h-[85vh] flex flex-col justify-center items-center relative">
 
-        <div className="flex flex-col items-center z-20 w-[576px]">
-          <div className="py-8">
-            <h1 ref={titleRef} className="h-[72px] text-center text-[52px] text-[#F4F5F6] font-bold pb-2 flex items-center justify-center max-[580px]:text-[32px] max-[580px]:px-4 max-[364px]:text-[28px]"></h1>
-            <h5 className="text-center text-xl text-[#F4F5F6] max-[580px]:text-[14px] max-[580px]:px-10">Discover how InfinixSoft can help you create the <span className='font-semibold'>Perfect Strategy</span> for your business.</h5>
-          </div>
+        <video id="video" className='absolute top-0 left-0 object-cover w-full h-full' preload={"auto"} muted autoPlay={"autoplay"} loop >
+          <source src={Video} type="video/mp4" />
+        </video>
+        <div className="overlayHero"></div>
 
-          <div className="flex gap-10 items-center justify-center max-[580px]:gap-8 max-[420px]:gap-2 max-[375px]:gap-0">
-            <a href='#services'>
-              <button className="btn-primary btn-anim btn-hover transition duration-400 hover:shadow-button flex items-center justify-center gap-2 max-[510px]:scale-90 max-[375px]:scale-[0.80]">
-                Our Services
-                <img className="rotate-90 ml-1" src={Arrow} alt="Arrow"></img>
-              </button>
-            </a>
-            <button className="btn-secondary btn-hover border-[#868687] transition duration-400 hover:shadow-button_secondary flex items-center justify-center gap-2 max-[510px]:scale-90 max-[375px]:scale-[0.80]" onClick={toggleShowForm}>
-              Contact
-            </button>
+        <div className="flex flex-col items-center z-20 w-full text-center text-white">
+          <div className="py-10">
+            <h1 className="text-[52px] leading-[120%] font-bold pb-3 flex items-center justify-center max-w-[666px] mx-auto text-shadow-md">Evolving Your Ideas Into Impactful Digital Solutions</h1>
+            <h5 className="text-[20px] leading-[150%] max-w-[530px] mx-auto text-shadow-md">Your trusted partner in designing, developing, launching, and maintaining technology-driven growth.</h5>
           </div>
+          <button
+            onClick={toggleShowForm}
+            className="btn-primary btn-hover transition duration-400 hover:shadow-opacity flex items-center justify-center gap-2 max-w-[300px]"
+          >
+            Book a Free Consultation
+            <img className="ml-1" src={Arrow} alt="Arrow"></img>
+          </button>
+
         </div>
 
-        {showForm && <Form onClose={() => setShowForm(false)} />}
-
       </section>
+
+      {showForm && <Form onClose={() => setShowForm(false)} />}
 
     </>
   )
