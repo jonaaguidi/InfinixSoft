@@ -5,44 +5,36 @@ import Atlassian from "/img/Banner/Atlassian.png"
 import AWS from "/img/Banner/AWS.png"
 import HubSpot from "/img/Banner/HubSpot.png"
 import Isotipo from "/img/Banner/isotipo.png"
-import Magento from "/img/Banner/Magento.svg"
-import Shopify from "/img/Banner/Shopify.png"
-import Stellar from "/img/Banner/Stellar.png"
+import TravelX from "/img/Banner/travelX.svg"
+import Stellar from "/img/Banner/stellar.svg"
 
 
 const BannerLogos = [
-  {
-    name: 'Magento',
-    icon: Magento,
-  },
   {
     name: 'HubSpot',
     icon: HubSpot,
   },
   {
-    name: 'Isotipo',
-    icon: Isotipo,
+    name: 'TravelX',
+    icon: TravelX,
   },
   {
     name: 'Atlassian',
     icon: Atlassian,
   },
   {
-    name: 'Shopify',
-    icon: Shopify,
-  },
-  {
-    name: 'AWS',
-    icon: AWS,
-  },
-  {
-    name: 'OpenAI',
-    icon: OpenAI,
+    name: 'Isotipo',
+    icon: Isotipo,
   },
   {
     name: 'Stellar',
     icon: Stellar,
   },
+  {
+    name: 'AWS',
+    icon: AWS,
+  },
+
 ];
 
 export { BannerLogos };

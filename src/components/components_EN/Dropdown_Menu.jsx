@@ -1,9 +1,9 @@
 const Dropdown_Menu = () => {
   return (
     <nav className="animate-fade-up animate-duration-[650ms] animate-delay-25 w-fit opacity-90 absolute bg-[#171718] shadow-navbar p-2 rounded-lg top-24 right-24 max-[469px]:right-12 max-[880px]:right-4">
-      <ul className="w-fit flex flex-col rounded-lg items-center font-semibold" role="menu">
+      <ul className="w-fit flex flex-col rounded-lg items-center font-normal text-[14px]" role="menu">
 
-        <li role="menuitem">
+      <li role="menuitem">
           <a
             href="/#hero"
             className="menuitems"
@@ -15,21 +15,20 @@ const Dropdown_Menu = () => {
 
         <li role="menuitem">
           <a
-            href="#about"
-            className="menuitems"
-            rel='noreferrer'>
-            <p>About</p>
-          </a>
-        </li>
-
-
-        <li role="menuitem">
-          <a
-            href="#projects"
+            href="/#projects"
             className="menuitems"
             rel='noreferrer'
           >
-            <p>Projects</p>
+            <p>Case Studies</p>
+          </a>
+        </li>
+
+        <li role="menuitem">
+          <a
+            href="#services"
+            className="menuitems"
+            rel='noreferrer'>
+            <p>Our Services</p>
           </a>
         </li>
 

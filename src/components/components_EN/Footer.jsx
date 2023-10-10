@@ -1,10 +1,10 @@
-import WaveSection from "../components_EN/Wave";
-import Arrow from "/img/Blog/Arrow_2.svg"
+// import Wave from "/img/Wave/Wave.svg"
+import Arrow from "/img/Services/Arrow_2.svg"
 import infinix_logo from "/img/favicons/favicon_infinix.ico"
 import Form from "../components_EN/Form"
 import { BannerLogos2 } from "../../constants/index_imgs"
 import { useState } from "react";
-import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
+// import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
   const [showForm, setShowForm] = useState(false);
@@ -16,8 +16,7 @@ const Footer = () => {
 
   return (
     <>
-      <WaveSection />
-      <footer className="w-full flex flex-col items-center justify-center px-28 py-20 bg-[#242427] max-[970px]:px-14 max-[560px]:px-7">
+      <footer className="w-full flex flex-col items-center justify-center px-28 py-20 bg-[#171718] max-[970px]:px-14 max-[560px]:px-7">
 
         <div className="w-fit mt-16 max-w-[693px] flex flex-col gap-8 z-20">
           <div className="flex items-center gap-14 text-center max-[620px]:gap-7 max-[510px]:gap-4 max-[430px]:gap-2 max-[455px]:flex-wrap max-[455px]:justify-center">
@@ -83,17 +82,6 @@ const Footer = () => {
               <a href="#hero">Terms of Use</a>
             </li>
           </ul>
-          <div className="flex gap-5">
-            <a href="https://www.instagram.com/infinix.soft/" target="_blank" rel="noreferrer">
-              <span className="text-[20px]"><BsInstagram /></span>
-            </a>
-            <a href="https://twitter.com/InfinixSoft" target="_blank" rel="noreferrer">
-              <span className="text-[20px]"><BsTwitter /></span>
-            </a>
-            <a href="https://www.linkedin.com/company/infinixsoft/" target="_blank" rel="noreferrer">
-              <span className="text-[20px]"><BsLinkedin /></span>
-            </a>
-          </div>
 
         </div>
         {showForm && <Form onClose={() => setShowForm(false)} />}
@@ -104,3 +92,16 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+          {/* REDES SOCIALES <div className="flex gap-5">
+            <a href="https://www.instagram.com/infinix.soft/" target="_blank" rel="noreferrer">
+              <span className="text-[20px]"><BsInstagram /></span>
+            </a>
+            <a href="https://twitter.com/InfinixSoft" target="_blank" rel="noreferrer">
+              <span className="text-[20px]"><BsTwitter /></span>
+            </a>
+            <a href="https://www.linkedin.com/company/infinixsoft/" target="_blank" rel="noreferrer">
+              <span className="text-[20px]"><BsLinkedin /></span>
+            </a>
+          </div> */}

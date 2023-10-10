@@ -22,14 +22,9 @@ $anim-speed: 0.7; // in seconds
 
 .btn-primary {
   position: relative;
-  overflow: hidden; // debug
-
-  // last element should not have margin
-  &:not(:last-child) {
-    margin-bottom: 3rem;
-  }
-  font-size: 15px;
-  padding: 17px 22px;
+  overflow: hidden;
+  font-size: 14px;
+  padding: 14px 22px;
   border-radius: 45.4px;
   text-decoration: none;
   border: var(--btn-border);

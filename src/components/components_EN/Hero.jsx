@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Form from "../components_EN/Form";
-import Arrow from "/img/Blog/Arrow_2.svg"
+import Arrow from "/img/Services/Arrow_2.svg"
 import Video from "/img/Hero/backgroundHero.mp4"
 
 const Hero = () => {
@@ -32,7 +32,7 @@ const Hero = () => {
             className="btn-primary btn-hover transition duration-400 hover:shadow-opacity flex items-center justify-center gap-2 max-w-[300px]"
           >
             Book a Free Consultation
-            <img className="ml-1" src={Arrow} alt="Arrow"></img>
+            <img className="ml-1 w-4" src={Arrow} alt="Arrow"></img>
           </button>
 
         </div>

@@ -19,8 +19,8 @@ const Home_EN = () => {
         <About />
         <Culture />
         <Team />
-        <Services />
         <Projects />
+        <Services />
         <Partners />
       </main>
       <Footer />

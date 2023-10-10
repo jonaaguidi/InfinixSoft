@@ -23,7 +23,7 @@ const Form = ({ onClose }) => {
 
 
     return (
-        <div className={`fixed overflow-y-auto z-[990] top-0 left-0 w-screen h-screen bg-[#171718] px-24 flex gap-16 justify-center items-center transition-wipe-in-down ${shouldAnimateOut ? 'transition-wipe-out-up' : ''} max-[1292px]:flex-col max-[1292px]:items-center max-[1292px]:justify-start max-[1292px]:top-24 max-[1292px]:pb-48 max-[830px]:px-14 max-[672px]:px-7 max-[420px]:gap-8`}>
+        <div className={`fixed overflow-y-auto z-[990] top-0 left-0 w-screen h-screen bg-[#171718] px-24 flex gap-16 justify-center items-center transition-wipe-in-down ${shouldAnimateOut ? 'transition-wipe-out-up' : ''} max-[1292px]:flex-col max-[1292px]:items-center max-[1292px]:justify-start max-[1292px]:top-0 max-[1292px]:pb-48 max-[830px]:px-14 max-[672px]:px-7 max-[420px]:gap-8`}>
 
             {/* Text "Contact" */}
             <div className='bg-transparent p-10 rounded-lg max-[502px]:px-4 max-[455px]:px-0'>
@@ -73,7 +73,7 @@ const Form = ({ onClose }) => {
             </div>
 
             {/* Formulario */}
-            <div className="w-[496px] h-fit bg-transparent shadow-form p-10 rounded-lg relative top-6 border-[2px] border-[#db3957] border-opacity-70 max-[586px]:w-[396px] max-[501px]:w-[328px] max-[420px]:w-[296px] max-[442px]:top-2 max-[442px]:top-2">
+            <div className="w-[496px] h-fit bg-transparent shadow-form p-10 rounded-lg relative top-6 border-[2px] border-[#db3957] border-opacity-70 max-[586px]:w-[396px] max-[501px]:w-[328px] max-[420px]:w-[296px] max-[442px]:top-2">
                 <div className='flex items-center justify-center pb-10 max-[442px]:pb-8'>
                     <img src={Logo} alt='Logotype' />
                 </div>

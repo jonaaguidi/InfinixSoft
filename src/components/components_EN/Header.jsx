@@ -1,20 +1,29 @@
 import { useEffect, useState } from "react";
 import Logo from "/img/Header/logo.svg"
 import Arrow from "/img/Header/arrow_dropdown.svg"
+import Arrow2 from "/img/Services/Arrow_2.svg"
 import Dropdown_Holding from "./Dropdown_Holding.jsx";
 import Dropdown_Lang from "./Dropdown_Lang.jsx";
 import Dropdown_Menu from "./Dropdown_Menu";
 import Dubai from "./Dubai.jsx";
+import Form from "./Form.jsx";
 
 
 const Header = () => {
 
-  // Estado para abrir y cerrar el Dropdown del Holding
+  // Estado para abrir y cerrar el Dropdown del Holding.
   const [showDropdownHolding, setShowDropdownHolding] = useState(false);
   // Estado para abrir y cerrar el Dropdown del LANG.
   const [showDropdownLang, setShowDropdownLang] = useState(false);
   // Estado para abrir y cerrar el Dropdown del Menú.
   const [showDropdownMenu, setShowDropdownMenu] = useState(false);
+  // Estado para abrir y cerrar el Form de Contacto.
+  const [showForm, setShowForm] = useState(false);
+
+  // Función para abrir/cerrar el Form de Contacto.
+  const toggleShowForm = () => {
+    setShowForm(!showForm);
+  };
 
   // Función abrir/cerrar dropdown del Holding
   const toggleDropdownHolding = () => {
@@ -77,33 +86,51 @@ const Header = () => {
           <img className="relative p-2 mt-1 opacity-70 hover:bg-[#303035] hover:rounded-lg hover:opacity-100 cursor-pointer max-[580px]:p-2 max-[420px]:w-8" src={Arrow} alt="arrow" onClick={toggleDropdownHolding} />
           {showDropdownHolding && <Dropdown_Holding />}
         </div>
-    
-
-        <div className="flex items-center z-50 gap-4 mt-2 max-[580px]:gap-3 max-[470px]:gap-2 max-[400px]:gap-0">
-          <div onClick={toggleDropdownLang} className="flex items-center justify-center gap-2 cursor-pointer">
-            <p className="text-[14px] font-normal">English (US)</p>
-            <img className="relative px-1 opacity-60 hover:opacity-100 cursor-pointer max-[580px]:p-2 max-[420px]:w-8" src={Arrow} alt="arrow"  />
-          </div>
-          {showDropdownLang && <Dropdown_Lang />}
 
 
-          <div className="ml-12 cursor-pointer max-[580px]:ml-6 min-[650px]:hidden">
-            <div
-              className={`menu-button ${showDropdownMenu ? 'open' : ''}`}
-              onClick={() => {
-                toggleDropdownMenu();
-              }}
-            >
-              <div className="menu-icon ">
-                <span className={`span-1 ${showDropdownMenu ? 'open-span-1' : ''}`}></span>
-                <span className={`span-2 ${showDropdownMenu ? 'open-span-2' : ''}`}></span>
-                <span className={`span-3 ${showDropdownMenu ? 'open-span-3' : ''}`}></span>
+        <nav className="flex items-center z-50 gap-10 mt-2 max-[580px]:gap-3 max-[470px]:gap-2 max-[400px]:gap-0">
+          <ul className="flex items-center gap-10 max-[580px]:gap-3 max-[470px]:gap-2 max-[400px]:gap-0 list-none p-0 m-0">
+            <li className="hover-underline-animation mt-2 max-[650px]:hidden">
+              <a href="#projects" className="text-[14px] font-normal cursor-pointer">Case Studies</a>
+            </li>
+            <li className="hover-underline-animation mt-2 max-[650px]:hidden">
+              <a href="#services" className="text-[14px] font-normal cursor-pointer ">Our Services</a>
+            </li>
+            <li className="max-[650px]:hidden">
+              <button
+                onClick={toggleShowForm}
+                className="btn-primary btn-hover transition duration-400 hover:shadow-opacity flex items-center justify-center gap-1 max-w-[300px]"
+              >
+                Contact Us
+                <img className="ml-1 w-3.5" src={Arrow2} alt="Arrow"></img>
+              </button>
+              {showForm && <Form onClose={() => setShowForm(false)} />}
+            </li>
+            <li className="max-[650px]:hidden">
+              <div onClick={toggleDropdownLang} className="flex items-center justify-center gap-2 cursor-pointer">
+                <p className="text-[14px] font-normal">English (US)</p>
+                <img className="relative px-1 opacity-60 hover:opacity-100 cursor-pointer max-[580px]:p-2 max-[420px]:w-8" src={Arrow} alt="arrow" />
               </div>
-            </div>
-            {showDropdownMenu && <Dropdown_Menu />}
-          </div>
+              {showDropdownLang && <Dropdown_Lang />}
+            </li>
+            <li className="ml-12 cursor-pointer max-[580px]:ml-6 min-[650px]:hidden">
+              <div
+                className={`menu-button ${showDropdownMenu ? 'open' : ''}`}
+                onClick={() => {
+                  toggleDropdownMenu();
+                }}
+              >
+                <div className="menu-icon ">
+                  <span className={`span-1 ${showDropdownMenu ? 'open-span-1' : ''}`}></span>
+                  <span className={`span-2 ${showDropdownMenu ? 'open-span-2' : ''}`}></span>
+                  <span className={`span-3 ${showDropdownMenu ? 'open-span-3' : ''}`}></span>
+                </div>
+              </div>
+              {showDropdownMenu && <Dropdown_Menu />}
+            </li>
+          </ul>
+        </nav>
 
-        </div>
       </header>
     </>
   );

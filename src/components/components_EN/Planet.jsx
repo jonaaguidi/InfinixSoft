@@ -16,6 +16,7 @@ const Planet = () => {
             theta: 0,
             dark: 1,
             diffuse: 2,
+            scale: 0.9,
             mapSamples: 12000,
             mapBrightness: 6,
             baseColor: [0.3, 0.3, 0.3],
@@ -42,7 +43,7 @@ const Planet = () => {
     return (
         <div className="relative z-10">
             <div className="absolute inset-0">
-                <div className="rounded-full bg-[#DB3957] blur-[180px] opacity-20 w-full h-full"></div>
+                <div className="rounded-full bg-[#DB3957] blur-[148px] opacity-30 w-full h-full"></div>
             </div>
             <canvas
                 ref={canvasRef}
