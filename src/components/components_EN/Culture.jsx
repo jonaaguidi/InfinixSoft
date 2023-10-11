@@ -1,7 +1,18 @@
 import Arrow from "/img/Services/Arrow_2.svg"
 import { Culture_cards } from "../../constants/index_EN";
+import { useState } from "react";
+import Form from "./Form";
 
 const Culture = () => {
+
+  // Estado para abrir y cerrar el Form
+  const [showForm, setShowForm] = useState(false);
+
+  // Función para abrir/cerrar el Form.
+  const toggleShowForm = () => {
+    setShowForm(!showForm);
+  };
+
   return (
     <section id="culture" className="w-full bg-culture py-20 px-28 flex flex-col items-start justify-center max-[1000px]:px-14 max-[425px]:px-7">
 
@@ -31,17 +42,18 @@ const Culture = () => {
 
       <div className="w-full flex flex-col gap-4 items-center justify-center py-16">
         <p className="text-[32px] font-bold">Start Infinix, today.</p>
-        <a href='#services'>
-          <button
-            className="btn-primary btn-hover transition duration-400 hover:shadow-opacity flex items-center justify-center gap-2 max-w-[300px]"
-          >
-            Book a Free Consultation
-            <img className="ml-1 w-4" src={Arrow} alt="Arrow"></img>
-          </button>
-        </a>
+
+        <button
+          onClick={toggleShowForm}
+          className="btn-primary btn-hover transition duration-400 hover:shadow-opacity flex items-center justify-center gap-2 max-w-[300px]"
+        >
+          Book a Free Consultation
+          <img className="ml-1 w-4" src={Arrow} alt="Arrow"></img>
+        </button>
+
       </div>
 
-
+      {showForm && <Form onClose={() => setShowForm(false)} />}
 
     </section>
   );
