@@ -79,7 +79,7 @@ const Header = () => {
       <Dubai />
       <header className="w-full h-fit z-max bg-transparent opacity-100 px-28 py-5 flex justify-between items-center max-[880px]:px-14 max-[675px]:px-7 max-[675px]:py-6">
 
-        <div className="flex gap-[18px] z-50 items-center max-[500px]:gap-2">
+        <div className="flex gap-[18px] z-50 items-center max-[500px]:gap-2 max-[410px]:gap-1">
           <a href="#hero">
             <img src={Logo} width={201} height={42} alt="InfinixSoft" className="max-[580px]:w-40 max-[440px]:w-32 max-[420px]:w-30 max-[375px]:w-28 max-[360px]:w-24" />
           </a>
@@ -90,13 +90,13 @@ const Header = () => {
 
         <nav className="flex items-center z-50 gap-10 mt-2 max-[580px]:gap-3 max-[470px]:gap-2 max-[400px]:gap-0">
           <ul className="flex items-center gap-10 max-[580px]:gap-3 max-[470px]:gap-2 max-[400px]:gap-0 list-none p-0 m-0">
-            <li className="hover-underline-animation mt-2 max-[650px]:hidden">
+            <li className="hover-underline-animation mt-2 max-[1075px]:hidden">
               <a href="#projects" className="text-[14px] font-normal cursor-pointer">Case Studies</a>
             </li>
-            <li className="hover-underline-animation mt-2 max-[650px]:hidden">
+            <li className="hover-underline-animation mt-2 max-[1075px]:hidden">
               <a href="#services" className="text-[14px] font-normal cursor-pointer ">Our Services</a>
             </li>
-            <li className="max-[650px]:hidden">
+            <li className="max-[1075px]:hidden">
               <button
                 onClick={toggleShowForm}
                 className="btn-primary btn-hover transition duration-400 hover:shadow-opacity flex items-center justify-center gap-1 max-w-[300px]"
@@ -106,14 +106,14 @@ const Header = () => {
               </button>
               {showForm && <Form onClose={() => setShowForm(false)} />}
             </li>
-            <li className="max-[650px]:hidden">
-              <div onClick={toggleDropdownLang} className="flex items-center justify-center gap-2 cursor-pointer">
-                <p className="text-[14px] font-normal">English (US)</p>
+            <li className="">
+              <div onClick={toggleDropdownLang} className="flex items-center justify-center gap-2 cursor-pointer max-[1050px]:gap-1">
+                <p className="text-[14px] font-normal max-[480px]:text-[12px]">English (US)</p>
                 <img className="relative px-1 opacity-60 hover:opacity-100 cursor-pointer max-[580px]:p-2 max-[420px]:w-8" src={Arrow} alt="arrow" />
               </div>
               {showDropdownLang && <Dropdown_Lang />}
             </li>
-            <li className="ml-12 cursor-pointer max-[580px]:ml-6 min-[650px]:hidden">
+            <li className="cursor-pointer min-[1075px]:hidden">
               <div
                 className={`menu-button ${showDropdownMenu ? 'open' : ''}`}
                 onClick={() => {

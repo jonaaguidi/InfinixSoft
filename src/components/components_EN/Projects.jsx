@@ -15,12 +15,29 @@ import { SiEthereum } from "react-icons/si"
 import { FaEarthAmericas } from "react-icons/fa6"
 import { BiLeaf, BiNetworkChart } from "react-icons/bi"
 import Arrow from "/img/Services/Arrow_2.svg"
+import { useEffect, useState } from "react"
 
 
 
 const Projects = () => {
+
+  // Resize de los difuminados
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <section id="projects" className="max-w-[1220px] mx-auto py-20 pb-60 max-[1024px]:py-10 max-[860px]:px-14 max-[480px]:px-7">
+    <section id="projects" className="max-w-[1220px] mx-auto py-20 pb-60 mb-10 max-[1024px]:py-10 max-[860px]:px-14 max-[480px]:px-7">
 
       <div className="max-w-[838px] z-[990] py-20 mx-auto flex flex-col justify-center items-center max-[1024px]:py-10">
         <p className="badge w-fit font-normal mb-2">WORK SHOWCASE</p>
@@ -32,12 +49,13 @@ const Projects = () => {
         </h4>
       </div>
 
-      <div id="Bombo_Project" className="flex items-center justify-center max-[1210px]:scale-90 max-[1040px]:scale-100 max-[1040px]:flex-col-reverse">
+      <div id="Bombo_Project" className="flex items-center justify-center gap-2 max-[1210px]:scale-90 max-[1040px]:scale-100 max-[1040px]:flex-col-reverse">
 
 
         <div className="relative z-[990]" >
-          <div className="absolute left-32 top-12 inset-0 rounded-[999px] bg-[#D78E27] blur-[174px] opacity-90 w-[396px] h-[368px]"></div>
-          <img className="scale-110 " src={BomboImage} width={605} height={556} />
+          <div className={`absolute left-[68px] inset-0 rounded-[999px] bg-[#d78e27] blur-[126px] opacity-80 ${windowWidth < 620 ? "top-16 w-[286px] h-[268px]" : "top-24 w-[386px] h-[368px]"
+            }`}></div>
+          <img className="scale-[1.28]" src={BomboImage} width={605} height={556} />
         </div>
 
         <div className="max-w-[546px] flex flex-col flex-end gap-10 max-[1440px]:scale-[0.90] max-[1040px]:scale-[0.85]">
@@ -112,7 +130,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div id="Biotoken" className="flex items-center justify-center gap-0 pt-28 max-[1210px]:scale-90 max-[1040px]:flex-col max-[1040px]:scale-100" >
+      <div id="Biotoken" className="flex items-center justify-center gap-3 pt-28 max-[1210px]:scale-90 max-[1040px]:flex-col max-[1040px]:scale-100" >
 
         <div className="max-w-[546px] flex flex-col flex-end gap-10 max-[1440px]:scale-[0.90] max-[1040px]:scale-[0.85]">
 
@@ -182,17 +200,21 @@ const Projects = () => {
         </div>
 
         <div className="relative z-[990] flex items-center justify-center" >
-          <div className="absolute left-[146px] top-32 inset-0 rounded-[999px] bg-[#7DE972] blur-[196px] opacity-90 w-[396px] h-[368px]"></div>
-          <img alt="biotoken" className="scale-95 pt-5 pl-20 max-[1240px]:scale-90" src={BiotokenImage} width={562} height={589} />
+          <div
+            className={`absolute inset-0 rounded-[999px] bg-[#7DE972] blur-[126px] opacity-80 ${windowWidth < 620 ? "top-10 left-[60px] w-[268px] h-[268px]" : "left-[100px] top-24 w-[386px] h-[368px]"
+              }`}
+          ></div>
+          <img alt="biotoken"  className={`scale-100 pt-5 ${windowWidth < 440 ? "pl-10" : "pl-16"} pr-10 max-[1240px]:scale-95`} src={BiotokenImage} width={562} height={589} />
         </div>
 
       </div>
 
-      <div id="Future" className="flex items-center justify-center gap-0 pt-28 max-[1210px]:scale-90 max-[1040px]:flex-col max-[1040px]:scale-100" >
+      <div id="Future" className="flex items-center justify-center gap-5 pt-28 max-[1210px]:scale-90 max-[1040px]:flex-col-reverse max-[1040px]:scale-100" >
 
-        <div className="relative z-[990] flex items-center justify-center" >
-          <div className="absolute left-[100px] top-32 inset-0 rounded-[999px] bg-[#99ACC8] blur-[196px] opacity-90 w-[396px] h-[368px]"></div>
-          <img className="scale-110 pb-20 pr-20 max-[1240px]:scale-90 " src={FutureImage} width={605} height={556} />
+        <div className="relative z-[990] flex items-center justify-center">
+          <div className={`absolute left-[80px] top-20 inset-0 rounded-[999px] bg-[#99ACC8] blur-[126px] opacity-80 ${windowWidth < 620 ? "w-[286px] h-[216px]" : "w-[386px] h-[368px]"
+            }`}></div>
+         <img  className={`scale-[1.34] ${windowWidth < 620 ? "pb-24 pr-10" : "pb-20 pr-20"}`} src={FutureImage} width={605} height={556} />
         </div>
 
         <div className="max-w-[546px] flex flex-col flex-end gap-10 max-[1440px]:scale-[0.90] max-[1040px]:scale-[0.85]">

@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Arrow from "/img/Form/arrow_contact.svg"
 import Logo from "/img/Header/logo.svg"
-import { BsEnvelopeFill } from "react-icons/bs";
+import Arrow2 from "/img/Services/Arrow_2.svg"
 
 
 
@@ -73,7 +73,7 @@ const Form = ({ onClose }) => {
             </div>
 
             {/* Formulario */}
-            <div className="w-[496px] h-fit bg-transparent shadow-form p-10 rounded-lg relative top-6 border-[2px] border-[#db3957] border-opacity-70 max-[586px]:w-[396px] max-[501px]:w-[328px] max-[420px]:w-[296px] max-[442px]:top-2">
+            <div className="w-[496px] h-fit bg-transparent shadow-form p-10 rounded-lg relative top-6 border-[3px] border-[#313134] border-opacity-70 max-[586px]:w-[396px] max-[501px]:w-[328px] max-[420px]:w-[296px] max-[442px]:top-2">
                 <div className='flex items-center justify-center pb-10 max-[442px]:pb-8'>
                     <img src={Logo} alt='Logotype' />
                 </div>
@@ -140,9 +140,9 @@ const Form = ({ onClose }) => {
                     </div>
 
                     {/* Button "Send" */}
-                    <button  className="btn-secondary btn-hover w-[236px] transition duration-600 hover:shadow-button_secondary flex items-center justify-center gap-3">
+                    <button  className="btn-primary btn-hover w-[180px] transition duration-400 hover:shadow-opacity flex items-center justify-center gap-1">
                         Send Email
-                        <span className='text-[18px]'><BsEnvelopeFill /></span>
+                        <img className="ml-1 w-3.5" src={Arrow2} alt="Arrow"></img>
                     </button>
 
                 </form>

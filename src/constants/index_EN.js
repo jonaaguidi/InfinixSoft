@@ -26,6 +26,8 @@ import hernan from "/img/Team/Hernan.png"
 import marcela from "/img/Team/Marce.png"
 import martin from "/img/Team/Martin.png"
 import luis from "/img/Team/Luis.png"
+import ale from "/img/Team/ale.png"
+import jero from "/img/Team/jero.png"
 import fernando from "/img/Team/Fer.png"
 import valeria from "/img/Team/valeria.png"
 import ayelen from "/img/Team/aye.png"
@@ -63,14 +65,14 @@ const Team = [
     icon: luis
   }, 
   {
-    name: 'Luis Paez',
-    position: "Business Developer Manager",
-    icon: luis
+    name: 'Alejandro Bustos',
+    position: "Partner Solution Adviser",
+    icon: ale
   }, 
   {
-    name: 'Luis Paez',
+    name: 'Jeronimo Hutton',
     position: "Business Developer Manager",
-    icon: luis
+    icon: jero
   }, 
   {
     name: 'Fernando Lepore',

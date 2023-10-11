@@ -117,70 +117,125 @@ const Holding_Dropdown = [
 export { Holding_Dropdown };
 
 
-// Clients DATA (Marquee Section)
-import AlaMaula from "/img/clients/alamaula.webp"
-import Alpeh from "/img/clients/alpeh.webp"
-import barCrawlNation from "/img/clients/barCrawlNation.webp"
-import bjfanatics from "/img/clients/bjfanatics-logo.webp"
-import bondacom from "/img/clients/bondacom.webp"
-import Bonus from "/img/clients/Bonus.webp"
-import cencosud from "/img/clients/cencosud.webp"
-import certicamara from "/img/clients/certicamara.webp"
-import cisco from "/img/clients/cisco.webp"
-import clickStream from "/img/clients/clickStream.webp"
-import colegioescribanos from "/img/clients/colegio-escribanos.webp"
-import datingly from "/img/clients/datingly.webp"
+// Partners DATA (Marquee Section)
+import AlaMaula from "/img/clients/alamaula.png"
+import Infobae from "/img/clients/infobae.png"
+import Aleph from "/img/clients/aleph.png"
+import bonda from "/img/clients/bonda.png"
+import gameon from "/img/clients/Artboard.png"
+import certi from "/img/clients/certi.png"
+import ebay from "/img/clients/ebay.png"
+import farma365 from "/img/clients/farma365.png"
+import diageo from "/img/clients/diageo.png"
+import dot from "/img/clients/dot.png"
+import FiberCorp from "/img/clients/fibercorp.png"
+import Irsa from "/img/clients/Irsa.png"
+import LaNacion from "/img/clients/lanacion.png"
+import moto from "/img/clients/MOTO.png"
+import Novartis from "/img/clients/novartis.png"
+import Personal from "/img/clients/Personal.png"
+import Cisco from "/img/clients/cisco.png"
+import Showcase from "/img/clients/Showcase.png"
+import Snack from "/img/clients/snack.png"
+import sony from "/img/clients/sony.png"
+import Xpress from "/img/clients/xpres.png"
+import Zurich from "/img/clients/zurich.png"
 
-
-const Clients = [
+const Clients1 = [
   {
     name: 'AlaMaula',
     icon: AlaMaula,
   },
   {
-    name: 'Alpeh',
-    icon: Alpeh,
+    name: 'Infobae',
+    icon: Infobae,
   },
   {
-    name: 'barCrawlNation',
-    icon: barCrawlNation,
+    name: 'Aleph',
+    icon: Aleph,
   },
   {
-    name: 'bjfanatics',
-    icon: bjfanatics,
+    name: 'BondaCom',
+    icon: bonda,
   },
   {
-    name: 'bondacom',
-    icon: bondacom,
+    name: 'Gameon',
+    icon: gameon,
   },
   {
-    name: 'Bonus',
-    icon: Bonus,
+    name: 'Certicamara',
+    icon: certi,
   },
   {
-    name: 'Cencosud',
-    icon: cencosud,
-  },
-  {
-    name: 'certicamara',
-    icon: certicamara,
-  },
-  {
-    name: 'Cisco',
-    icon: cisco,
-  },
-  {
-    name: 'clickStream',
-    icon: clickStream,
-  },
-  {
-    name: 'colegioescribanos',
-    icon: colegioescribanos,
-  },
-  {
-    name: 'datingly',
-    icon: datingly,
+    name: 'Ebay',
+    icon: ebay,
   },
 ];
 
-export { Clients };
+const Clients2 = [
+  {
+    name: 'Farma365',
+    icon: farma365,
+  },
+  {
+    name: 'Diageo',
+    icon: diageo,
+  },
+  {
+    name: 'Dot',
+    icon: dot,
+  },
+  {
+    name: 'FiberCorp',
+    icon: FiberCorp,
+  },
+  {
+    name: 'Irsa',
+    icon: Irsa,
+  },
+  {
+    name: 'La Nacion',
+    icon: LaNacion,
+  },
+  {
+    name: 'moto',
+    icon: moto,
+  },
+];
+
+const Clients3 = [
+  {
+    name: 'Novartis',
+    icon: Novartis,
+  },
+  {
+    name: 'Personal',
+    icon: Personal,
+  },
+  {
+    name: 'Cisco',
+    icon: Cisco,
+  },
+  {
+    name: 'Showcase',
+    icon: Showcase,
+  },
+  {
+    name: 'Snack',
+    icon: Snack,
+  },
+  {
+    name: 'Sony',
+    icon: sony,
+  },
+  {
+    name: 'Xpress',
+    icon: Xpress,
+  },
+  {
+    name: 'Zurich',
+    icon: Zurich,
+  },
+];
+
+export { Clients1, Clients2, Clients3 };

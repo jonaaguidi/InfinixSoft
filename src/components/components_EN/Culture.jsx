@@ -7,7 +7,7 @@ const Culture = () => {
 
       <div className="max-w-[1220px] mx-auto">
         <div className="max-w-[820px] flex flex-col justify-center items-start">
-          <p className="badge font-normal">OUR EXPERTISE</p>
+          <p className="badge font-normal mb-1.5">OUR EXPERTISE</p>
           <h2 className="max-w-[888px] text-[#FCFCFD] font-bold text-[42px] max-[1024px]:text-[32px] max-[455px]:text-[24px] max-[455px]:leading-8">
             From Beginning to Infinix
           </h2>
@@ -19,7 +19,7 @@ const Culture = () => {
         <div className="flex justify-center flex-wrap pt-20 gap-6 max-[832px]:gap-12 max-[800px]:gap-7">
           {Culture_cards.map((card) => (
             <div key={card.title} className="max-w-[390px] z-10 relative max-[1442px]:w-[356px] max-[400px]:w-[304px]">
-              <div className="h-fit flex flex-col p-[30px] bg-cards border-2 border-[#313134] z-20 justify-start items-start max-[400px]:h-[300px]">
+              <div className="h-fit flex flex-col p-[30px] bg-cards border-2 border-[#313134] z-20 justify-start items-start max-[400px]:h-fit">
                 <p className="text-[14px] font-semibold text-[#868687]">{card.number}</p>
                 <h4 className="text-[#FCFCFD] text-[18px] font-bold pb-2.5 max-[400px]:p-0">{card.title}</h4>
                 <p className="text-[#A1A1A9] text-[15px] font-normal">{card.content}</p>

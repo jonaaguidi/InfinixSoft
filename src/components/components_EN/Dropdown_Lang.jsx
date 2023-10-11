@@ -1,6 +1,6 @@
 const Dropdown_Lang = () => {
   return (
-    <div className="animate-fade-up animate-duration-[650ms] animate-delay-25 w-fit absolute bg-black shadow-navbar p-2 rounded-lg top-[124px] max-[469px]:left-58">
+    <div className="animate-fade-up animate-duration-[650ms] animate-delay-25 w-fit absolute border-2 border-[#313134] bg-black shadow-navbar p-2 rounded-md top-[124px] max-[469px]:left-58">
       <div className="w-fit flex flex-col rounded-lg items-start">
         <a
           href="/es"

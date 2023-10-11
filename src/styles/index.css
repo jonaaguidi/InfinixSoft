@@ -17,9 +17,9 @@
   html {
     max-width: 100%;
     width: 100%;
+    overflow-x: hidden !important;
   }
   body {
-    overflow-x: hidden !important;
     background-color: #171718 !important;
     color: #ffffff;
   }
@@ -43,8 +43,8 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin-left: 12px;
-    padding: 10px;
+    margin-left: 4px;
+    padding: 8px;
     z-index: 999;
     border-radius: 40px;
     transition: background 0.3s ease;
@@ -124,7 +124,7 @@
   }
 
   .menuitems {
-    @apply flex items-center cursor-pointer py-3 px-4 rounded-lg hover:bg-black hover:text-[#DB3957] focus:bg-black focus:text-[#DB3957] active:bg-black active:text-[#DB3957];
+    @apply flex items-center cursor-pointer p-2 rounded-lg hover:bg-black hover:text-[#DB3957] focus:bg-black focus:text-[#DB3957] active:bg-black active:text-[#DB3957];
   }
 
   .badge {
@@ -212,8 +212,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-  } 
-  
+  }
+
   .bg-cards {
     background: rgba(21, 21, 23, 0.8);
     cursor: pointer;
@@ -225,8 +225,8 @@
   }
 
   .shadow-form {
-    box-shadow: 0px 0px 8px #db3957;
-  }  
+    box-shadow: 0px 0px 8px #313134;
+  }
 
   .shadow-opacity {
     background: rgba(182, 182, 182, 0.28);

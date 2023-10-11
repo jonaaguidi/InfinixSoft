@@ -1,7 +1,7 @@
 const Dropdown_Menu = () => {
   return (
-    <nav className="animate-fade-up animate-duration-[650ms] animate-delay-25 w-fit opacity-90 absolute bg-[#171718] shadow-navbar p-2 rounded-lg top-24 right-24 max-[469px]:right-12 max-[880px]:right-4">
-      <ul className="w-fit flex flex-col rounded-lg items-center font-normal text-[14px]" role="menu">
+    <nav className="animate-fade-up animate-duration-[650ms] animate-delay-25 w-fit opacity-90 absolute border-2 border-[#313134] bg-black shadow-navbar p-1.5 rounded-md top-36 right-20 max-[469px]:right-12 max-[880px]:right-4">
+      <ul className="w-fit flex flex-col rounded-md items-center font-normal text-[14px]" role="menu">
 
       <li role="menuitem">
           <a
