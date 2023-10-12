@@ -30,7 +30,7 @@ const Culture = () => {
         <div className="flex justify-center flex-wrap pt-20 gap-6 max-[832px]:gap-12 max-[800px]:gap-7">
           {Culture_cards.map((card) => (
             <div key={card.title} className="max-w-[390px] z-10 relative max-[1442px]:w-[356px] max-[400px]:w-[304px]">
-              <div className="h-fit flex flex-col p-[30px] bg-cards border-2 border-[#313134] z-20 justify-start items-start max-[400px]:h-fit">
+              <div className="h-fit flex flex-col p-[30px] bg-cards rounded-[12px] border-2 border-[#313134] z-20 justify-start items-start max-[400px]:h-fit">
                 <p className="text-[14px] font-semibold text-[#868687]">{card.number}</p>
                 <h4 className="text-[#FCFCFD] text-[18px] font-bold pb-2.5 max-[400px]:p-0">{card.title}</h4>
                 <p className="text-[#A1A1A9] text-[15px] font-normal">{card.content}</p>

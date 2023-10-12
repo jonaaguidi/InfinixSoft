@@ -2,7 +2,6 @@ import Planet from "./Planet"
 import logo1 from "/img/Team/team_logo1.svg";
 import logo2 from "/img/Team/team_logo2.svg";
 import logo3 from "/img/Team/team_logo3.svg";
-import infinix_logo from "/img/favicons/favicon_infinix.ico"
 
 const About = () => {
 
@@ -14,7 +13,6 @@ const About = () => {
 
                 <div className="w-fit max-w-[428px] flex flex-col items-start pb-6">
                     <div className="badge w-fit flex items-center justify-center gap-1">
-                        <img src={infinix_logo} width={14} height={14} alt="logotipo" />
                         <p className="font-normal text-[12px]">INFINIX SOFT</p>
                     </div>
                     <h2 className="mt-1 font-bold text-[42px] text-[#F4F5F6] max-[540px]:text-[32px]">About Us</h2>
