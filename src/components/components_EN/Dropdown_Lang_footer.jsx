@@ -1,6 +1,6 @@
-const Dropdown_Lang = () => {
+const Dropdown_Lang_Footer = () => {
   return (
-    <div className="z-[900] animate-fade-up animate-duration-[650ms] animate-delay-25 w-fit absolute border-2 border-[#313134] bg-black shadow-navbar p-2 rounded-md top-[124px] max-[469px]:left-58">
+    <div className="z-[900] animate-fade-up animate-duration-[650ms] animate-delay-25 w-fit absolute border-2 border-[#313134] bg-black shadow-navbar p-2 rounded-md bottom-12 left-0 max-[469px]:left-58">
       <div className="w-fit flex flex-col rounded-lg items-start">
         <a
           href="#"
@@ -22,6 +22,6 @@ const Dropdown_Lang = () => {
   );
 };
 
-export default Dropdown_Lang;
+export default Dropdown_Lang_Footer;
 
 

@@ -21,7 +21,7 @@ const Partners = () => {
     return (
         <section className={`w-full z-max flex flex-col justify-center items-center mx-auto py-20 ${windowWidth < 768 ? "pb-20" : "pb-60"}`}>
             <div className="max-w-[838px] py-20 mx-auto flex flex-col justify-center items-center max-[1024px]:py-10 max-[810px]:px-14 max-[510px]:px-7">
-                <p className="badge py-3 px-6 text-[12px] text-center font-semibold text-white mb-2 max-[1024px]:scale-[0.88]">OUR PARTNERS</p>
+                <p className="badge py-3 px-6 text-[12px] text-center font-semibold text-white mb-2 max-[1024px]:scale-[0.88]">OUR CLIENTS</p>
                 <h2 className="max-w-[888px] text-[#FCFCFD] leading-[58px] font-bold text-[52px] text-center pb-3 max-[1024px]:text-[32px] max-[1024px]:leading-[40px] max-[455px]:text-[24px] max-[455px]:leading-8">
                     Trusted by <br></br> Leading Brands
                 </h2>
@@ -31,13 +31,13 @@ const Partners = () => {
             </div>
             <div className="max-w-[1340px] flex flex-col gap-20 max-[1024px]:scale-[0.70] overflow-hidden">
                 <Marquee
+                    style={{ justifyContent: "center", alignItems: "center" }}
                     direction="right"
                     speed={45}
                     pauseOnHover={true}
                     gradient={true}
                     gradientColor={[23, 23, 24]}
                     gradientWidth={296}
-                    autoFill= {true}
                 >
                     {Clients1.map((client, index) => (
                         <div key={index} className="mx-10">
@@ -52,7 +52,7 @@ const Partners = () => {
                     gradient={true}
                     gradientColor={[23, 23, 24]}
                     gradientWidth={296}
-                    autoFill= {true}
+                    style={{ justifyContent: "center", alignItems: "center" }}
                 >
                     {Clients2.map((client, index) => (
                         <div key={index} className="mx-10">
@@ -67,7 +67,7 @@ const Partners = () => {
                     gradient={true}
                     gradientColor={[23, 23, 24]}
                     gradientWidth={296}
-                    autoFill= {true}
+                    style={{ justifyContent: "center", alignItems: "center" }}
                 >
                     {Clients3.map((client, index) => (
                         <div key={index} className="mx-10">

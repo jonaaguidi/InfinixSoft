@@ -1,9 +1,9 @@
 // Importaciones/Exportaciones de Imagenes con el objetivo de modularizar el codigo.
 
 // Banner debajo del Hero.
-import Atlassian from "/img/Banner/Atlassian.png"
+import Atlassian from "/img/Banner/Atlassian.svg"
 import AWS from "/img/Banner/AWS.png"
-import HubSpot from "/img/Banner/HubSpot.png"
+import HubSpot from "/img/Banner/HubSpot.svg"
 import Isotipo from "/img/Banner/isotipo.png"
 import TravelX from "/img/Banner/travelX.svg"
 import Stellar from "/img/Banner/stellar.svg"
@@ -170,6 +170,62 @@ const Clients1 = [
     name: 'Ebay',
     icon: ebay,
   },
+  {
+    name: 'AlaMaula',
+    icon: AlaMaula,
+  },
+  {
+    name: 'Infobae',
+    icon: Infobae,
+  },
+  {
+    name: 'Aleph',
+    icon: Aleph,
+  },
+  {
+    name: 'BondaCom',
+    icon: bonda,
+  },
+  {
+    name: 'Gameon',
+    icon: gameon,
+  },
+  {
+    name: 'Certicamara',
+    icon: certi,
+  },
+  {
+    name: 'Ebay',
+    icon: ebay,
+  },
+  {
+    name: 'AlaMaula',
+    icon: AlaMaula,
+  },
+  {
+    name: 'Infobae',
+    icon: Infobae,
+  },
+  {
+    name: 'Aleph',
+    icon: Aleph,
+  },
+  {
+    name: 'BondaCom',
+    icon: bonda,
+  },
+  {
+    name: 'Gameon',
+    icon: gameon,
+  },
+  {
+    name: 'Certicamara',
+    icon: certi,
+  },
+  {
+    name: 'Ebay',
+    icon: ebay,
+  }
 ];
 
 const Clients2 = [
@@ -201,9 +257,129 @@ const Clients2 = [
     name: 'moto',
     icon: moto,
   },
+  {
+    name: 'Farma365',
+    icon: farma365,
+  },
+  {
+    name: 'Diageo',
+    icon: diageo,
+  },
+  {
+    name: 'Dot',
+    icon: dot,
+  },
+  {
+    name: 'FiberCorp',
+    icon: FiberCorp,
+  },
+  {
+    name: 'Irsa',
+    icon: Irsa,
+  },
+  {
+    name: 'La Nacion',
+    icon: LaNacion,
+  },
+  {
+    name: 'moto',
+    icon: moto,
+  },
+  {
+    name: 'Farma365',
+    icon: farma365,
+  },
+  {
+    name: 'Diageo',
+    icon: diageo,
+  },
+  {
+    name: 'Dot',
+    icon: dot,
+  },
+  {
+    name: 'FiberCorp',
+    icon: FiberCorp,
+  },
+  {
+    name: 'Irsa',
+    icon: Irsa,
+  },
+  {
+    name: 'La Nacion',
+    icon: LaNacion,
+  },
+  {
+    name: 'moto',
+    icon: moto,
+  },
 ];
 
 const Clients3 = [
+  {
+    name: 'Novartis',
+    icon: Novartis,
+  },
+  {
+    name: 'Personal',
+    icon: Personal,
+  },
+  {
+    name: 'Cisco',
+    icon: Cisco,
+  },
+  {
+    name: 'Showcase',
+    icon: Showcase,
+  },
+  {
+    name: 'Snack',
+    icon: Snack,
+  },
+  {
+    name: 'Sony',
+    icon: sony,
+  },
+  {
+    name: 'Xpress',
+    icon: Xpress,
+  },
+  {
+    name: 'Zurich',
+    icon: Zurich,
+  },
+  {
+    name: 'Novartis',
+    icon: Novartis,
+  },
+  {
+    name: 'Personal',
+    icon: Personal,
+  },
+  {
+    name: 'Cisco',
+    icon: Cisco,
+  },
+  {
+    name: 'Showcase',
+    icon: Showcase,
+  },
+  {
+    name: 'Snack',
+    icon: Snack,
+  },
+  {
+    name: 'Sony',
+    icon: sony,
+  },
+  {
+    name: 'Xpress',
+    icon: Xpress,
+  },
+  {
+    name: 'Zurich',
+    icon: Zurich,
+  },
   {
     name: 'Novartis',
     icon: Novartis,

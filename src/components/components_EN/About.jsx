@@ -1,7 +1,7 @@
 import Planet from "./Planet"
-import logo1 from "/img/Team/team_logo1.svg";
-import logo2 from "/img/Team/team_logo2.svg";
-import logo3 from "/img/Team/team_logo3.svg";
+import logo1 from "/img/About/team_logo1.svg";
+import logo2 from "/img/About/team_logo2.svg";
+import logo3 from "/img/About/team_logo3.svg";
 
 const About = () => {
 
@@ -44,5 +44,5 @@ const About = () => {
     )
 }
 
-export default About
+export default About;
 

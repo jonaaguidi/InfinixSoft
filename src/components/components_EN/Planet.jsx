@@ -30,7 +30,7 @@ const Planet = () => {
             ],
             onRender: (state) => {
                 state.phi = phi
-                phi += 0.01
+                phi += 0.0035
             }
         });
 

@@ -80,7 +80,7 @@ const Header = () => {
       <header className="w-full h-fit z-max bg-transparent opacity-100 px-28 py-5 flex justify-between items-center max-[880px]:px-14 max-[675px]:px-7 max-[675px]:py-6">
 
         <div className="flex gap-[18px] z-50 items-center max-[500px]:gap-2 max-[410px]:gap-1">
-          <a href="#hero">
+          <a href="/">
             <img src={Logo} width={201} height={42} alt="InfinixSoft" className="max-[580px]:w-40 max-[440px]:w-32 max-[420px]:w-30 max-[375px]:w-28 max-[360px]:w-24" />
           </a>
           <img className="relative p-2 mt-1 opacity-70 hover:bg-[#303035] hover:rounded-lg hover:opacity-100 cursor-pointer max-[580px]:p-2 max-[420px]:w-8" src={Arrow} alt="arrow" onClick={toggleDropdownHolding} />
@@ -95,6 +95,9 @@ const Header = () => {
             </li>
             <li className="hover-underline-animation mt-2 max-[1075px]:hidden">
               <a href="#services" className="text-[14px] font-normal cursor-pointer ">Our Services</a>
+            </li>
+            <li className="hover-underline-animation mt-2 max-[1075px]:hidden">
+              <a href="https://infinixholdinggroup.com/partner/" target="_blank" rel="noreferrer" className="text-[14px] font-normal cursor-pointer ">Partner</a>
             </li>
             <li className="max-[1075px]:hidden">
               <button

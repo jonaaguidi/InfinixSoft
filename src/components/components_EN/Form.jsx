@@ -37,17 +37,13 @@ const Form = ({ onClose }) => {
                             <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55  c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55  c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505  c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55  l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719  c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z" />
                         </svg>
                     </button>
-                    
+
                 </h3>
                 <p className='text-[16px] font-normal text-[#A1A1A9] max-[880px]:text-[14px]'>
-                    Tell us about your project.<br></br>
-                    We respond to almost every inquiry within one business day. Really!
+                    At InfinixSoft, your ideas meet our innovation.<br></br>
+                    Get in touch and let's explore the digital horizon together.
                 </p>
                 <ul className='pt-16 flex flex-col gap-4'>
-                    <li className='flex gap-1.5 pb-2 border-b border-opacity-20 border-[#A1A1A2] max-[1467px]:text-[14px] max-[1379px]:items-start max-[586px]:text-[12px] max-[422px]:flex-wrap '>
-                        <img src={Arrow} alt='arrow' />
-                        <span className='font-bold'>Miami:</span> 360 NE 75 st. Miami, Suite #127, Florida 33138 United States.
-                    </li>
                     <li className='flex gap-1.5 pb-2 border-b border-opacity-20 border-[#A1A1A2] max-[1467px]:text-[14px] max-[1379px]:items-start max-[586px]:text-[12px] max-[422px]:flex-wrap'>
                         <img src={Arrow} alt='arrow' />
                         <span className='font-bold'>Dubai:</span> Dubai Silicon Oasis, DDP, Building A1, United Arab Emirates.
@@ -55,6 +51,10 @@ const Form = ({ onClose }) => {
                     <li className='flex gap-1.5 pb-2 border-b border-opacity-20 border-[#A1A1A2] max-[1467px]:text-[14px] max-[1379px]:items-start max-[586px]:text-[12px] max-[422px]:flex-wrap'>
                         <img src={Arrow} alt='arrow' />
                         <span className='font-bold'>New York:</span> 175 Varick St. New York, NY. 10014. United States.
+                    </li>
+                    <li className='flex gap-1.5 pb-2 border-b border-opacity-20 border-[#A1A1A2] max-[1467px]:text-[14px] max-[1379px]:items-start max-[586px]:text-[12px] max-[422px]:flex-wrap '>
+                        <img src={Arrow} alt='arrow' />
+                        <span className='font-bold'>Miami:</span> 360 NE 75 st. Miami, Suite #127, Florida 33138 United States.
                     </li>
                     <li className='flex gap-1.5 pb-2 border-b border-opacity-20 border-[#A1A1A2] max-[1467px]:text-[14px] max-[1379px]:items-start max-[586px]:text-[12px] max-[422px]:flex-wrap'>
                         <img src={Arrow} alt='arrow' />
@@ -73,7 +73,7 @@ const Form = ({ onClose }) => {
             </div>
 
             {/* Formulario */}
-            <div className="w-[496px] h-fit bg-transparent shadow-form p-10 rounded-lg relative top-6 border-[3px] border-[#313134] border-opacity-70 max-[586px]:w-[396px] max-[501px]:w-[328px] max-[420px]:w-[296px] max-[442px]:top-2">
+            <div className="w-[496px] h-fit bg-transparent shadow-form p-10 rounded-[12px] relative top-5 border-[2px] border-[#313134] border-opacity-70 max-[586px]:w-[396px] max-[501px]:w-[328px] max-[420px]:w-[296px] max-[442px]:top-2">
                 <div className='flex items-center justify-center pb-10 max-[442px]:pb-8'>
                     <img src={Logo} alt='Logotype' />
                 </div>
@@ -81,7 +81,7 @@ const Form = ({ onClose }) => {
                 <form className='flex flex-col items-center justify-center'>
 
                     {/* Name Inputs */}
-                    <div className="grid sm:grid-cols-2 sm:gap-6 max-[632px]:w-full max-[420px]:gap-1.5">
+                    <div className="w-full grid sm:grid-cols-2 sm:gap-6 max-[632px]:w-full max-[420px]:gap-1.5">
                         <div className="relative z-0 w-full mb-6 group max-[442px]:mb-4">
                             <input
                                 type="text"
@@ -117,7 +117,7 @@ const Form = ({ onClose }) => {
 
                     {/* Email Input */}
                     <div className="relative z-0 w-full mb-12 group max-[442px]:mb-8">
-                        <input type="Email" name="floating_Email" id="floating_Email" className="block py-2.5 px-2 rounded-sm w-full text-sm text-white bg-transparent border-0 border-b-2 border-[#A1A1A9] appearance-none focus:outline-none focus:ring-0 focus:border-[#db3957] peer" placeholder="" required />
+                        <input type="email" name="floating_Email" id="floating_Email" className="block py-2.5 px-2 rounded-sm w-full text-sm text-white bg-transparent border-0 border-b-2 border-[#A1A1A9] appearance-none focus:outline-none focus:ring-0 focus:border-[#db3957] peer" placeholder="" required />
                         <label htmlFor="floating_Email" className="peer-focus:font-medium p-1 absolute text-sm text-[#A1A1A9] duration-300 transform -translate-y-6 scale-75 top-0 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#db3957] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
                     </div>
 
@@ -140,8 +140,8 @@ const Form = ({ onClose }) => {
                     </div>
 
                     {/* Button "Send" */}
-                    <button  className="btn-primary btn-hover w-[180px] transition duration-400 hover:shadow-opacity flex items-center justify-center gap-1">
-                        Send Email
+                    <button type="submit" className="btn-primary btn-hover w-[180px] transition duration-400 hover:shadow-opacity flex items-center justify-center gap-1">
+                        Let's Connect
                         <img className="ml-1 w-3.5" src={Arrow2} alt="Arrow"></img>
                     </button>
 

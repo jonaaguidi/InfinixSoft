@@ -16,6 +16,7 @@ import { FaEarthAmericas } from "react-icons/fa6"
 import { BiLeaf, BiNetworkChart } from "react-icons/bi"
 import Arrow from "/img/Services/Arrow_2.svg"
 import { useEffect, useState } from "react"
+import { Tooltip } from "react-tooltip"
 
 
 
@@ -37,6 +38,7 @@ const Projects = () => {
   }, []);
 
   return (
+
     <section id="projects" className="max-w-[1220px] mx-auto py-20 pb-60 mb-10 max-[1024px]:py-10 max-[860px]:px-14 max-[480px]:px-7">
 
       <div className="max-w-[838px] z-[990] py-20 mx-auto flex flex-col justify-center items-center max-[1024px]:py-10">
@@ -52,23 +54,24 @@ const Projects = () => {
       <div id="Bombo_Project" className="flex items-center justify-center gap-2 max-[1210px]:scale-90 max-[1040px]:scale-100 max-[1040px]:flex-col-reverse">
 
 
-        <div className="relative z-[990]" >
+        <div className="relative" >
           <div className={`absolute left-[68px] inset-0 rounded-[999px] bg-[#d78e27] blur-[126px] opacity-80 ${windowWidth < 620 ? "top-16 w-[286px] h-[268px]" : "top-24 w-[386px] h-[368px]"
             }`}></div>
-          <img className="scale-[1.28]" src={BomboImage} width={605} height={556} />
+          <img className="scale-[1.25]" src={BomboImage} width={605} height={556} />
         </div>
 
-        <div className="max-w-[546px] flex flex-col flex-end gap-10 max-[1440px]:scale-[0.90] max-[1040px]:scale-[0.85]">
+        <div className="max-w-[546px] z-[990] flex flex-col flex-end gap-10 max-[1440px]:scale-[0.90] max-[1040px]:scale-[0.85]">
           <div className="max-w-[482px] flex-wrap">
             <p className="badge w-fit font-normal mb-3">ENTERTAINMENT INDUSTRY</p>
             <img src={Bombo} alt="Bombo" className="pb-6" />
-            <p className="text-[12px] text-white font-semibold uppercase pb-3">Revolucionando la industria de ticketing con tecnología blockchain.</p>
-            <p className="text-[16px] font-normal text-[#A1A1A9] pb-6">Aplicación móvil, combinada con una plataforma administrativa de backend, ofrece una solución segura, transparente y eficiente para la gestión y venta de boletos utilizando la tecnología NFT y blockchain.</p>
-            <button className="btn-primary btn-hover transition duration-400 hover:shadow-button">
-              <a className=" w-fit flex items-center justify-center gap-2" href="https://wearebombo.com/" target="_blank" rel="noreferrer"> View More
-                <img className="ml-1 w-4" src={Arrow} alt="Arrow"></img>
-              </a>
-            </button>
+            <p className="text-[12px] text-white font-semibold uppercase pb-3">REVOLUTIONING THE TICKETING INDUSTRY WITH BLOCKCHAIN TECHNOLOGY.</p>
+            <p className="text-[16px] font-normal text-[#A1A1A9] pb-6">Mobile application, combined with a backend administrative platform, offers a secure, transparent and efficient solution for ticket management and sales using NFT and blockchain technology.</p>
+            <a href="https://wearebombo.com/" target="_blank" rel="noreferrer">
+              <button className="btn-primary btn-hover transition duration-400 hover:shadow-button w-fit flex items-center justify-center gap-2">
+                View More
+                <img className="ml-1 w-4" src={Arrow} alt="Arrow" />
+              </button>
+            </a>
           </div>
 
           <div className="flex flex-col gap-6 flex-wrap">
@@ -139,11 +142,12 @@ const Projects = () => {
             <img src={Biotoken} alt="Biotoken" className="pb-6" />
             <p className="text-[12px] text-white font-semibold uppercase pb-3">Transforming Carbon Footprint - Biotoken's Digital Innovation</p>
             <p className="text-[16px] font-normal text-[#868687] pb-6">Convert CO2 offsets into tradeable tokens with Biotoken. Harnessing blockchain for cleaner planet solutions. Supported by global entities, we drive economic and environmental benefits. Combat climate change. #CarbonTech</p>
-            <button className="btn-primary btn-hover transition duration-400 hover:shadow-button">
-              <a className=" w-fit flex items-center justify-center gap-2" href="https://biotoken.world/" target="_blank" rel="noreferrer"> View More
-                <img className="ml-1 w-4" src={Arrow} alt="Arrow"></img>
-              </a>
-            </button>
+            <a href="https://biotoken.world/" target="_blank" rel="noreferrer">
+              <button className="btn-primary btn-hover transition duration-400 hover:shadow-button w-fit flex items-center justify-center gap-2">
+                View More
+                <img className="ml-1 w-4" src={Arrow} alt="Arrow" />
+              </button>
+            </a>
           </div>
 
           <div className="flex flex-col gap-6 ">
@@ -204,31 +208,33 @@ const Projects = () => {
             className={`absolute inset-0 rounded-[999px] bg-[#7DE972] blur-[126px] opacity-80 ${windowWidth < 620 ? "top-10 left-[60px] w-[268px] h-[268px]" : "left-[100px] top-24 w-[386px] h-[368px]"
               }`}
           ></div>
-          <img alt="biotoken"  className={`scale-100 pt-5 ${windowWidth < 440 ? "pl-10" : "pl-16"} pr-10 max-[1240px]:scale-95`} src={BiotokenImage} width={562} height={589} />
+          <img alt="biotoken" className={`scale-100 pt-5 ${windowWidth < 440 ? "pl-10" : "pl-16"} pr-10 max-[1240px]:scale-95`} src={BiotokenImage} width={562} height={589} />
         </div>
 
       </div>
 
-      <div id="Future" className="flex items-center justify-center gap-5 pt-28 max-[1210px]:scale-90 max-[1040px]:flex-col-reverse max-[1040px]:scale-100" >
+      <div id="Future" className="flex items-center justify-center gap-10 pt-28 max-[1210px]:scale-90 max-[1040px]:flex-col-reverse max-[1040px]:scale-100" >
 
-        <div className="relative z-[990] flex items-center justify-center">
+        <div className="relative flex items-center justify-center">
           <div className={`absolute left-[80px] top-20 inset-0 rounded-[999px] bg-[#99ACC8] blur-[126px] opacity-80 ${windowWidth < 620 ? "w-[286px] h-[216px]" : "w-[386px] h-[368px]"
             }`}></div>
-         <img  className={`scale-[1.34] ${windowWidth < 620 ? "pb-24 pr-10" : "pb-20 pr-20"}`} src={FutureImage} width={605} height={556} />
+          <img className={`scale-[1.34] ${windowWidth < 620 ? "pb-24 pr-10" : "pb-20 pr-20"}`} src={FutureImage} width={605} height={556} />
         </div>
 
-        <div className="max-w-[546px] flex flex-col flex-end gap-10 max-[1440px]:scale-[0.90] max-[1040px]:scale-[0.85]">
+        <div className="max-w-[546px] z-[990] flex flex-col flex-end gap-10 max-[1440px]:scale-[0.90] max-[1040px]:scale-[0.85]">
 
           <div className="max-w-[487px]">
-            <p className="badge w-fit font-normal mb-3">FINTECH</p>
+            <p className="badge w-fit font-normal mb-3">FINTECH INDUSTRY</p>
             <img src={Future} alt="Future" className="pb-6" />
             <p className="text-[12px] text-white font-semibold uppercase pb-3">Transformando educación - Innovación educativa digital</p>
             <p className="text-[16px] font-normal text-[#868687] pb-6">FutureCard Visa® Debit: Cashback for eco-friendly spending. Earn 6% at FuturePartners and 5% on green choices like public transport, electric charging, and sustainable products. Future empowers you to make climate-conscious decisions, impacting 66% of carbon emissions. Join Future and earn FutureCoins through app Missions.</p>
-            <button className="btn-primary btn-hover transition duration-400 hover:shadow-button">
-              <a className=" w-fit flex items-center justify-center gap-2" href="https://www.future.green/" target="_blank" rel="noreferrer"> View More
-                <img className="ml-1 w-4" src={Arrow} alt="Arrow"></img>
-              </a>
-            </button>
+            <a href="https://www.future.green/" target="_blank" rel="noreferrer">
+              <button className="btn-primary btn-hover transition duration-400 hover:shadow-button w-fit flex items-center justify-center gap-2">
+                View More
+                <img className="ml-1 w-4" src={Arrow} alt="Arrow" />
+              </button>
+            </a>
+
           </div>
 
           <div className="flex flex-col gap-6 ">
@@ -289,9 +295,18 @@ const Projects = () => {
         </div>
       </div>
 
-
+      <div className="w-full flex items-center justify-center mt-28 max-[800px]:mt-10 max-[800px]:pb-10">
+      <a href="/projects" target="_blank" rel="noreferrer">
+              <button className="btn-primary btn-hover transition duration-400 hover:shadow-opacity flex items-center justify-center gap-2 max-w-[300px]">
+                View More
+                <img className="ml-1 w-4" src={Arrow} alt="Arrow" />
+              </button>
+            </a>
+      </div>
 
     </section>
+
+
   )
 }
 
