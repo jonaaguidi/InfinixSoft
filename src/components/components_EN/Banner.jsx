@@ -5,7 +5,7 @@ const Banner = () => {
   const isMobile = window.innerWidth <= 600; 
 
   return (
-    <div className="w-full h-fit px-28 py-16 flex flex-wrap items-center justify-center gap-24 max-[880px]:px-14 max-[466px]:px-7 max-[466px]:gap-16">
+    <div className="w-full h-fit px-28 py-16 z-20 flex flex-wrap items-center justify-center gap-24 max-[880px]:px-14 max-[466px]:px-7 max-[466px]:gap-16">
       {isMobile ? (
         // React-fast-marquee solo en pantallas móviles (ancho <= 600px)
         <Marquee

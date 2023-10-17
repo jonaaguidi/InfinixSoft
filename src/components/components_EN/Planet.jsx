@@ -41,9 +41,9 @@ const Planet = () => {
 
 
     return (
-        <div className="relative z-10">
+        <div className="relative z-0">
             <div className="absolute inset-0">
-                <div className="rounded-full bg-[#DB3957] blur-[148px] opacity-30 w-full h-full"></div>
+                <div className="rounded-full bg-[#DB3957] blur-[128px] opacity-30 w-full h-full"></div>
             </div>
             <canvas
                 ref={canvasRef}
