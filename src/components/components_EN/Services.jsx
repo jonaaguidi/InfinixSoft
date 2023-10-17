@@ -1,17 +1,9 @@
-import { useState } from "react";
 import { services } from "../../constants/index_EN";
-import Form from "./Form";
 import Wave from "./Wave";
 import Arrow from "/img/Services/Arrow_2.svg";
 import { useEffect } from "react";
 
 const Services = () => {
-  const [showForm, setShowForm] = useState(false);
-
-  // Función para mostrar el formulario cuando se hace click en el botón
-  const handleShowForm = () => {
-    setShowForm(true);
-  };
 
   // Función para verificar el ancho de la ventana y ocultar el elemento
   const checkWindowWidth = () => {
@@ -41,11 +33,11 @@ const Services = () => {
       <div id="services" className="w-full bg-[#242427]">
         <section className="max-w-[1220px] relative bg-[#242427] py-20 mx-auto flex flex-col items-center max-[1350px]:px-14 max-[520px]:px-7">
           <div className="max-w-[538px] flex flex-col self-start">
-            <p className="badge w-fit z-[990] font-normal">OUR EXPERTISE</p>
-            <h2 className="text-[52px] text-[#F4F5F6] font-bold pb-2 max-[458px]:text-2xl">
+            <p className="badge w-fit z-10 font-normal pb-2">OUR EXPERTISE</p>
+            <h2 className="text-[52px] text-[#F4F5F6] font-bold pb-2 max-[458px]:text-[32px]">
               Support Areas
             </h2>
-            <h4 className="text-[#A1A1A9] text-[18px] font-normal max-[580px]:text-sm">
+            <h4 className="text-[#A1A1A9] text-[18px] font-normal max-[580px]:text-[16px]">
               Tailored solutions to meet your unique business requirements.
             </h4>
           </div>
@@ -64,8 +56,8 @@ const Services = () => {
             ))}
           </div>
 
-          <div className="w-full mt-20 z-[990] flex flex-col gap-4 items-center justify-center py-20">
-            <p className="text-[32px] font-bold">Start Infinix, today.</p>
+          <div className="w-full mt-20 z-10 flex flex-col gap-4 items-center justify-center py-20">
+            <p className="text-[32px] font-bold max-[425px]:text-[28px]">Start Infinix, today.</p>
             <a href="/projects" target="_blank" rel="noreferrer">
               <button className="btn-primary btn-hover transition duration-400 hover:shadow-opacity flex items-center justify-center gap-2 max-w-[300px]">
                 Book a Free Consultation
@@ -80,8 +72,6 @@ const Services = () => {
               <div className="rounded-[999px] bg-[#DB3957] blur-[200px] opacity-30 w-[700px] h-[311px]"></div>
             </div>
           </div>
-
-          {showForm && <Form onClose={() => setShowForm(false)} />}
         </section>
       </div>
     </>

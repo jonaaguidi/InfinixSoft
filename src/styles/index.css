@@ -203,8 +203,12 @@
     color: #db3957;
   }
 
+  .member:nth-child(7){
+    margin-left: 6px;
+  }
+
   .z-max {
-    z-index: 999;
+    z-index: 9999;
   }
 
   .bg-culture {
@@ -224,9 +228,9 @@
     transform: scale(1.024);
   }
 
-.shadow-form{
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.40);
-}
+  .shadow-form {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+  }
 
   /* Animación de Entrada para el Form */
   @keyframes wipe-in-down {

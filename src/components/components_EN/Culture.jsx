@@ -19,10 +19,10 @@ const Culture = () => {
       <div className="max-w-[1220px] mx-auto">
         <div className="max-w-[820px] flex flex-col justify-center items-start">
           <p className="badge font-normal mb-1.5">OUR EXPERTISE</p>
-          <h2 className="max-w-[888px] text-[#FCFCFD] font-bold text-[42px] max-[1024px]:text-[32px] max-[455px]:text-[24px] max-[455px]:leading-8">
+          <h2 className="max-w-[888px] text-[#FCFCFD] font-bold text-[42px] max-[1024px]:text-[32px] max-[455px]:text-[32px] max-[455px]:leading-9">
             From Beginning to Infinix
           </h2>
-          <h4 className="max-w-[720px] text-[18px] text-[#A1A1A9] pt-2 max-[1024px]:text-[16px] max-[455px]:text-[14px] max-[455px]:leading-6">
+          <h4 className="max-w-[720px] text-[18px] text-[#A1A1A9] pt-2 max-[1024px]:text-[16px] max-[455px]:text-[16px] max-[455px]:leading-6">
             Tailored solutions to meet your unique business requirements.
           </h4>
         </div>
@@ -41,7 +41,7 @@ const Culture = () => {
       </div>
 
       <div className="w-full flex flex-col gap-4 items-center justify-center py-16">
-        <p className="text-[32px] font-bold">Start Infinix, today.</p>
+        <p className="text-[32px] font-bold max-[425px]:text-[28px]">Start Infinix, today.</p>
 
         <button
           onClick={toggleShowForm}

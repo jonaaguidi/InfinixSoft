@@ -2,9 +2,9 @@
 
 // Banner debajo del Hero.
 import Atlassian from "/img/Banner/Atlassian.svg"
-import AWS from "/img/Banner/AWS.png"
+import AWS from "/img/Banner/aws.svg"
 import HubSpot from "/img/Banner/HubSpot.svg"
-import Isotipo from "/img/Banner/isotipo.png"
+import Isotipo from "/img/Banner/isotipo.svg"
 import TravelX from "/img/Banner/travelX.svg"
 import Stellar from "/img/Banner/stellar.svg"
 
@@ -73,11 +73,8 @@ export { BannerLogos2 };
 
 // Holding Dropdown (Todo el holding menos InfinixSoft)
 import InfinixHolding from "/img/Hero/Infinix_Holding.svg"
-import InfinixQA from "/img/Hero/Infinix_QA.svg"
 import InfinixNFT from "/img/Hero/Infinix_NFT.svg"
-import InfinixVR from "/img/Hero/Infinix_VR.svg"
 import InfinixSocial from "/img/Hero/Infinix_Social.svg"
-import InfinixGaming from "/img/Hero/Infinix_Gaming.svg"
 
 const Holding_Dropdown = [
   {
@@ -86,32 +83,15 @@ const Holding_Dropdown = [
     link: "https://infinixholdinggroup.com/"
   },
   {
-    name: 'Infinix Social',
-    icon: InfinixSocial,
-    link: "https://infinixsocial.com/"
-  },
-  {
-    name: 'Infinix Gaming',
-    icon: InfinixGaming,
-    link: "https://infinixgaming.com/"
-  },
-  {
-    name: 'Infinix QA',
-    icon: InfinixQA,
-    link: "https://infinixqa.com/"
-  },
-
-  {
-    name: 'Infinix VR',
-    icon: InfinixVR,
-    link: "https://www.infinixar.com/"
-  },
-
-  {
     name: 'Infinix NFT',
     icon: InfinixNFT,
     link: "https://infinixNFT.com/"
   },
+  {
+    name: 'Infinix Social',
+    icon: InfinixSocial,
+    link: "https://infinixsocial.com/"
+  }
 ];
 
 export { Holding_Dropdown };

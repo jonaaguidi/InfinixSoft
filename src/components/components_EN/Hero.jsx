@@ -27,7 +27,7 @@ const Hero = () => {
             <h1 className="text-[52px] leading-[120%] font-bold pb-3 flex items-center justify-center max-w-[666px] mx-auto text-shadow-md max-[1000px]:text-[42px] max-[680px]:text-[36px] max-[520px]:text-[32px]">
               Evolving Your Ideas Into Impactful Digital Solutions
             </h1>
-            <h5 className="text-[20px] leading-[150%] max-w-[530px] mx-auto text-shadow-md max-[1000px]:text-[18px] max-[590px]:text-[16px] max-[520px]:text-[14px]">Your trusted partner in designing, developing, launching, and maintaining technology-driven growth.</h5>
+            <h5 className="text-[20px] leading-[150%] max-w-[530px] mx-auto text-shadow-md max-[1000px]:text-[18px] max-[590px]:text-[16px] max-[520px]:text-[16px]">Your trusted partner in designing, developing, launching, and maintaining technology-driven growth.</h5>
           </div>
           <button
             onClick={toggleShowForm}

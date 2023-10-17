@@ -37,62 +37,74 @@ const Team = [
   {
     name: 'Ivan Saroka',
     position: "CEO Infinix Holding Group, Founder & Investor",
-    icon: ivan
+    icon: ivan,
+    link: "https://www.linkedin.com/in/isaroka/"
   },
   {
     name: 'Marcos Vittorio',
     position: "Chief Executive Officer",
-    icon: marcos
+    icon: marcos,
+    link: "https://www.linkedin.com/in/vittoriomarcos/"
   },
   {
     name: 'Hernán Paez',
     position: "Chief Technology Officer",
-    icon: hernan
+    icon: hernan,
+    link: "https://www.linkedin.com/in/hernanpaez/"
   },
   {
     name: 'Marcela Biondi',
     position: "Chief Financial Officer",
-    icon: marcela
+    icon: marcela,
+    link: "https://www.linkedin.com/company/infinixsoft/"
   },
   {
     name: 'Martin Gimenez',
     position: "Head of Legal & Compliance",
-    icon: martin
+    icon: martin,
+    link: "https://www.linkedin.com/company/infinixsoft/"
   },
   {
     name: 'Alejandro Bustos',
     position: "Partner Solution Adviser",
-    icon: ale
+    icon: ale,
+    link: "https://www.linkedin.com/in/alebustos/"
   },
   {
     name: 'Jeronimo Hutton',
     position: "Business Developer Manager",
-    icon: jero
+    icon: jero,
+    link: "https://www.linkedin.com/in/jeronimohutton/"
   },
   {
     name: 'Luis Paez',
     position: "Chief Marketing Operator",
-    icon: luis
+    icon: luis,
+    link: "https://www.linkedin.com/in/luis-santiago-paez/"
   },
   {
     name: 'Fernando Lepore',
     position: "Business Developer",
-    icon: fernando
+    icon: fernando,
+    link: "https://www.linkedin.com/in/fernando-lepore-33125929/"
   },
   {
     name: 'Valeria Caracciolo',
     position: "Expansion leader, EMEA",
-    icon: valeria
+    icon: valeria,
+    link: "https://www.linkedin.com/in/valeriacaracciolo/"
   },
   {
     name: 'Ayelen Vignuda',
     position: "Human Resources",
-    icon: ayelen
+    icon: ayelen,
+    link: "https://www.linkedin.com/in/ayel%C3%A9n-vignuda-46b782132/"
   },
   {
     name: 'Lisianne Cabral De Melo',
     position: "Partner - Brazil",
-    icon: lis
+    icon: lis,
+    link: "https://www.linkedin.com/company/infinixsoft/"
   },
 ];
 
@@ -121,7 +133,7 @@ const services = [
     icon: service2
   },
   {
-    title: 'Native / React movile App & Responsive Websites',
+    title: 'Native / React Mobile App & Responsive Websites',
     content: "We develop Native / React mobile apps for iOS / Android devices and Responsive HTML5 Websites.",
     icon: service3
   },
@@ -197,3 +209,28 @@ const Card_Projects_data = [
 ];
 
 export { Card_Projects_data };
+
+
+// Testimonials DATA
+import Claudio from "/img/Testimonials/claudio.png";
+
+export const Testimonials = [
+  {
+    icon: Claudio,
+    name: "Claudio Fiandesio",
+    position: "COO at SocialSnack",
+    content: "“As the COO of Social Snack from Aleph group, I've been working with Infinix since 2013. Their performance as a technology partner has been exceptional, and I continue to recommend and use Infinix for our technological needs.”",
+  },
+  {
+    icon: Claudio,
+    name: "Claudio Fiandesio",
+    position: "COO at SocialSnack",
+    content: "“As the COO of Social Snack from Aleph group, I've been working with Infinix since 2013. Their performance as a technology partner has been exceptional, and I continue to recommend and use Infinix for our technological needs.”",
+  },
+  {
+    icon: Claudio,
+    name: "Claudio Fiandesio",
+    position: "COO at SocialSnack",
+    content: "“As the COO of Social Snack from Aleph group, I've been working with Infinix since 2013. Their performance as a technology partner has been exceptional, and I continue to recommend and use Infinix for our technological needs.”",
+  },
+];

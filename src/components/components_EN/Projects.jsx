@@ -16,8 +16,6 @@ import { FaEarthAmericas } from "react-icons/fa6"
 import { BiLeaf, BiNetworkChart } from "react-icons/bi"
 import Arrow from "/img/Services/Arrow_2.svg"
 import { useEffect, useState } from "react"
-import { Tooltip } from "react-tooltip"
-
 
 
 const Projects = () => {
@@ -41,12 +39,12 @@ const Projects = () => {
 
     <section id="projects" className="max-w-[1220px] mx-auto py-20 pb-60 mb-10 max-[1024px]:py-10 max-[860px]:px-14 max-[480px]:px-7">
 
-      <div className="max-w-[838px] z-[990] py-20 mx-auto flex flex-col justify-center items-center max-[1024px]:py-10">
+      <div className="max-w-[838px] z-[100] py-20 mx-auto flex flex-col justify-center items-center max-[1024px]:py-10">
         <p className="badge w-fit font-normal mb-2">WORK SHOWCASE</p>
-        <h2 className="max-w-[888px] text-[#FCFCFD] leading-[120%] font-bold text-[52px] text-center pb-3 max-[1024px]:text-[32px] max-[1024px]:leading-[40px] max-[455px]:text-[24px] max-[455px]:leading-8">
+        <h2 className="max-w-[888px] text-[#FCFCFD] leading-[120%] font-bold text-[52px] text-center pb-3 max-[1024px]:text-[32px] max-[1024px]:leading-[40px] max-[455px]:leading-8">
           Our Portfolio
         </h2>
-        <h4 className="max-w-[404px] text-[18px] font-normal text-[#A1A1A9] text-center pb-8 max-[1024px]:text-[16px] max-[455px]:text-[14px] max-[455px]:leading-6">
+        <h4 className="max-w-[404px] text-[18px] font-normal text-[#A1A1A9] text-center pb-8 max-[1024px]:text-[16px] max-[455px]:text-[16px] max-[455px]:leading-6">
           A glimpse into the transformative impact we’ve made across various industries
         </h4>
       </div>
@@ -55,12 +53,12 @@ const Projects = () => {
 
 
         <div className="relative" >
-          <div className={`absolute left-[68px] inset-0 rounded-[999px] bg-[#d78e27] blur-[126px] opacity-80 ${windowWidth < 620 ? "top-16 w-[286px] h-[268px]" : "top-24 w-[386px] h-[368px]"
+          <div className={`absolute left-[68px] inset-0 rounded-[999px] bg-[#d78e27] blur-[106px] opacity-80 ${windowWidth < 620 ? "top-16 w-[156px] h-[268px]" : "top-24 w-[386px] h-[368px]"
             }`}></div>
-          <img className="scale-[1.25]" src={BomboImage} width={605} height={556} />
+          <img className="scale-[1.17]" src={BomboImage} width={605} height={556} />
         </div>
 
-        <div className="max-w-[546px] z-[990] flex flex-col flex-end gap-10 max-[1440px]:scale-[0.90] max-[1040px]:scale-[0.85]">
+        <div className="max-w-[546px] z-0 flex flex-col flex-end gap-10 max-[1440px]:scale-[0.90] max-[1040px]:scale-[0.85]">
           <div className="max-w-[482px] flex-wrap">
             <p className="badge w-fit font-normal mb-3">ENTERTAINMENT INDUSTRY</p>
             <img src={Bombo} alt="Bombo" className="pb-6" />
@@ -203,9 +201,9 @@ const Projects = () => {
 
         </div>
 
-        <div className="relative z-[990] flex items-center justify-center" >
+        <div className="relative z-0 flex items-center justify-center" >
           <div
-            className={`absolute inset-0 rounded-[999px] bg-[#7DE972] blur-[126px] opacity-80 ${windowWidth < 620 ? "top-10 left-[60px] w-[268px] h-[268px]" : "left-[100px] top-24 w-[386px] h-[368px]"
+            className={`absolute inset-0 rounded-[999px] bg-[#7DE972] blur-[126px] opacity-80 ${windowWidth < 620 ? "top-10 left-[60px] w-[140px] h-[248px]" : "left-[100px] top-24 w-[386px] h-[368px]"
               }`}
           ></div>
           <img alt="biotoken" className={`scale-100 pt-5 ${windowWidth < 440 ? "pl-10" : "pl-16"} pr-10 max-[1240px]:scale-95`} src={BiotokenImage} width={562} height={589} />
@@ -216,12 +214,12 @@ const Projects = () => {
       <div id="Future" className="flex items-center justify-center gap-10 pt-28 max-[1210px]:scale-90 max-[1040px]:flex-col-reverse max-[1040px]:scale-100" >
 
         <div className="relative flex items-center justify-center">
-          <div className={`absolute left-[80px] top-20 inset-0 rounded-[999px] bg-[#99ACC8] blur-[126px] opacity-80 ${windowWidth < 620 ? "w-[286px] h-[216px]" : "w-[386px] h-[368px]"
+          <div className={`absolute left-[80px] top-20 inset-0 rounded-[999px] bg-[#99ACC8] blur-[126px] opacity-80 ${windowWidth < 620 ? "w-[152px] h-[216px]" : "w-[386px] h-[368px]"
             }`}></div>
-          <img className={`scale-[1.34] ${windowWidth < 620 ? "pb-24 pr-10" : "pb-20 pr-20"}`} src={FutureImage} width={605} height={556} />
+          <img className={`scale-[1.17] ${windowWidth < 620 ? "pb-24 pr-10" : "pb-20 pr-20"}`} src={FutureImage} width={605} height={556} />
         </div>
 
-        <div className="max-w-[546px] z-[990] flex flex-col flex-end gap-10 max-[1440px]:scale-[0.90] max-[1040px]:scale-[0.85]">
+        <div className="max-w-[546px] z-0 flex flex-col flex-end gap-10 max-[1440px]:scale-[0.90] max-[1040px]:scale-[0.85]">
 
           <div className="max-w-[487px]">
             <p className="badge w-fit font-normal mb-3">FINTECH INDUSTRY</p>

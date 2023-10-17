@@ -7,8 +7,9 @@ import Team from "../components/components_EN/Team"
 import Services from "../components/components_EN/Services"
 import Projects from "../components/components_EN/Projects"
 import Partners from "../components/components_EN/Partners"
-import Footer from "../components/components_EN/Footer"
+import PreFooter from "../components/components_EN/PreFooter"
 import Testimonials from "../components/components_EN/Testimonials"
+import Footer from "../components/components_EN/Footer"
 
 const Home_EN = () => {
   return (
@@ -23,7 +24,8 @@ const Home_EN = () => {
         <Projects />
         <Services />
         <Partners />
-        <Testimonials />
+        <Testimonials /> 
+        <PreFooter />
       </main>
       <Footer />
     </>

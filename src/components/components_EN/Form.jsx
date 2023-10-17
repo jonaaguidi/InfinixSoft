@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 import Arrow from "/img/Form/arrow_contact.svg"
@@ -23,7 +24,7 @@ const Form = ({ onClose }) => {
 
 
     return (
-        <div className={`fixed overflow-y-auto z-[990] top-0 left-0 w-screen h-screen bg-[#171718] px-24 flex gap-16 justify-center items-center transition-wipe-in-down ${shouldAnimateOut ? 'transition-wipe-out-up' : ''} max-[1292px]:flex-col max-[1292px]:items-center max-[1292px]:justify-start max-[1292px]:top-0 max-[1292px]:pb-48 max-[830px]:px-14 max-[672px]:px-7 max-[420px]:gap-8`}>
+        <div className={`fixed overflow-y-auto z-max top-0 left-0 w-screen h-screen bg-[#171718] px-24 flex gap-16 justify-center items-center transition-wipe-in-down ${shouldAnimateOut ? 'transition-wipe-out-up' : ''} max-[1292px]:flex-col max-[1292px]:items-center max-[1292px]:justify-start max-[1292px]:top-0 max-[1292px]:pb-48 max-[830px]:px-14 max-[672px]:px-7 max-[420px]:gap-8`}>
 
             {/* Text "Contact" */}
             <div className='bg-transparent p-10 rounded-lg max-[502px]:px-4 max-[455px]:px-0'>

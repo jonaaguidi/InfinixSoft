@@ -90,16 +90,16 @@ const Header = () => {
 
         <nav className="flex items-center z-50 gap-10 mt-2 max-[580px]:gap-3 max-[470px]:gap-2 max-[400px]:gap-0">
           <ul className="flex items-center gap-10 max-[580px]:gap-3 max-[470px]:gap-2 max-[400px]:gap-0 list-none p-0 m-0">
-            <li className="hover-underline-animation mt-2 max-[1075px]:hidden">
+            <li className="hover-underline-animation mt-2 max-[1170px]:hidden">
               <a href="#projects" className="text-[14px] font-normal cursor-pointer">Case Studies</a>
             </li>
-            <li className="hover-underline-animation mt-2 max-[1075px]:hidden">
+            <li className="hover-underline-animation mt-2 max-[1170px]:hidden">
               <a href="#services" className="text-[14px] font-normal cursor-pointer ">Our Services</a>
             </li>
-            <li className="hover-underline-animation mt-2 max-[1075px]:hidden">
+            <li className="hover-underline-animation mt-2 max-[1170px]:hidden">
               <a href="https://infinixholdinggroup.com/partner/" target="_blank" rel="noreferrer" className="text-[14px] font-normal cursor-pointer ">Partner</a>
             </li>
-            <li className="max-[1075px]:hidden">
+            <li className="max-[1170px]:hidden">
               <button
                 onClick={toggleShowForm}
                 className="btn-primary btn-hover transition duration-400 hover:shadow-opacity flex items-center justify-center gap-1 max-w-[300px]"
@@ -116,7 +116,7 @@ const Header = () => {
               </div>
               {showDropdownLang && <Dropdown_Lang />}
             </li>
-            <li className="cursor-pointer min-[1075px]:hidden">
+            <li className="cursor-pointer min-[1170px]:hidden">
               <div
                 className={`menu-button ${showDropdownMenu ? 'open' : ''}`}
                 onClick={() => {
