@@ -25,7 +25,7 @@ const TeamComponent = () => {
               {member.position}
             </p>
             <a href={member.link} target="_blank" rel="noreferrer">
-             <BsLinkedin className="mt-1.5 text-[20px] cursor-pointer transition duration-500 transform hover:scale-[1.10]" /> 
+             <BsLinkedin className="mt-1.5 opacity-50 text-[20px] cursor-pointer transition duration-500 transform hover:scale-[1.10] hover:opacity-80" /> 
             </a>
           </div>
         ))}

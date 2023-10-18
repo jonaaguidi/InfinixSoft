@@ -7,10 +7,10 @@ const Projects_Cards = () => {
     return (
         <section className="max-w-[1220px] mb-40 flex flex-col justify-center items-center mx-auto py-10">
             <div className="max-w-[640px] mx-auto py-20 flex flex-col items-center justify-center max-[1320px]:px-28 max-[1024px]:py-10 max-[820px]:px-14 max-[556px]:px-7">
-                <h2 className="max-w-[888px] text-[#FCFCFD] font-bold text-[52px] leading-[58px] text-center pb-3 max-[1024px]:text-[32px] max-[1024px]:leading-[40px] max-[455px]:text-[24px] max-[455px]:leading-8">
-                Our Best Projects
+                <h2 className="max-w-[888px] text-[#FCFCFD] font-bold text-[52px] leading-[58px] text-center pb-3 max-[1024px]:text-[32px] max-[1024px]:leading-[40px] max-[455px]:leading-8">
+                Our Projects
                 </h2>
-                <h4 className="max-w-[720px] text-[18px] text-[#A1A1A9] text-center pb-8 leading-[30px] max-[1024px]:text-[16px] max-[455px]:text-[14px] max-[455px]:leading-6">
+                <h4 className="max-w-[720px] text-[18px] text-[#A1A1A9] text-center pb-8 leading-[30px] max-[1024px]:text-[16px] max-[455px]:leading-6">
                     InfinixSoft offers games, business and product development  (web, mobile, social and internet technologies)  to startup and enterprise clients.
                 </h4>
                 <a href='#projects-cards'>
@@ -28,6 +28,7 @@ const Projects_Cards = () => {
                         title={project.title}
                         subtitle={project.subtitle}
                         image={project.image}
+                        link={project.link}
                     />
                 ))}
             </div>
