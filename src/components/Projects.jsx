@@ -16,9 +16,14 @@ import { FaEarthAmericas } from "react-icons/fa6"
 import { BiLeaf, BiNetworkChart } from "react-icons/bi"
 import Arrow from "/img/Services/Arrow_2.svg"
 import { useEffect, useState } from "react"
+import { useTranslation } from "react-i18next"
+
 
 
 const Projects = () => {
+
+  // Hook de Traducción
+  const { t } = useTranslation();
 
   // Resize de los difuminados
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -40,12 +45,12 @@ const Projects = () => {
     <section id="projects" className="max-w-[1220px] mx-auto py-20 pb-60 mb-10 max-[1024px]:py-10 max-[860px]:px-14 max-[480px]:px-7">
 
       <div className="max-w-[838px] z-[100] py-20 mx-auto flex flex-col justify-center items-center max-[1024px]:py-10">
-        <p className="badge w-fit font-normal mb-2">WORK SHOWCASE</p>
+        <p className="badge w-fit font-normal mb-2"> {t("portfolioBadge")}</p>
         <h2 className="max-w-[888px] text-[#FCFCFD] leading-[120%] font-bold text-[52px] text-center pb-3 max-[1024px]:text-[32px] max-[1024px]:leading-[40px] max-[455px]:leading-8">
-          Our Portfolio
+          {t("portfolioTitle")}
         </h2>
         <h4 className="max-w-[404px] text-[18px] font-normal text-[#A1A1A9] text-center pb-8 max-[1024px]:text-[16px] max-[455px]:text-[16px] max-[455px]:leading-6">
-          A glimpse into the transformative impact we’ve made across various industries
+          {t("portfolioSubtitle")}
         </h4>
       </div>
 
@@ -60,13 +65,13 @@ const Projects = () => {
 
         <div className="max-w-[546px] z-0 flex flex-col flex-end gap-10 max-[1440px]:scale-[0.90] max-[1040px]:scale-[0.85]">
           <div className="max-w-[482px] flex-wrap">
-            <p className="badge w-fit font-normal mb-3">ENTERTAINMENT INDUSTRY</p>
+            <p className="badge w-fit font-normal mb-3">{t("bomboBadge")}</p>
             <img src={Bombo} alt="Bombo" className="pb-6" />
-            <p className="text-[12px] text-white font-semibold uppercase pb-3">REVOLUTIONING THE TICKETING INDUSTRY WITH BLOCKCHAIN TECHNOLOGY.</p>
-            <p className="text-[16px] font-normal text-[#A1A1A9] pb-6">Mobile application, combined with a backend administrative platform, offers a secure, transparent and efficient solution for ticket management and sales using NFT and blockchain technology.</p>
+            <p className="text-[12px] text-white font-semibold uppercase pb-3">{t("bomboText1")}</p>
+            <p className="text-[16px] font-normal text-[#A1A1A9] pb-6">{t("bomboText2")}</p>
             <a href="https://wearebombo.com/" target="_blank" rel="noreferrer">
               <button className="btn-primary btn-hover transition duration-400 hover:shadow-button w-fit flex items-center justify-center gap-2">
-                View More
+                {t("buttonText2")}
                 <img className="ml-1 w-4" src={Arrow} alt="Arrow" />
               </button>
             </a>
@@ -74,7 +79,7 @@ const Projects = () => {
 
           <div className="flex flex-col gap-6 flex-wrap">
             <div className="flex flex-col items-start gap-3">
-              <p className="text-[12px] font-semibold">AWARDS AND WINNING</p>
+              <p className="text-[12px] font-semibold">{t("projectsTitle1")}</p>
               <div className="flex gap-5 flex-wrap">
                 <button className="badge flex justify-center items-center gap-2 uppercase">
                   <span className="text-[18px] mb-1"><BsApple /></span>
@@ -88,7 +93,7 @@ const Projects = () => {
               </div>
             </div>
             <div className="flex flex-col items-start gap-3">
-              <p className="text-[12px] font-semibold">TECH STACK</p>
+              <p className="text-[12px] font-semibold">{t("projectsTitle2")}</p>
               <div className="flex gap-5 flex-wrap">
                 <button className="badge flex items-center gap-2">
                   <span className="text-[18px] mb-[2px]"><SiEthereum /></span>
@@ -111,7 +116,7 @@ const Projects = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <p className="text-[14px] text-[#A1A1A9]">Who supports us</p>
+            <p className="text-[14px] text-[#A1A1A9]">{t("projectsTitle3")}</p>
             <div className="flex gap-4 flex-wrap">
               <div className="flex justify-center items-center gap-2">
                 <img src={iosIcon} alt="iOS" />
@@ -136,13 +141,13 @@ const Projects = () => {
         <div className="max-w-[546px] flex flex-col flex-end gap-10 max-[1440px]:scale-[0.90] max-[1040px]:scale-[0.85]">
 
           <div className="max-w-[487px]">
-            <p className="badge w-fit font-normal mb-3">AGRO INDUSTRY</p>
+            <p className="badge w-fit font-normal mb-3">{t("biotokenBadge")}</p>
             <img src={Biotoken} alt="Biotoken" className="pb-6" />
-            <p className="text-[12px] text-white font-semibold uppercase pb-3">Transforming Carbon Footprint - Biotoken's Digital Innovation</p>
-            <p className="text-[16px] font-normal text-[#868687] pb-6">Convert CO2 offsets into tradeable tokens with Biotoken. Harnessing blockchain for cleaner planet solutions. Supported by global entities, we drive economic and environmental benefits. Combat climate change. #CarbonTech</p>
+            <p className="text-[12px] text-white font-semibold uppercase pb-3">{t("biotokenText1")}</p>
+            <p className="text-[16px] font-normal text-[#868687] pb-6">{t("biotokenText2")}</p>
             <a href="https://biotoken.world/" target="_blank" rel="noreferrer">
               <button className="btn-primary btn-hover transition duration-400 hover:shadow-button w-fit flex items-center justify-center gap-2">
-                View More
+                {t("buttonText2")}
                 <img className="ml-1 w-4" src={Arrow} alt="Arrow" />
               </button>
             </a>
@@ -150,7 +155,7 @@ const Projects = () => {
 
           <div className="flex flex-col gap-6 ">
             <div className="flex flex-col items-start gap-3">
-              <p className="text-[12px] font-semibold">AWARDS AND WINNING</p>
+              <p className="text-[12px] font-semibold">{t("projectsTitle1")}</p>
               <div className="flex gap-5 flex-wrap">
                 <button className="badge flex items-center gap-2">
                   <span className="text-[18px] mb-[2px]"><BiNetworkChart /></span>
@@ -163,7 +168,7 @@ const Projects = () => {
               </div>
             </div>
             <div className="flex flex-col items-start gap-3">
-              <p className="text-[12px] font-semibold">TECH STACK</p>
+              <p className="text-[12px] font-semibold">{t("projectsTitle2")}</p>
               <div className="flex gap-5 flex-wrap">
                 <button className="badge flex items-center gap-2">
                   <span className="text-[18px] mb-[2px]"><FaReact /></span>
@@ -182,7 +187,7 @@ const Projects = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <p className="text-[14px] text-[#A1A1A9]">Who supports us</p>
+            <p className="text-[14px] text-[#A1A1A9]">{t("projectsTitle3")}</p>
             <div className="flex gap-4 flex-wrap">
               <div className="flex justify-center items-center gap-2">
                 <img src={iosIcon} alt="iOS" />
@@ -222,13 +227,13 @@ const Projects = () => {
         <div className="max-w-[546px] z-0 flex flex-col flex-end gap-10 max-[1440px]:scale-[0.90] max-[1040px]:scale-[0.85]">
 
           <div className="max-w-[487px]">
-            <p className="badge w-fit font-normal mb-3">FINTECH INDUSTRY</p>
+            <p className="badge w-fit font-normal mb-3">{t("futureBadge")}</p>
             <img src={Future} alt="Future" className="pb-6" />
-            <p className="text-[12px] text-white font-semibold uppercase pb-3">Transformando educación - Innovación educativa digital</p>
-            <p className="text-[16px] font-normal text-[#868687] pb-6">FutureCard Visa® Debit: Cashback for eco-friendly spending. Earn 6% at FuturePartners and 5% on green choices like public transport, electric charging, and sustainable products. Future empowers you to make climate-conscious decisions, impacting 66% of carbon emissions. Join Future and earn FutureCoins through app Missions.</p>
+            <p className="text-[12px] text-white font-semibold uppercase pb-3">{t("futureText1")}</p>
+            <p className="text-[16px] font-normal text-[#868687] pb-6">{t("futureText2")}</p>
             <a href="https://www.future.green/" target="_blank" rel="noreferrer">
               <button className="btn-primary btn-hover transition duration-400 hover:shadow-button w-fit flex items-center justify-center gap-2">
-                View More
+                {t("buttonText2")}
                 <img className="ml-1 w-4" src={Arrow} alt="Arrow" />
               </button>
             </a>
@@ -237,7 +242,7 @@ const Projects = () => {
 
           <div className="flex flex-col gap-6 ">
             <div className="flex flex-col items-start gap-3">
-              <p className="text-[12px] font-semibold">AWARDS AND WINNING</p>
+              <p className="text-[12px] font-semibold">{t("projectsTitle1")}</p>
               <div className="flex gap-5 flex-wrap">
                 <button className="badge flex items-center gap-2">
                   <span className="text-[18px] mb-[2px]"><BsFillCreditCard2BackFill /></span>
@@ -250,7 +255,7 @@ const Projects = () => {
               </div>
             </div>
             <div className="flex flex-col items-start gap-3">
-              <p className="text-[12px] font-semibold">TECH STACK</p>
+              <p className="text-[12px] font-semibold">{t("projectsTitle2")}</p>
               <div className="flex gap-5 flex-wrap">
                 <button className="badge flex items-center gap-2">
                   <span className="text-[18px] mb-[2px]"><FaReact /></span>
@@ -273,7 +278,7 @@ const Projects = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <p className="text-[14px] text-[#A1A1A9]">Who supports us</p>
+            <p className="text-[14px] text-[#A1A1A9]">{t("projectsTitle3")}</p>
             <div className="flex gap-4 flex-wrap">
               <div className="flex justify-center items-center gap-2">
                 <img src={iosIcon} alt="iOS" />
@@ -294,12 +299,12 @@ const Projects = () => {
       </div>
 
       <div className="w-full flex items-center justify-center mt-28 max-[800px]:mt-10 max-[800px]:pb-10">
-      <a href="/projects" target="_blank" rel="noreferrer">
-              <button className="btn-primary btn-hover transition duration-400 hover:shadow-opacity flex items-center justify-center gap-2 max-w-[300px]">
-                View More
-                <img className="ml-1 w-4" src={Arrow} alt="Arrow" />
-              </button>
-            </a>
+        <a href="/projects" target="_self" rel="noreferrer">
+          <button className="btn-primary btn-hover transition duration-400 hover:shadow-opacity flex items-center justify-center gap-2 max-w-[300px]">
+            {t("buttonText2")}
+            <img className="ml-1 w-4" src={Arrow} alt="Arrow" />
+          </button>
+        </a>
       </div>
 
     </section>

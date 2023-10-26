@@ -1,17 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import { useTranslation } from "react-i18next";
+
 
 const Testimonials = () => {
+
+    // Hook de Traducción
+    const { t } = useTranslation();
+
     return (
-        <section className="max-w-[1220px] mx-auto bg-transparent py-20 pb-60 px-28 flex flex-col items-start justify-center max-[850px]:pb-[180px] max-[850px]:items-center max-[850px]:justify-center max-[1000px]:px-14 max-[425px]:px-7">
+        <section className="max-w-[1220px] mx-auto bg-transparent py-20 pb-44 px-28 flex flex-col items-start justify-center max-[850px]:pb-[180px] max-[850px]:items-center max-[850px]:justify-center max-[1000px]:px-14 max-[425px]:px-7">
             <div className="flex gap-10 max-[850px]:flex-col max-[850px]:items-center">
                 <div className="max-w-[820px] flex flex-col justify-center items-start max-[850px]:items-center">
-                    <p className="badge font-normal mb-1.5">CLIENT TESTIMONIALS</p>
+                    <p className="badge font-normal mb-1.5">{t("clientsBadge")}</p>
                     <h2 className="max-w-[888px] text-[#FCFCFD] font-bold text-[42px] max-[1024px]:text-[28px] max-[850px]:text-center max-[455px]:leading-8">
-                        What Our Clients Say
+                    {t("testimonialsTitle")}
                     </h2>
                     <h4 className="max-w-[720px] text-[18px] text-[#A1A1A9] pt-2 max-[850px]:text-center max-[455px]:text-[16px] max-[455px]:leading-6">
-                        Here's what some of our esteemed clients have to say about our services:
+                    {t("testimonialsSubtitle")}
                     </h4>
                 </div>
 
@@ -24,7 +30,7 @@ const Testimonials = () => {
                         </div>
                     </div>
                     <p className="text-[15px] text-[#A1A1A9] pt-4">
-                        As the COO of Social Snack from Aleph group, I've been working with Infinix since 2013. Their performance as a technology partner has been exceptional, and I continue to recommend and use Infinix for our technological needs.”
+                        "As the COO of Social Snack from Aleph group, I've been working with Infinix since 2013. Their performance as a technology partner has been exceptional, and I continue to recommend and use Infinix for our technological needs.”
                     </p>
                 </div>
 

@@ -25,7 +25,7 @@ const Dropdown_Menu = () => {
 
         <li role="menuitem">
           <a
-            href="#services"
+            href="/#services"
             className="menuitems"
             rel='noreferrer'>
             <p>Our Services</p>
@@ -45,7 +45,7 @@ const Dropdown_Menu = () => {
 
         <li role="menuitem">
           <a
-            href="#contact"
+            href="/#contact"
             className="menuitems"
             rel='noreferrer'
           >

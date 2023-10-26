@@ -1,11 +1,13 @@
-import Header from "../components/components_EN/Header"
-import Projects_Cards from "../components/components_EN/Projects_Cards"
+import Header_v2 from "../components/Header_v2"
+import Projects_Cards from "../components/Projects_Cards"
 
 const Projects = () => {
   return (
     <>
-      <Header />
-      <Projects_Cards />
+      <Header_v2 />
+      <main>
+        <Projects_Cards />
+      </main>
     </>
   )
 }

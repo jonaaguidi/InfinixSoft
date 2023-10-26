@@ -1,9 +1,13 @@
+import { useTranslation } from "react-i18next";
 import Planet from "./Planet"
 import logo1 from "/img/About/team_logo1.svg";
 import logo2 from "/img/About/team_logo2.svg";
 import logo3 from "/img/About/team_logo3.svg";
 
 const About = () => {
+
+  // Hook de Traducción
+  const { t } = useTranslation();
 
     return (
         <section id="about" className="w-fit h-[680px] mx-auto px-28 py-20 mb-20 flex items-center justify-center gap-10 max-[1300px]:gap-4 max-[950px]:gap-0 max-[880px]:px-14 max-[675px]:px-7">
@@ -15,15 +19,15 @@ const About = () => {
                     <div className="badge w-fit flex items-center justify-center gap-1">
                         <p className="font-normal text-[12px]">INFINIX SOFT</p>
                     </div>
-                    <h2 className="mt-1 font-bold text-[42px] text-[#F4F5F6] max-[540px]:text-[32px]">About Us</h2>
+                    <h2 className="mt-1 font-bold text-[42px] text-[#F4F5F6] max-[540px]:text-[32px]">{t("aboutTitle")}</h2>
                 </div>
 
                 <div className="pb-10">
                     <p className="text-[18px] font-normal pb-[18px] leading-[150%] max-[540px]:text-[16px]">
-                        At InfinixSoft, we transcend the traditional software development paradigm. Stretching across the USA, Mexico, Dubai, and El Salvador, we stand as a collective of passionate individuals committed to not just delivering premium consulting software solutions, but fostering enduring relationships with our clients and partners.
+                        {t("aboutText")}
                     </p>
                     <p className="text-[18px] font-normal leading-[150%] max-[540px]:text-[16px]">
-                        Our ethos is grounded in trust and humanity, making us more than just a service provider; we are your reliable partner in achieving sustained growth.
+                        {t("aboutText2")}
                     </p>
                 </div>
 

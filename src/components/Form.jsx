@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Arrow from "/img/Form/arrow_contact.svg"
 import Logo from "/img/Header/logo.svg"
 import Arrow2 from "/img/Services/Arrow_2.svg"
+import { FaInstagram, FaLinkedinIn, FaSquareXTwitter } from 'react-icons/fa6';
 
 
 
@@ -47,7 +48,7 @@ const Form = ({ onClose }) => {
                 <ul className='pt-16 flex flex-col gap-4'>
                     <li className='flex gap-1.5 pb-2 border-b border-opacity-20 border-[#A1A1A2] max-[1467px]:text-[14px] max-[1379px]:items-start max-[586px]:text-[12px] max-[422px]:flex-wrap'>
                         <img src={Arrow} alt='arrow' />
-                        <span className='font-bold'>Dubai:</span> Dubai Silicon Oasis, DDP, Building A1, United Arab Emirates.
+                        <span className='font-bold'>Dubai:</span> Dubai Silicon Oasis, DDP, Building A2, United Arab Emirates.
                     </li>
                     <li className='flex gap-1.5 pb-2 border-b border-opacity-20 border-[#A1A1A2] max-[1467px]:text-[14px] max-[1379px]:items-start max-[586px]:text-[12px] max-[422px]:flex-wrap'>
                         <img src={Arrow} alt='arrow' />
@@ -69,7 +70,18 @@ const Form = ({ onClose }) => {
                         <img src={Arrow} alt='arrow' />
                         <span className='font-bold'>+1 (877) 789 8761</span>
                     </li>
-
+                    <li className='flex gap-3 pb-3 border-b border-opacity-20 border-[#A1A1A2] max-[1467px]:text-[14px] max-[1379px]:items-start max-[586px]:text-[12px] max-[422px]:flex-wrap'>
+                        <img src={Arrow} alt='arrow' />
+                        <a href='https://www.linkedin.com/company/infinixsoft/' target='_blank' rel='noreferrer'>
+                            <FaLinkedinIn className='text-[20px] cursor-pointer transition duration-500 transform hover:scale-[1.10]' />
+                        </a>
+                        <a href='https://www.instagram.com/infinix.soft/' target='_blank' rel='noreferrer'>
+                          <FaInstagram className='text-[20px] cursor-pointer transition duration-500 transform hover:scale-[1.10] ml-1' />  
+                        </a>
+                        <a href='https://twitter.com/InfinixSoft' target='_blank' rel='noreferrer'>
+                          <FaSquareXTwitter className='text-[20px] cursor-pointer transition duration-500 transform hover:scale-[1.10] ml-1' />  
+                        </a>
+                    </li>
                 </ul>
             </div>
 

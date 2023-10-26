@@ -1,5 +1,5 @@
 import Card_Projects from "./Card_Projects";
-import { Card_Projects_data } from "../../constants/index_EN";
+import { Card_Projects_data } from "../constants/default";
 import Arrow from "/img/Services/Arrow_2.svg"
 import { Tooltip } from 'react-tooltip'
 

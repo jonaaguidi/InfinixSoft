@@ -1,4 +1,4 @@
-import { BannerLogos } from "../../constants/index_imgs"
+import { BannerLogos } from "../constants/images"
 import Marquee from 'react-fast-marquee'; // Importa react-fast-marquee
 
 const Banner = () => {

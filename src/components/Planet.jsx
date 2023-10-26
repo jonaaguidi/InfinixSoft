@@ -23,10 +23,13 @@ const Planet = () => {
             markerColor: [0.8588, 0.2235, 0.3412],
             glowColor: [0.7, 0.7, 0.7],
             markers: [
-                { location: [25.276987, 55.296249], size: 0.08 },  // Dubai
-                { location: [25.7617, -80.1918], size: 0.08 },    // Miami
-                { location: [40.7128, -74.006], size: 0.08 },     // New York
-                { location: [-34.6118, -58.4173], size: 0.08 }    // Buenos Aires
+                { location: [25.276987, 55.296249], size: 0.06 },  // Dubai
+                { location: [25.7617, -80.1918], size: 0.06 },    // Miami
+                { location: [40.7128, -74.006], size: 0.06 },     // New York
+                { location: [-34.6118, -58.4173], size: 0.06 },   // Buenos Aires
+                { location: [-23.5505, -46.6333], size: 0.06 },   // São Paulo
+                { location: [19.4326, -99.1332], size: 0.06 },    // Ciudad de México
+                { location: [13.6972, -89.1912], size: 0.06 },    // San Salvador
             ],
             onRender: (state) => {
                 state.phi = phi

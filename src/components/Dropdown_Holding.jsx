@@ -1,4 +1,4 @@
-import { Holding_Dropdown } from '../../constants/index_imgs';
+import { Holding_Dropdown } from '../constants/images';
 
 const Dropdown_Holding = () => {
   return (
